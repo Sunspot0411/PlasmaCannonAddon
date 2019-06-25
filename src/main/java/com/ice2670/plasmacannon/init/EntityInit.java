@@ -11,15 +11,15 @@ public class EntityInit
 {
     public static void registerEntities()
     {
-        registerEntity("plasmaball", EntityPlasmaBall.class, Reference.ENTITY_PLASMABALL, 200);
-        registerEntity("largeplasmaball", EntityLargePlasmaBall.class, Reference.ENTITY_lARGEPLASMABALL, 200);
-        registerEntity("fasttorpedo", EntityFastTorpedo.class, Reference.FAST_TORPEDO, 200);
-        registerEntity("autotorpedo", EntityAutoTorpedo.class, Reference.AUTO_TORPEDO, 200);
+        registerEntity("plasmaball", EntityPlasmaBall.class, Reference.ENTITY_PLASMABALL, 800);
+        registerEntity("largeplasmaball", EntityLargePlasmaBall.class, Reference.ENTITY_lARGEPLASMABALL, 800);
+        registerEntity("fasttorpedo", EntityFastTorpedo.class, Reference.FAST_TORPEDO, 800);
+        registerEntity("autotorpedo", EntityAutoTorpedo.class, Reference.AUTO_TORPEDO, 800);
     }
 
     private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range)
     {
 
-        EntityRegistry.registerModEntity(new ResourceLocation(Reference.MODID + ":" + name), entity, name, id, Main.instance, 200, 1, true);
+        EntityRegistry.registerModEntity(new ResourceLocation(Reference.MODID + ":" + name), entity, name, id, Main.instance, range, 1, true);
     }
 }
