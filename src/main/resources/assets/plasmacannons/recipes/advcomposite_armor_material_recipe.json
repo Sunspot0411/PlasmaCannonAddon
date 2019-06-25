@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "DI ",
+        "   ",
+        "   "
+    ],
+    
+    "key":
+    {
+        "I": {
+            "item": "plasmacannons:composite_armor_material"
+        },
+
+        "D": {
+            "item": "plasmacannons:iridium_plate"
+        }
+    },
+    
+    "result":
+    {
+        "item": "plasmacannons:advcomposite_armor_material",
+        "count": 1
+    }
+}

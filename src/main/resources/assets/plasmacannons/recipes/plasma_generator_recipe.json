@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "DID",
+        "IGI",
+        "DID"
+    ],
+    
+    "key":
+    {
+        "I": {
+            "item": "ic2:plating"
+        },
+        "G": {
+            "item": "plasmacannons:plasma_container"
+        },
+        "D": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    
+    "result":
+    {
+        "item": "plasmacannons:block_plasmagenerator",
+        "count": 1
+    }
+}

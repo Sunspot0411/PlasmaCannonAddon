@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "ICG",
+        " D ",
+        "ICG"
+    ],
+    
+    "key":
+    {
+        "I": {
+            "item": "plasmacannons:dense_compositematerial"
+        },
+        "C": {
+            "item": "plasmacannons:integrated_circuit"
+        },
+        "G": {
+            "item": "minecraft:iron_ingot"
+        },
+        "D": {
+            "item": "plasmacannons:plasma_container"
+        }
+    },
+    
+    "result":
+    {
+        "item": "plasmacannons:plasma_cannon",
+        "count": 1
+    }
+}

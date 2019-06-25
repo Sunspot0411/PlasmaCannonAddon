@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "IOO",
+        "IOO",
+        "IOO"
+    ],
+    
+    "key":
+    {
+        "I": {
+            "item": "plasmacannons:carbon_dust"
+        },
+        "O": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    
+    "result":
+    {
+        "item": "plasmacannons:carbon_iron_mixture",
+        "count": 6
+    }
+}

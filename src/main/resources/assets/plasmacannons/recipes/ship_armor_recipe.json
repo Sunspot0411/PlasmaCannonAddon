@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "II ",
+        "II ",
+        "   "
+    ],
+    
+    "key":
+    {
+        "I": {
+            "item": "plasmacannons:armor_steel"
+        }
+    },
+    
+    "result":
+    {
+        "item": "plasmacannons:block_shiparmor",
+        "count": 1
+    }
+}
