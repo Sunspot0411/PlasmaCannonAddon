@@ -63,7 +63,7 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
      */
     public boolean isBurning()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -79,18 +79,18 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
             f = Math.min(0.8F, f);
         }
 
-        /*double d=(double)f;
+        double d=(double)f;
         float f1;
 
         if (powerFactorf > 20) {
 
-            f1 = (float) (1 * d);
+            f1 = (float) (0.8 * d);
 
         } else
             {
-                f1 =(float) (1 * d);
+                f1 =(float) (0.5 * d);
             }
-            */
+
 
         return f;
     }
