@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        "facing=north": { "model": "plasmaengines:plasma_engine" },
+        "facing=east": { "model": "plasmaengines:plasma_engine", "y": 90 },
+        "facing=south": { "model": "plasmaengines:plasma_engine", "y": 180 },
+        "facing=west": { "model": "plasmaengines:plasma_engine", "y": 270 }
+    }
+}

@@ -26,6 +26,8 @@ repositories {
         name = "ic2"
         url = "http://maven.ic2.player.to/"
     }
+
+    maven { url = 'https://maven.daporkchop.net/' }
 }
 
 minecraft {
@@ -58,7 +60,7 @@ dependencies {
     // except that these dependencies get remapped to your current MCP mappings
     //deobfCompile 'com.mod-buildcraft:buildcraft:6.0.8:dev'
     //deobfProvided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
-    compile "com.ice2670:vwold:1.0"
+    compile 'valkyrienwarfare:api:1.0'
     compile 'net.industrial-craft:industrialcraft-2:2.8.75-ex112:dev'
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
