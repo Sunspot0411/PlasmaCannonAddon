@@ -112,7 +112,7 @@ public class TileEntityTorpedoLauncher extends TileEntity
                 }
 
             }
-            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS,1.0F, 1.0F);
+            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS,8.0F, 1.0F);
             this.torpedoload = 0;
             this.ftorpedoload = 0;
         } else if (this.ftorpedoload == 1)
@@ -155,7 +155,7 @@ public class TileEntityTorpedoLauncher extends TileEntity
                     worldIn.spawnEntity(fastTorpedo);
                 }
             }
-            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS,1.0F, 1.0F);
+            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS,8.0F, 1.0F);
             this.torpedoload = 0;
             this.ftorpedoload = 0;
         }
@@ -223,7 +223,7 @@ public class TileEntityTorpedoLauncher extends TileEntity
                     }
 
                 }
-                worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 8.0F, 1.0F);
             }
 
 

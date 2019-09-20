@@ -120,8 +120,8 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
                 {
                     if (powerFactorf >= 20)
                     {
-                        AxisAlignedBB axis = new AxisAlignedBB(this.posX - 5, this.posY - 5, this.posZ - 5,
-                                this.posX + 5, this.posY + 5, this.posZ + 5);
+                        AxisAlignedBB axis = new AxisAlignedBB(this.posX - 6, this.posY - 6, this.posZ - 6,
+                                this.posX + 6, this.posY + 6, this.posZ + 6);
                         List<EntityLivingBase> targets = getEntityWorld().getEntitiesWithinAABB(EntityLivingBase.class, axis);
                         for (EntityLivingBase mob : targets) {
                             (mob).setHealth((mob).getHealth() - damagefactor);
@@ -138,8 +138,8 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
                 {
                     if (powerFactorf >= 20)
                     {
-                        AxisAlignedBB axis = new AxisAlignedBB(this.posX - 5, this.posY - 5, this.posZ - 5,
-                                this.posX + 5, this.posY + 5, this.posZ + 5);
+                        AxisAlignedBB axis = new AxisAlignedBB(this.posX - 6, this.posY - 6, this.posZ - 6,
+                                this.posX + 6, this.posY + 6, this.posZ + 6);
                         List<EntityLivingBase> targets = getEntityWorld().getEntitiesWithinAABB(EntityLivingBase.class, axis);
                         for (EntityLivingBase mob : targets) {
                             (mob).setHealth((mob).getHealth() - damagefactor);

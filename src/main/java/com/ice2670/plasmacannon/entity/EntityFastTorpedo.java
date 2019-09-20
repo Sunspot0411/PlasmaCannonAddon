@@ -113,8 +113,8 @@ public class EntityFastTorpedo extends EntityPlasmaBall
 
                 if (result.entityHit instanceof EntityLivingBase)
                 {
-                    AxisAlignedBB axis = new AxisAlignedBB(this.posX - 5, this.posY - 5, this.posZ - 5,
-                            this.posX + 5, this.posY + 5, this.posZ + 5);
+                    AxisAlignedBB axis = new AxisAlignedBB(this.posX - 4, this.posY - 4, this.posZ - 4,
+                            this.posX + 4, this.posY + 4, this.posZ + 4);
                     List<EntityLivingBase> targets = getEntityWorld().getEntitiesWithinAABB(EntityLivingBase.class, axis);
                     for (EntityLivingBase mob : targets) {
                         (mob).setHealth((mob).getHealth() - powerFactorf);
@@ -127,8 +127,8 @@ public class EntityFastTorpedo extends EntityPlasmaBall
                 if (result.entityHit instanceof EntityPlayer)
                 {
 
-                    AxisAlignedBB axis = new AxisAlignedBB(this.posX - 5, this.posY - 5, this.posZ - 5,
-                            this.posX + 5, this.posY + 5, this.posZ + 5);
+                    AxisAlignedBB axis = new AxisAlignedBB(this.posX - 4, this.posY - 4, this.posZ - 4,
+                            this.posX + 4, this.posY + 4, this.posZ + 4);
                     List<EntityLivingBase> targets = getEntityWorld().getEntitiesWithinAABB(EntityLivingBase.class, axis);
                     for (EntityLivingBase mob : targets) {
                         (mob).setHealth((mob).getHealth() - powerFactorf);

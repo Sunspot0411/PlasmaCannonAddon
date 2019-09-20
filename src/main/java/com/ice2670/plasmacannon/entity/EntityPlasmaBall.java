@@ -73,7 +73,7 @@ public abstract class EntityPlasmaBall extends EntitySnowball implements IProjec
      */
     public void onUpdate()
     {
-        if (this.ticksExisted > 150) {
+        if (this.ticksExisted > 160) {
             this.setDead();
             return;
         }

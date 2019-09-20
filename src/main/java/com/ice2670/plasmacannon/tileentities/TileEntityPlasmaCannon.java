@@ -111,7 +111,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                                 worldIn.spawnEntity(entityplasmaball);
                             }
 
-                            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 9.9F, 1.0F);
                             this.energy = 0;
                         } else {
                             if (world.isRemote) {
@@ -145,7 +145,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                                 worldIn.spawnEntity(entityplasmaball);
                             }
 
-                            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 9.9F, 1.0F);
                             this.energy = 0;
                         } else {
                             if (world.isRemote) {
@@ -179,7 +179,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                                 worldIn.spawnEntity(entityplasmaball);
                             }
 
-                            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 9.9F, 1.0F);
                             this.energy = 0;
                         } else {
                             if (world.isRemote) {
@@ -213,7 +213,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                                 worldIn.spawnEntity(entityplasmaball);
                             }
 
-                            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 9.9F, 1.0F);
                             this.energy = 0;
                         } else {
                             if (world.isRemote) {
@@ -237,7 +237,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
     {
         ticks++;
 
-        if (ticks > 20){
+        if (ticks > 23){
             ticks = 0;
         }
 
