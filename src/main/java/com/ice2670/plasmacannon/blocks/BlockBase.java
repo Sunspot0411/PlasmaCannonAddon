@@ -18,6 +18,9 @@ public class BlockBase extends Block implements IHasModel
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(CreativeTabs.COMBAT);
+        setHardness(15.0F);
+        setResistance(20.0F);
+        setHarvestLevel("pickaxe", 2);
 
         BlockInit.BLOCKS.add(this);
         ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
