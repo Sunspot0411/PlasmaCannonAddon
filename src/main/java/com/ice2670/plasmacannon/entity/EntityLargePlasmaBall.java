@@ -32,13 +32,13 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
     public EntityLargePlasmaBall(World worldIn)
     {
         super(worldIn);
-        this.setSize(0.3125F, 0.3125F);
+        this.setSize(0.8125F, 0.8125F);
     }
 
     public EntityLargePlasmaBall(World worldIn, double x, double y, double z, int powerfactor)
     {
         super(worldIn, x, y, z, powerfactor);
-        this.setSize(0.3125F, 0.3125F);
+        this.setSize(0.8125F, 0.8125F);
     }
 
     public static void registerFixesLargePlasmaBall(DataFixer fixer)
@@ -55,7 +55,7 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
     public EntityLargePlasmaBall(World worldIn, EntityLivingBase throwerIn, int powerfactor2)
     {
         super(worldIn, throwerIn, powerfactor2);
-        this.setSize(0.3125F, 0.3125F);
+        this.setSize(0.8125F, 0.8125F);
     }
 
     /**
