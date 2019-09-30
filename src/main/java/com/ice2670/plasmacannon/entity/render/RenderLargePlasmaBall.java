@@ -61,7 +61,7 @@ public class RenderLargePlasmaBall extends Render<EntityLargePlasmaBall>
             GlStateManager.enableOutlineMode(this.getTeamColor(entity));
         }
 
-        this.skeletonHeadModel.render(entity, 0.0F, 0.0F, 0.0F, f, f1, 0.11F);
+        this.skeletonHeadModel.render(entity, 0.0F, 0.0F, 0.0F, f, f1, 0.09F);
 
         if (this.renderOutlines)
         {

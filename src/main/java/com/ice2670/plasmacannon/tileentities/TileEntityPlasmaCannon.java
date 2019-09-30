@@ -80,7 +80,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
         //direction
         EnumFacing enumfacing = (EnumFacing) state.getValue(FACING);
         double d0 = pos.getX() + 0.5D + (float) enumfacing.getFrontOffsetX();
-        double d1 = pos.getY() + 0.2D + (float) enumfacing.getFrontOffsetY();
+        double d1 = pos.getY() + 0.164D + (float) enumfacing.getFrontOffsetY();
         double d2 = pos.getZ() + 0.5D + (float) enumfacing.getFrontOffsetZ();
 
         int x = this.pos.getX();
