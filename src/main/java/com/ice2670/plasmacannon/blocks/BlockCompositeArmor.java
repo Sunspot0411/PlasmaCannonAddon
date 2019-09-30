@@ -12,7 +12,7 @@ public class BlockCompositeArmor extends BlockBase
     {
         super(name, Material.IRON);
         setSoundType(SoundType.METAL);
-        setHardness(450.0F);
+        setHardness(501.0F);
         setResistance(150.0F);
         setHarvestLevel("pickaxe", 3);
 

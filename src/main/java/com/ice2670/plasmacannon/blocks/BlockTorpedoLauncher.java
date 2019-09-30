@@ -33,7 +33,7 @@ public class BlockTorpedoLauncher extends BlockBase
         super(name, Material.IRON);
         setCreativeTab(CreativeTabs.COMBAT);
         setSoundType(SoundType.METAL);
-        setHardness(201.0F);
+        setHardness(501.0F);
         setResistance(140.0F);
         setHarvestLevel("pickaxe", 3);
         setLightOpacity(1);

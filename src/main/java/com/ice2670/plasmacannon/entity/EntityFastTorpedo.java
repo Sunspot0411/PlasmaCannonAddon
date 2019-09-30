@@ -164,7 +164,7 @@ public class EntityFastTorpedo extends EntityPlasmaBall
             // Go through non solid block
             return;
         } else {
-            if (hitBlock.getBlockHardness(world,pos)<=6*powerFactorf)
+            if (hitBlock.getBlockHardness(world,pos)<=51)
             {
             getEntityWorld().destroyBlock(pos, false);
             }
