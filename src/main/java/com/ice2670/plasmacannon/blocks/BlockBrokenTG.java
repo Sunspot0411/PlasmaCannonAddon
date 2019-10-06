@@ -9,6 +9,8 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import valkyrienwarfare.mod.common.ValkyrienWarfareMod;
 
+import java.util.Random;
+
 /**
  * Created by Eric C on 10/5/2019.
  */
@@ -24,8 +26,13 @@ public class BlockBrokenTG extends BlockBase
         setHarvestLevel("pickaxe", 3);
     }
 
+    public int quantityDropped(Random random)
+    {
+        return 0;
+    }
+
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getRenderLayer()
+    public BlockRenderLayer getBlockLayer()
     {
         return BlockRenderLayer.CUTOUT;
     }
