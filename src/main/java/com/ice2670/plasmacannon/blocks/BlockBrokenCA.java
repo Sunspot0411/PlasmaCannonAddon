@@ -1,16 +1,19 @@
 package com.ice2670.plasmacannon.blocks;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.util.EnumFacing;
 
-public class BlockAdvCompositeArmor extends BlockBase {
-    public BlockAdvCompositeArmor(String name) {
+/**
+ * Created by Eric C on 10/5/2019.
+ */
+public class BlockBrokenCA extends BlockBase
+{
+    public BlockBrokenCA(String name)
+    {
         super(name, Material.IRON);
         setSoundType(SoundType.METAL);
-        setHardness(951.0F);
-        setResistance(321.0F);
+        setHardness(150.0F);
+        setResistance(60.0F);
         setHarvestLevel("pickaxe", 3);
     }
 }

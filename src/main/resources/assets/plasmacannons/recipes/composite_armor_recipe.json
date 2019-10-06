@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "DI ",
+        "   ",
+        "   "
+    ],
+    
+    "key":
+    {
+        "I": {
+            "item": "plasmacannons:block_brokenca"
+        },
+
+        "D": {
+            "item": "plasmacannons:dense_compositematerial"
+        }
+    },
+    
+    "result":
+    {
+        "item": "plasmacannons:advcomposite_armor_material",
+        "count": 1
+    }
+}

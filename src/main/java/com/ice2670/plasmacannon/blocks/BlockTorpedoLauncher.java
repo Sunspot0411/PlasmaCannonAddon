@@ -21,6 +21,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import valkyrienwarfare.mod.common.ValkyrienWarfareMod;
 
 import java.util.Random;
 
@@ -31,10 +32,10 @@ public class BlockTorpedoLauncher extends BlockBase
     public BlockTorpedoLauncher(String name)
     {
         super(name, Material.IRON);
-        setCreativeTab(CreativeTabs.COMBAT);
+        setCreativeTab(ValkyrienWarfareMod.vwTab);
         setSoundType(SoundType.METAL);
-        setHardness(501.0F);
-        setResistance(140.0F);
+        setHardness(500.0F);
+        setResistance(170.0F);
         setHarvestLevel("pickaxe", 3);
         setLightOpacity(1);
     }

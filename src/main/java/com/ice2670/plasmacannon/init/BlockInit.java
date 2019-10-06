@@ -25,4 +25,14 @@ public class BlockInit
 
     public static final Block BPC = new BlockPC("bpc");
 
+    public static final Block BLOCK_BROKENACA1 = new BlockBrokenACA1("block_brokenaca1");
+
+    public static final Block BLOCK_BROKENACA2 = new BlockBrokenACA2("block_brokenaca2");
+
+    public static final Block BLOCK_BROKENACA3 = new BlockBrokenACA3("block_brokenaca3");
+
+    public static final Block BLOCK_BROKENCA = new BlockBrokenCA("block_brokenca");
+
+    public static final Block BLOCK_BROKENTG = new BlockBrokenTG("block_brokentg");
+
 }

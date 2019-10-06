@@ -1,10 +1,12 @@
 package com.ice2670.plasmacannon.entity;
 
 
+import com.ice2670.plasmacannon.init.BlockInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
@@ -164,6 +166,26 @@ public class EntityFastTorpedo extends EntityPlasmaBall
             // Go through non solid block
             return;
         } else {
+            if (hitBlock.getBlockHardness(world,pos)==951)
+            {
+                world.setBlockState(pos, BlockInit.BLOCK_BROKENACA1.getDefaultState(), 11);
+            }
+            if (hitBlock.getBlockHardness(world,pos)==651)
+            {
+                world.setBlockState(pos, BlockInit.BLOCK_BROKENACA2.getDefaultState(), 11);
+            }
+            if (hitBlock.getBlockHardness(world,pos)==501)
+            {
+                world.setBlockState(pos, BlockInit.BLOCK_BROKENCA.getDefaultState(), 11);
+            }
+            if (hitBlock.getBlockHardness(world,pos)==451)
+            {
+                world.setBlockState(pos, BlockInit.BLOCK_BROKENACA3.getDefaultState(), 11);
+            }
+            if (hitBlock.getBlockHardness(world,pos)==201)
+            {
+                world.setBlockState(pos, BlockInit.BLOCK_BROKENTG.getDefaultState(), 11);
+            }
             if (hitBlock.getBlockHardness(world,pos)<=200)
             {
             getEntityWorld().destroyBlock(pos, false);

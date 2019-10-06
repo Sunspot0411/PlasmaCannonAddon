@@ -66,7 +66,7 @@ public class Main
         Recipes.metalformerRolling.addRecipe(input7, Collections.singletonList(output7), null, false);
 
         IRecipeInput input8 = Recipes.inputFactory.forStack(IC2Items.getItem("misc_resource","iridium_ore"));
-        ItemStack output8 = new ItemStack(ItemInit.IRIDIUM_PLATE, 4);
+        ItemStack output8 = new ItemStack(ItemInit.IRIDIUM_PLATE, 8);
         Recipes.metalformerRolling.addRecipe(input8, Collections.singletonList(output8), null, false);
 
         SmeltingRecipes.init();

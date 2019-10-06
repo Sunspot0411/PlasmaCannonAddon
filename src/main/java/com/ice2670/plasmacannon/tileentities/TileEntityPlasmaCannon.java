@@ -106,7 +106,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                             if (!worldIn.isRemote) {
                                 EntityLargePlasmaBall entityplasmaball = new EntityLargePlasmaBall(worldIn, d0, d1, d2 - 1, powerfactor);
 
-                                entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 6, 0.01F);
+                                entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 6, 0.001F);
 
                                 worldIn.spawnEntity(entityplasmaball);
                             }
@@ -140,7 +140,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                             if (!worldIn.isRemote) {
                                 EntityLargePlasmaBall entityplasmaball = new EntityLargePlasmaBall(worldIn, d0, d1, d2 + 1, powerfactor);
 
-                                entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 6, 0.01F);
+                                entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 6, 0.001F);
 
                                 worldIn.spawnEntity(entityplasmaball);
                             }
@@ -174,7 +174,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                             if (!worldIn.isRemote) {
                                 EntityLargePlasmaBall entityplasmaball = new EntityLargePlasmaBall(worldIn, d0 + 1, d1, d2, powerfactor);
 
-                                entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 6, 0.01F);
+                                entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 6, 0.001F);
 
                                 worldIn.spawnEntity(entityplasmaball);
                             }
@@ -208,7 +208,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                             if (!worldIn.isRemote) {
                                 EntityLargePlasmaBall entityplasmaball = new EntityLargePlasmaBall(worldIn, d0 - 1, d1, d2, powerfactor);
 
-                                entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 6, 0.01F);
+                                entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 6, 0.001F);
 
                                 worldIn.spawnEntity(entityplasmaball);
                             }

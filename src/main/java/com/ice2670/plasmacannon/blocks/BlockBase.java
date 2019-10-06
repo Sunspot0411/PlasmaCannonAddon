@@ -9,6 +9,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import valkyrienwarfare.mod.common.ValkyrienWarfareMod;
 
 public class BlockBase extends Block implements IHasModel
 {
@@ -17,7 +18,7 @@ public class BlockBase extends Block implements IHasModel
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(CreativeTabs.COMBAT);
+        setCreativeTab(ValkyrienWarfareMod.vwTab);
         setHardness(15.0F);
         setResistance(20.0F);
         setHarvestLevel("pickaxe", 2);

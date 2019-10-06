@@ -1,5 +1,6 @@
 package com.ice2670.plasmacannon.entity;
 
+import com.ice2670.plasmacannon.init.BlockInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
@@ -177,8 +178,48 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
             // Go through non solid block
             return;
         } else {
-            if (powerFactorf >= 51){
+            if (powerFactorf >= 55){
             getEntityWorld().destroyBlock(pos, false);
+            }else if(powerFactorf >= 40 && powerFactorf <= 54)
+            {
+                if (hitBlock.getBlockHardness(world,pos)==951)
+                {
+                    world.setBlockState(pos, BlockInit.BLOCK_BROKENACA2.getDefaultState(), 11);
+                }
+                if (hitBlock.getBlockHardness(world,pos)==651)
+                {
+                    world.setBlockState(pos, BlockInit.BLOCK_BROKENACA3.getDefaultState(), 11);
+                }
+                if (hitBlock.getBlockHardness(world,pos)<=502)
+                {
+                    getEntityWorld().destroyBlock(pos, false);
+                }
+            }else if(powerFactorf >= 10 && powerFactorf <= 39)
+            {
+                if (hitBlock.getBlockHardness(world,pos)==951)
+                {
+                    world.setBlockState(pos, BlockInit.BLOCK_BROKENACA1.getDefaultState(), 11);
+                }
+                if (hitBlock.getBlockHardness(world,pos)==651)
+                {
+                    world.setBlockState(pos, BlockInit.BLOCK_BROKENACA2.getDefaultState(), 11);
+                }
+                if (hitBlock.getBlockHardness(world,pos)==501)
+                {
+                    world.setBlockState(pos, BlockInit.BLOCK_BROKENCA.getDefaultState(), 11);
+                }
+                if (hitBlock.getBlockHardness(world,pos)==451)
+                {
+                    world.setBlockState(pos, BlockInit.BLOCK_BROKENACA3.getDefaultState(), 11);
+                }
+                if (hitBlock.getBlockHardness(world,pos)==201)
+                {
+                    world.setBlockState(pos, BlockInit.BLOCK_BROKENTG.getDefaultState(), 11);
+                }
+                if (hitBlock.getBlockHardness(world,pos)<=200)
+                {
+                    getEntityWorld().destroyBlock(pos, false);
+                }
             }
         }
         this.world.newExplosion(this, this.posX, this.posY, this.posZ, (float)this.explosionPower, false, this.world.getGameRules().getBoolean("mobGriefing"));

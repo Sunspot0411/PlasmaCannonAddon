@@ -5,6 +5,7 @@ import com.ice2670.plasmacannon.init.ItemInit;
 import com.ice2670.plasmacannon.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import valkyrienwarfare.mod.common.ValkyrienWarfareMod;
 
 public class ItemBase extends Item implements IHasModel
 {
@@ -12,7 +13,7 @@ public class ItemBase extends Item implements IHasModel
     {
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(CreativeTabs.COMBAT);
+        setCreativeTab(ValkyrienWarfareMod.vwTab);
 
         ItemInit.ITEMS.add(this);
     }

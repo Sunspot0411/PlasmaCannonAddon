@@ -22,5 +22,10 @@ tile.block_compositearmor.name=Composite Armor Plate
 tile.block_advcompositearmor.name=Advanced Composite Armor Plate
 tile.block_shiparmor.name=Steel Armor Plate
 tile.plasma_cannon.name=Plasma Cannon
+tile.block_brokenaca1.name=Damaged Advanced Composite Armor Plate
+tile.block_brokenaca2.name=Broken Advanced Composite Armor Plate
+tile.block_brokenaca3.name=Destroyed Advanced Composite Armor Plate
+tile.block_brokenca.name=Broken Composite Armor Plate
+tile.block_brokentg.name=Broken Tempered Glass
 tile.block_torpedo_launcher.name=Torpedo Launcher
 
