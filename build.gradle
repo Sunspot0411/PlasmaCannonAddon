@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "1.3.0"
+version = "1.3.1"
 group = "com.ice2670.plasmacannon" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "PlasmaCannon"
 
@@ -28,6 +28,7 @@ repositories {
     }
 
     maven { url = 'https://maven.daporkchop.net/' }
+    maven { url 'https://jitpack.io' }
 }
 
 minecraft {
@@ -62,7 +63,10 @@ dependencies {
     //deobfProvided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
     compile 'valkyrienwarfare:api:1.0'
     compile 'net.industrial-craft:industrialcraft-2:2.8.75-ex112:dev'
-    compile "com.ice2670:nVW2:1.2"
+    deobfCompile('com.github.ValkyrienSkies:Valkyrien-Skies:breaking~1.0-SNAPSHOT') {
+        transitive = false
+    }
+    //compile "com.ice2670:nVW2:1.2"
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html

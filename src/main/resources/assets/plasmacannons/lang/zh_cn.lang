@@ -2,7 +2,7 @@ item.ingot_key.name=电子击发器
 item.ingot_energyreader.name=能量显示器
 item.integrated_circuit.name=集成电路
 item.item_compositearmor.name=复合装甲
-item.item_advcompositearmor.name=高级复合装甲材料
+item.item_advcompositearmor.name=高级复合装甲
 item.dense_compositematerial.name=高密度复合材料
 item.small_obsidian.name=黑曜石锭
 item.compositematerial.name=复合材料
@@ -15,7 +15,7 @@ item.autotorpedo.name=鱼雷-高射速
 item.torpedo.name=鱼雷-高爆
 item.carbon_dust.name=提纯碳粉
 item.plasma_container.name=等离子容器
-item.advcomposite_armor_material.name=高级复合装甲
+item.advcomposite_armor_material.name=高级复合装甲材料
 
 tile.block_plasmagenerator.name=等离子生成器
 tile.block_compositearmor.name=复合装甲板

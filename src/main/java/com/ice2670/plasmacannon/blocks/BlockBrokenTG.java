@@ -7,7 +7,8 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import valkyrienwarfare.mod.common.ValkyrienWarfareMod;
+import org.valkyrienskies.mod.common.ValkyrienSkiesMod;
+
 
 import java.util.Random;
 
@@ -19,7 +20,7 @@ public class BlockBrokenTG extends BlockBase
     public BlockBrokenTG(String name)
     {
         super(name, Material.GLASS);
-        setCreativeTab(ValkyrienWarfareMod.vwTab);
+        setCreativeTab(ValkyrienSkiesMod.VS_CREATIVE_TAB);
         setSoundType(SoundType.GLASS);
         setHardness(100.0F);
         setResistance(60.0F);
