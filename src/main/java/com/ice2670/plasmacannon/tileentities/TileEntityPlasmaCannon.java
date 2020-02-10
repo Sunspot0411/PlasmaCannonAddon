@@ -23,6 +23,8 @@ import net.minecraftforge.common.MinecraftForge;
 
 import javax.annotation.Nullable;
 
+import java.util.Random;
+
 import static com.ice2670.plasmacannon.blocks.BlockPlasmaCannon.FACING;
 
 public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEnergySink
@@ -226,6 +228,160 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                     }
                 }
             }
+
+
+
+
+    }
+
+    public void fireredstone(World worldIn, BlockPos pos, IBlockState state) {
+
+
+        //direction
+        EnumFacing enumfacing = (EnumFacing) state.getValue(FACING);
+        double d0 = pos.getX() + 0.5D + (float) enumfacing.getFrontOffsetX();
+        double d1 = pos.getY() + 0.164D + (float) enumfacing.getFrontOffsetY();
+        double d2 = pos.getZ() + 0.5D + (float) enumfacing.getFrontOffsetZ();
+
+        int x = this.pos.getX();
+        int y = this.pos.getY();
+        int z = this.pos.getZ();
+
+
+
+        BlockPos pos2;
+
+
+        if (enumfacing == EnumFacing.NORTH) {
+            int i = 1;
+            while (i < 71) {
+                pos2 = new BlockPos(x, y, z + i);
+                if (world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_PLASMAGENERATOR) {
+                    i++;
+                } else {
+                    this.powerfactor = i;
+                    this.maxenergy = 10000 * i;
+                    if (this.energy > (this.maxenergy - 100)) {
+
+                        if (!worldIn.isRemote) {
+                            EntityLargePlasmaBall entityplasmaball = new EntityLargePlasmaBall(worldIn, d0, d1, d2 - 1, powerfactor);
+
+                            entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 6, 0.001F);
+
+                            worldIn.spawnEntity(entityplasmaball);
+                        }
+
+                        worldIn.playSound(null, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 9.9F, 1.0F);
+                        this.energy = 0;
+                    } else {
+                        if (world.isRemote) {
+                            String str2 = Double.toString(energy);
+                            String str3 = Double.toString(maxenergy);
+                        }
+                    }
+                    break;
+                }
+            }
+        }
+
+        if (enumfacing == EnumFacing.SOUTH) {
+
+            int i = 1;
+            while (i < 71) {
+                pos2 = new BlockPos(x, y, z - i);
+                if (world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_PLASMAGENERATOR) {
+                    i++;
+                } else {
+                    this.powerfactor = i;
+                    this.maxenergy = 10000 * i;
+                    if (this.energy > (this.maxenergy - 100)) {
+
+                        if (!worldIn.isRemote) {
+                            EntityLargePlasmaBall entityplasmaball = new EntityLargePlasmaBall(worldIn, d0, d1, d2 + 1, powerfactor);
+
+                            entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 6, 0.001F);
+
+                            worldIn.spawnEntity(entityplasmaball);
+                        }
+
+                        worldIn.playSound(null, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 9.9F, 1.0F);
+                        this.energy = 0;
+                    } else {
+                        if (world.isRemote) {
+                            String str2 = Double.toString(energy);
+                            String str3 = Double.toString(maxenergy);
+                        }
+                    }
+                    break;
+                }
+            }
+        }
+
+        if (enumfacing == EnumFacing.EAST) {
+
+            int i = 1;
+            while (i < 71) {
+                pos2 = new BlockPos(x - i, y, z);
+                if (world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_PLASMAGENERATOR) {
+                    i++;
+                } else {
+                    this.powerfactor = i;
+                    this.maxenergy = 10000 * i;
+                    if (this.energy > (this.maxenergy - 100)) {
+
+                        if (!worldIn.isRemote) {
+                            EntityLargePlasmaBall entityplasmaball = new EntityLargePlasmaBall(worldIn, d0 + 1, d1, d2, powerfactor);
+
+                            entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 6, 0.001F);
+
+                            worldIn.spawnEntity(entityplasmaball);
+                        }
+
+                        worldIn.playSound(null, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 9.9F, 1.0F);
+                        this.energy = 0;
+                    } else {
+                        if (world.isRemote) {
+                            String str2 = Double.toString(energy);
+                            String str3 = Double.toString(maxenergy);
+                        }
+                    }
+                    break;
+                }
+            }
+        }
+
+        if (enumfacing == EnumFacing.WEST) {
+
+            int i = 1;
+            while (i < 71) {
+                pos2 = new BlockPos(x + i, y, z);
+                if (world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_PLASMAGENERATOR) {
+                    i++;
+                } else {
+                    this.powerfactor = i;
+                    this.maxenergy = 10000 * i;
+                    if (this.energy > (this.maxenergy - 100)) {
+
+                        if (!worldIn.isRemote) {
+                            EntityLargePlasmaBall entityplasmaball = new EntityLargePlasmaBall(worldIn, d0 - 1, d1, d2, powerfactor);
+
+                            entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 6, 0.001F);
+
+                            worldIn.spawnEntity(entityplasmaball);
+                        }
+
+                        worldIn.playSound(null, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 9.9F, 1.0F);
+                        this.energy = 0;
+                    } else {
+                        if (world.isRemote) {
+                            String str2 = Double.toString(energy);
+                            String str3 = Double.toString(maxenergy);
+                        }
+                    }
+                    break;
+                }
+            }
+        }
 
 
 

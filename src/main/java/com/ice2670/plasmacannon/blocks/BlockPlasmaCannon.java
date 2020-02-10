@@ -4,6 +4,7 @@ package com.ice2670.plasmacannon.blocks;
 import com.ice2670.plasmacannon.init.BlockInit;
 import com.ice2670.plasmacannon.init.ItemInit;
 import com.ice2670.plasmacannon.tileentities.TileEntityPlasmaCannon;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -18,6 +19,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 import java.util.Random;
@@ -127,6 +129,24 @@ public class BlockPlasmaCannon extends BlockBase
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
     {
         worldIn.setBlockState(pos, this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
+    }
+
+    @Override
+    public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
+        boolean flag = worldIn.isBlockPowered(pos);
+
+        if(!worldIn.isRemote) {
+            if (flag) {
+                worldIn.scheduleUpdate(pos, this, this.tickRate(worldIn));
+                TileEntityPlasmaCannon plasmacannon = (TileEntityPlasmaCannon) worldIn.getTileEntity(pos);
+                plasmacannon.fireredstone(worldIn, pos, state);
+            }
+        }
+    }
+
+
+    public boolean canConnectRedstone(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
+        return true;
     }
 
 
