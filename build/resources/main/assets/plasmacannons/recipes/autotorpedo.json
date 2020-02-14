@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " D ",
+        "IEI",
+        " I "
+    ],
+    
+    "key":
+    {
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "E": {
+            "item": "ic2:energy_crystal"
+        }
+    },
+    
+    "result":
+    {
+        "item": "plasmacannons:autotorpedo",
+        "count": 9
+    }
+}

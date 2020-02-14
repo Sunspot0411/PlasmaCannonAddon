@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "IO ",
+        "   ",
+        "   "
+    ],
+    
+    "key":
+    {
+        "I": {
+            "item": "plasmacannons:armor_steel"
+        },
+        "O": {
+            "item": "plasmacannons:small_obsidian"
+        }
+    },
+    
+    "result":
+    {
+        "item": "plasmacannons:compositematerial",
+        "count": 1
+    }
+}

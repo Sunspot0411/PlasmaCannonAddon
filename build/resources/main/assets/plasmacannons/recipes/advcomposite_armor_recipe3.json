@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "DIC",
+        " C ",
+        "   "
+    ],
+    
+    "key":
+    {
+        "I": {
+            "item": "plasmacannons:block_brokenaca3"
+        },
+
+        "C": {
+            "item": "plasmacannons:dense_compositematerial"
+        },
+
+        "D": {
+            "item": "plasmacannons:iridium_plate"
+        }
+    },
+    
+    "result":
+    {
+        "item": "plasmacannons:advcomposite_armor_material",
+        "count": 1
+    }
+}

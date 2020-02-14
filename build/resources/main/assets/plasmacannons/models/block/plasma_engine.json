@@ -1,0 +1,11 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "up": "plasmaengines:blocks/plasma_engine_side",
+        "down": "plasmaengines:blocks/plasma_engine_side",
+        "north": "plasmaengines:blocks/plasma_engine_front",
+        "east": "plasmaengines:blocks/plasma_engine_side",
+        "south": "plasmaengines:blocks/plasma_engine_back",
+        "west": "plasmaengines:blocks/plasma_engine_side"
+    }
+}

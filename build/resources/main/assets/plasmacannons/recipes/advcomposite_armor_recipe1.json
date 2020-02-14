@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "I  ",
+        "   ",
+        "   "
+    ],
+    
+    "key":
+    {
+        "I": {
+            "item": "plasmacannons:block_brokenaca1"
+        }
+    },
+    
+    "result":
+    {
+        "item": "plasmacannons:advcomposite_armor_material",
+        "count": 1
+    }
+}
