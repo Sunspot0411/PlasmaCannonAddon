@@ -112,8 +112,8 @@ public class EntityAutoTorpedo extends EntityPlasmaBall
 
                 if (result.entityHit instanceof EntityLivingBase)
                 {
-                    AxisAlignedBB axis = new AxisAlignedBB(this.posX - 2, this.posY - 2, this.posZ - 2,
-                            this.posX + 2, this.posY + 2, this.posZ + 2);
+                    AxisAlignedBB axis = new AxisAlignedBB(result.entityHit.posX - 2, result.entityHit.posY - 2, result.entityHit.posZ - 2,
+                            result.entityHit.posX + 2, result.entityHit.posY + 2, result.entityHit.posZ + 2);
                     List<EntityLivingBase> targets = getEntityWorld().getEntitiesWithinAABB(EntityLivingBase.class, axis);
                     for (EntityLivingBase mob : targets) {
                         (mob).setHealth((mob).getHealth() - 1);
@@ -125,8 +125,8 @@ public class EntityAutoTorpedo extends EntityPlasmaBall
                 if (result.entityHit instanceof EntityPlayer)
                 {
 
-                    AxisAlignedBB axis = new AxisAlignedBB(this.posX - 2, this.posY - 2, this.posZ - 2,
-                            this.posX + 2, this.posY + 2, this.posZ + 2);
+                    AxisAlignedBB axis = new AxisAlignedBB(result.entityHit.posX - 2, result.entityHit.posY - 2, result.entityHit.posZ - 2,
+                            result.entityHit.posX + 2, result.entityHit.posY + 2, result.entityHit.posZ + 2);
                     List<EntityLivingBase> targets = getEntityWorld().getEntitiesWithinAABB(EntityLivingBase.class, axis);
                     for (EntityLivingBase mob : targets) {
                         (mob).setHealth((mob).getHealth() - 1);
@@ -134,7 +134,7 @@ public class EntityAutoTorpedo extends EntityPlasmaBall
                     }
 
                 }
-                this.world.newExplosion(this, this.posX, this.posY, this.posZ, (float)1, false, this.world.getGameRules().getBoolean("mobGriefing"));
+                this.world.newExplosion(this, this.posX + 0.7*this.motionX, this.posY + 0.7*this.motionY, this.posZ + 0.7*this.motionZ, (float)1, false, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
                 this.setDead();
             }
 
@@ -165,7 +165,7 @@ public class EntityAutoTorpedo extends EntityPlasmaBall
             getEntityWorld().destroyBlock(pos, false);
             }
         }
-        this.world.newExplosion(this, this.posX, this.posY, this.posZ, (float)1, false, this.world.getGameRules().getBoolean("mobGriefing"));
+        this.world.newExplosion(this, this.posX + 0.7*this.motionX, this.posY + 0.7*this.motionY, this.posZ + 0.7*this.motionZ, (float)1, false, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
         this.setDead();
 
 

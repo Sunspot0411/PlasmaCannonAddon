@@ -7,6 +7,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
@@ -28,7 +29,7 @@ import java.util.List;
  */
 public class EntityFastTorpedo extends EntityPlasmaBall
 {
-    public double explosionPower = 0.8*powerFactorf;
+    public double explosionPower = 0.7*powerFactorf;
     public int damagefactor =2* powerFactorf;
 
     private static final DataParameter<Boolean> INVULNERABLE = EntityDataManager.<Boolean>createKey(net.minecraft.entity.projectile.EntityWitherSkull.class, DataSerializers.BOOLEAN);
@@ -68,6 +69,22 @@ public class EntityFastTorpedo extends EntityPlasmaBall
     public boolean isBurning()
     {
         return false;
+    }
+
+    public void writeEntityToNBT(NBTTagCompound compound)
+    {
+        super.writeEntityToNBT(compound);
+
+        compound.setByte("ExplosionPower", (byte)this.explosionPower);
+    }
+
+    public void readEntityFromNBT(NBTTagCompound compound)
+    {
+        super.readEntityFromNBT(compound);
+        if (compound.hasKey("ExplosionPower", 99))
+        {
+            this.explosionPower = compound.getByte("ExplosionPower");
+        }
     }
 
     /**
@@ -115,8 +132,8 @@ public class EntityFastTorpedo extends EntityPlasmaBall
 
                 if (result.entityHit instanceof EntityLivingBase)
                 {
-                    AxisAlignedBB axis = new AxisAlignedBB(this.posX - 4, this.posY - 4, this.posZ - 4,
-                            this.posX + 4, this.posY + 4, this.posZ + 4);
+                    AxisAlignedBB axis = new AxisAlignedBB(result.entityHit.posX - 2, result.entityHit.posY - 2, result.entityHit.posZ - 2,
+                            result.entityHit.posX + 2, result.entityHit.posY + 2, result.entityHit.posZ + 2);
                     List<EntityLivingBase> targets = getEntityWorld().getEntitiesWithinAABB(EntityLivingBase.class, axis);
                     for (EntityLivingBase mob : targets) {
                         (mob).setHealth((mob).getHealth() - powerFactorf);
@@ -129,8 +146,8 @@ public class EntityFastTorpedo extends EntityPlasmaBall
                 if (result.entityHit instanceof EntityPlayer)
                 {
 
-                    AxisAlignedBB axis = new AxisAlignedBB(this.posX - 4, this.posY - 4, this.posZ - 4,
-                            this.posX + 4, this.posY + 4, this.posZ + 4);
+                    AxisAlignedBB axis = new AxisAlignedBB(result.entityHit.posX - 2, result.entityHit.posY - 2, result.entityHit.posZ - 2,
+                            result.entityHit.posX + 2, result.entityHit.posY + 2, result.entityHit.posZ + 2);
                     List<EntityLivingBase> targets = getEntityWorld().getEntitiesWithinAABB(EntityLivingBase.class, axis);
                     for (EntityLivingBase mob : targets) {
                         (mob).setHealth((mob).getHealth() - powerFactorf);
@@ -140,7 +157,7 @@ public class EntityFastTorpedo extends EntityPlasmaBall
                     ((EntityLivingBase)result.entityHit).setFire(30);
 
                 }
-                this.world.newExplosion(this, this.posX, this.posY, this.posZ, (float)this.explosionPower, false, this.world.getGameRules().getBoolean("mobGriefing"));
+                this.world.createExplosion(this, this.posX + 0.7*this.motionX, this.posY + 0.7*this.motionY, this.posZ + 0.7*this.motionZ, (float)this.explosionPower, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
                 this.setDead();
             }
 
@@ -192,7 +209,7 @@ public class EntityFastTorpedo extends EntityPlasmaBall
             }
         }
 
-        this.world.newExplosion(this, this.posX, this.posY, this.posZ, (float)this.explosionPower, false, this.world.getGameRules().getBoolean("mobGriefing"));
+        this.world.createExplosion(this, this.posX + 0.7*this.motionX, this.posY + 0.7*this.motionY, this.posZ + 0.7*this.motionZ, (float)this.explosionPower, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
         this.setDead();
 
 

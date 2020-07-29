@@ -1,16 +1,16 @@
 [
 {
   "modid": "plasmacannons",
-  "name": "PlasmaCannon",
-  "description": "A cannon addon for ValkyrienWarfare mod",
-  "version": "1.3.3",
-  "mcversion": "1.12.2",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["Ice2670"],
-  "credits": "Ice2670 for development",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": [IndustrialCraft 2 ]
+    "name": "PlasmaCannon",
+    "description": "A cannon addon for ValkyrienWarfare mod",
+    "version": "1.3.5",
+    "mcversion": "1.12.2",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["Ice2670"],
+    "credits": "Ice2670 for development",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": [IndustrialCraft 2, ValkyrienSkies ]
 }
 ]
