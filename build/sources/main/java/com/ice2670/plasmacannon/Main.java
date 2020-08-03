@@ -50,7 +50,7 @@ public class Main
 
         IRecipeInput input4 = Recipes.inputFactory.forStack(IC2Items.getItem("te","mfe"));
         IRecipeInput input4_1 = Recipes.inputFactory.forStack(IC2Items.getItem("dust","lapis"),9);
-        ItemStack output4 = new ItemStack(ItemInit.PLASMACONTAINER,4);
+        ItemStack output4 = new ItemStack(ItemInit.PLASMACONTAINER,8);
         Recipes.cannerBottle.addRecipe(input4, input4_1, output4);
 
         IRecipeInput input5 = Recipes.inputFactory.forStack(IC2Items.getItem("crafting","advanced_circuit"),6);
@@ -66,7 +66,7 @@ public class Main
         Recipes.metalformerRolling.addRecipe(input7, Collections.singletonList(output7), null, false);
 
         IRecipeInput input8 = Recipes.inputFactory.forStack(IC2Items.getItem("misc_resource","iridium_ore"));
-        ItemStack output8 = new ItemStack(ItemInit.IRIDIUM_PLATE, 8);
+        ItemStack output8 = new ItemStack(ItemInit.IRIDIUM_PLATE, 16);
         Recipes.metalformerRolling.addRecipe(input8, Collections.singletonList(output8), null, false);
 
         SmeltingRecipes.init();

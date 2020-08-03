@@ -2,7 +2,7 @@ Unsupposrted library path: D:\Minecraft Modding\PlasmaCannonAddon\build\classes\
 Unsupposrted library path: D:\Minecraft Modding\PlasmaCannonAddon\build\resources\api
 Symbol range map extraction starting
 Processing 37 files
-startProcessing "com/ice2670/plasmacannon/Main.java" md5: 398bb2b1911e5e8cf617d4b0f129e124
+startProcessing "com/ice2670/plasmacannon/Main.java" md5: 41d2ae9d172afe1d4f1258ee9df7137c
 @|com/ice2670/plasmacannon/Main.java|8|32|com.ice2670.plasmacannon|package|com.ice2670.plasmacannon|(file)
 Class Start: com.ice2670.plasmacannon.Main
    @|com/ice2670/plasmacannon/Main.java|928|931|Mod|class|net.minecraftforge.fml.common.Mod|false
@@ -168,23 +168,23 @@ Class Start: com.ice2670.plasmacannon.Main
       @|com/ice2670/plasmacannon/Main.java|3617|3626|ItemStack|class|net.minecraft.item.ItemStack|false
       @|com/ice2670/plasmacannon/Main.java|3627|3635|ItemInit|class|com.ice2670.plasmacannon.init.ItemInit|false
       @|com/ice2670/plasmacannon/Main.java|3636|3649|IRIDIUM_PLATE|field|com.ice2670.plasmacannon.init.ItemInit|IRIDIUM_PLATE
-      @|com/ice2670/plasmacannon/Main.java|3664|3671|Recipes|class|ic2.api.recipe.Recipes|false
-      @|com/ice2670/plasmacannon/Main.java|3672|3690|metalformerRolling|field|ic2.api.recipe.Recipes|metalformerRolling
-      @|com/ice2670/plasmacannon/Main.java|3691|3700|addRecipe|method|ic2.api.recipe.IMachineRecipeManager|addRecipe|(Ljava/lang/Object;Ljava/lang/Object;Lnet/minecraft/nbt/NBTTagCompound;Z)Z
-      @|com/ice2670/plasmacannon/Main.java|3709|3720|Collections|class|java.util.Collections|false
-      @|com/ice2670/plasmacannon/Main.java|3721|3734|singletonList|method|java.util.Collections|singletonList|(Ljava/lang/Object;)Ljava/util/List;
-      @|com/ice2670/plasmacannon/Main.java|3770|3785|SmeltingRecipes|class|com.ice2670.plasmacannon.init.SmeltingRecipes|false
-      @|com/ice2670/plasmacannon/Main.java|3786|3790|init|method|com.ice2670.plasmacannon.init.SmeltingRecipes|init|()V
-      @|com/ice2670/plasmacannon/Main.java|3807|3822|RegistryHandler|class|com.ice2670.plasmacannon.util.handlers.RegistryHandler|false
-      @|com/ice2670/plasmacannon/Main.java|3823|3837|initRegistries|method|com.ice2670.plasmacannon.util.handlers.RegistryHandler|initRegistries|()V
+      @|com/ice2670/plasmacannon/Main.java|3665|3672|Recipes|class|ic2.api.recipe.Recipes|false
+      @|com/ice2670/plasmacannon/Main.java|3673|3691|metalformerRolling|field|ic2.api.recipe.Recipes|metalformerRolling
+      @|com/ice2670/plasmacannon/Main.java|3692|3701|addRecipe|method|ic2.api.recipe.IMachineRecipeManager|addRecipe|(Ljava/lang/Object;Ljava/lang/Object;Lnet/minecraft/nbt/NBTTagCompound;Z)Z
+      @|com/ice2670/plasmacannon/Main.java|3710|3721|Collections|class|java.util.Collections|false
+      @|com/ice2670/plasmacannon/Main.java|3722|3735|singletonList|method|java.util.Collections|singletonList|(Ljava/lang/Object;)Ljava/util/List;
+      @|com/ice2670/plasmacannon/Main.java|3771|3786|SmeltingRecipes|class|com.ice2670.plasmacannon.init.SmeltingRecipes|false
+      @|com/ice2670/plasmacannon/Main.java|3787|3791|init|method|com.ice2670.plasmacannon.init.SmeltingRecipes|init|()V
+      @|com/ice2670/plasmacannon/Main.java|3808|3823|RegistryHandler|class|com.ice2670.plasmacannon.util.handlers.RegistryHandler|false
+      @|com/ice2670/plasmacannon/Main.java|3824|3838|initRegistries|method|com.ice2670.plasmacannon.util.handlers.RegistryHandler|initRegistries|()V
    Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
    Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com/ice2670/plasmacannon/Main.java|3921|3926|event|param|com.ice2670.plasmacannon.Main|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
-      @|com/ice2670/plasmacannon/Main.java|3848|3860|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
-      @|com/ice2670/plasmacannon/Main.java|3885|3893|postInit|method|com.ice2670.plasmacannon.Main|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com/ice2670/plasmacannon/Main.java|3894|3920|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent|false
-      @|com/ice2670/plasmacannon/Main.java|3929|3944|RegistryHandler|class|com.ice2670.plasmacannon.util.handlers.RegistryHandler|false
-      @|com/ice2670/plasmacannon/Main.java|3945|3963|postInitRegistries|method|com.ice2670.plasmacannon.util.handlers.RegistryHandler|postInitRegistries|()V
+      @|com/ice2670/plasmacannon/Main.java|3922|3927|event|param|com.ice2670.plasmacannon.Main|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com/ice2670/plasmacannon/Main.java|3849|3861|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler|false
+      @|com/ice2670/plasmacannon/Main.java|3886|3894|postInit|method|com.ice2670.plasmacannon.Main|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com/ice2670/plasmacannon/Main.java|3895|3921|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent|false
+      @|com/ice2670/plasmacannon/Main.java|3930|3945|RegistryHandler|class|com.ice2670.plasmacannon.util.handlers.RegistryHandler|false
+      @|com/ice2670/plasmacannon/Main.java|3946|3964|postInitRegistries|method|com.ice2670.plasmacannon.util.handlers.RegistryHandler|postInitRegistries|()V
    Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
 Class End  : com.ice2670.plasmacannon.Main
 endProcessing "com/ice2670/plasmacannon/Main.java"

@@ -2,7 +2,7 @@ Unsupposrted library path: D:\Minecraft Modding\PlasmaCannonAddon\build\classes\
 Unsupposrted library path: D:\Minecraft Modding\PlasmaCannonAddon\build\resources\api
 Symbol range map extraction starting
 Processing 37 files
-startProcessing "com/ice2670/plasmacannon/Main.java" md5: 398bb2b1911e5e8cf617d4b0f129e124
+startProcessing "com/ice2670/plasmacannon/Main.java" md5: 41d2ae9d172afe1d4f1258ee9df7137c
 endProcessing "com/ice2670/plasmacannon/Main.java"
 
 startProcessing "com/ice2670/plasmacannon/blocks/BlockAdvCompositeArmor.java" md5: 5eddd0d15c230228b26dd32d6b695875
