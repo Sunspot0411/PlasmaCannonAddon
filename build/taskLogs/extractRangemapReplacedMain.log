@@ -77,13 +77,13 @@ endProcessing "com/ice2670/plasmacannon/init/SmeltingRecipes.java"
 startProcessing "com/ice2670/plasmacannon/items/IridiumPlate.java" md5: 325956d89bd14be96861cd0b2568eb28
 endProcessing "com/ice2670/plasmacannon/items/IridiumPlate.java"
 
-startProcessing "com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java" md5: 279eac1c1df5da8a3bbd1f9f274b3295
+startProcessing "com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java" md5: 4ee0a6d5d8b2a08b2b088ead62e564b4
 endProcessing "com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java"
 
 startProcessing "com/ice2670/plasmacannon/items/ItemBase.java" md5: 582015d3408a3fe3ca6a7eba4426ccf8
 endProcessing "com/ice2670/plasmacannon/items/ItemBase.java"
 
-startProcessing "com/ice2670/plasmacannon/items/ItemCompositeArmor.java" md5: 0bc48d54a7d4ccdc60cb03f79d0dab94
+startProcessing "com/ice2670/plasmacannon/items/ItemCompositeArmor.java" md5: 1deee6ba05359aeb8120f1ae620f9669
 endProcessing "com/ice2670/plasmacannon/items/ItemCompositeArmor.java"
 
 startProcessing "com/ice2670/plasmacannon/proxy/ClientProxy.java" md5: 905f996d9678f474e6b5a4e1d51888e9
@@ -101,7 +101,7 @@ endProcessing "com/ice2670/plasmacannon/tileentities/TileEntityTorpedoLauncher.j
 startProcessing "com/ice2670/plasmacannon/util/IHasModel.java" md5: 87d1b88d60cb5227bfd3e0b897ffee72
 endProcessing "com/ice2670/plasmacannon/util/IHasModel.java"
 
-startProcessing "com/ice2670/plasmacannon/util/Reference.java" md5: 690d76add206fc113cef0f9b074b586c
+startProcessing "com/ice2670/plasmacannon/util/Reference.java" md5: 976cd184ff7606daedb3f7a8f301aa48
 endProcessing "com/ice2670/plasmacannon/util/Reference.java"
 
 startProcessing "com/ice2670/plasmacannon/util/handlers/RegistryHandler.java" md5: 19d1ff3ebe0da3f6e3813d63f5570b85

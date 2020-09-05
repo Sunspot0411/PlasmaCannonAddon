@@ -31,7 +31,7 @@ public class ItemCompositeArmor extends ItemBase {
         {
             worldIn.setBlockState(pos, BlockInit.BLOCK_COMPOSITEARMOR.getDefaultState());
             itemstack.shrink(1);
-            player.inventory.addItemStackToInventory(new ItemStack(ItemInit.ARMOR_STELL,4));
+            player.inventory.addItemStackToInventory(new ItemStack(ItemInit.ARMOR_STELL,2));
             return EnumActionResult.SUCCESS;
         }
         return EnumActionResult.PASS;

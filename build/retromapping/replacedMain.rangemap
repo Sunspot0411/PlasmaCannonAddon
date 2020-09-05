@@ -2969,67 +2969,88 @@ Class Start: com.ice2670.plasmacannon.items.IridiumPlate
 Class End  : com.ice2670.plasmacannon.items.IridiumPlate
 endProcessing "com/ice2670/plasmacannon/items/IridiumPlate.java"
 
-startProcessing "com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java" md5: 279eac1c1df5da8a3bbd1f9f274b3295
+startProcessing "com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java" md5: 4ee0a6d5d8b2a08b2b088ead62e564b4
 @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|8|38|com.ice2670.plasmacannon.items|package|com.ice2670.plasmacannon.items|(file)
 Class Start: com.ice2670.plasmacannon.items.ItemAdvCompositeArmor
-   @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|428|449|ItemAdvCompositeArmor|class|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|false
-   @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|458|466|ItemBase|class|com.ice2670.plasmacannon.items.ItemBase|false
+   @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|476|497|ItemAdvCompositeArmor|class|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|false
+   @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|506|514|ItemBase|class|com.ice2670.plasmacannon.items.ItemBase|false
    Method Start: ItemAdvCompositeArmor(Ljava/lang/String;)V
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|510|514|name|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|ItemAdvCompositeArmor|(Ljava/lang/String;)V|name|0
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|481|502|ItemAdvCompositeArmor|method|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|ItemAdvCompositeArmor|(Ljava/lang/String;)V
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|503|509|String|class|java.lang.String|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|533|537|name|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|ItemAdvCompositeArmor|(Ljava/lang/String;)V|name|0
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|558|562|name|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|ItemAdvCompositeArmor|(Ljava/lang/String;)V|name|0
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|529|550|ItemAdvCompositeArmor|method|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|ItemAdvCompositeArmor|(Ljava/lang/String;)V
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|551|557|String|class|java.lang.String|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|581|585|name|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|ItemAdvCompositeArmor|(Ljava/lang/String;)V|name|0
    Method End: ItemAdvCompositeArmor(Ljava/lang/String;)V
    Method Start: onItemUse(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|616|622|player|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|player|0
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|630|637|worldIn|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|worldIn|1
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|648|651|pos|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|pos|2
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|662|666|hand|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|hand|3
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|679|685|facing|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|facing|4
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|693|697|hitX|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|hitX|5
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|705|709|hitY|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|hitY|6
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|717|721|hitZ|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|hitZ|7
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|555|563|Override|class|java.lang.Override|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|576|592|EnumActionResult|class|net.minecraft.util.EnumActionResult|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|593|602|onItemUse|method|net.minecraft.item.Item|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|603|615|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|624|629|World|class|net.minecraft.world.World|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|639|647|BlockPos|class|net.minecraft.util.math.BlockPos|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|653|661|EnumHand|class|net.minecraft.util.EnumHand|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|668|678|EnumFacing|class|net.minecraft.util.EnumFacing|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|734|743|ItemStack|class|net.minecraft.item.ItemStack|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|756|762|player|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|player|0
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|763|774|getHeldItem|method|net.minecraft.entity.EntityLivingBase|getHeldItem|(Lnet/minecraft/util/EnumHand;)Lnet/minecraft/item/ItemStack;
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|775|779|hand|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|hand|3
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|797|804|worldIn|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|worldIn|1
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|805|818|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|819|822|pos|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|pos|2
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|824|832|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|838|844|Blocks|class|net.minecraft.init.Blocks|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|845|856|COBBLESTONE|field|net.minecraft.init.Blocks|COBBLESTONE
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|860|867|worldIn|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|worldIn|1
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|868|881|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|882|885|pos|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|pos|2
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|887|895|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|901|907|Blocks|class|net.minecraft.init.Blocks|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|908|918|IRON_BLOCK|field|net.minecraft.init.Blocks|IRON_BLOCK
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|922|929|worldIn|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|worldIn|1
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|930|943|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|944|947|pos|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|pos|2
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|949|957|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|963|969|Blocks|class|net.minecraft.init.Blocks|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|970|976|PLANKS|field|net.minecraft.init.Blocks|PLANKS
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1002|1009|worldIn|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|worldIn|1
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1010|1023|setBlockState|method|net.minecraft.world.World|setBlockState|(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)Z
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1024|1027|pos|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|pos|2
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1029|1038|BlockInit|class|com.ice2670.plasmacannon.init.BlockInit|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1039|1062|BLOCK_ADVCOMPOSITEARMOR|field|com.ice2670.plasmacannon.init.BlockInit|BLOCK_ADVCOMPOSITEARMOR
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1063|1078|getDefaultState|method|net.minecraft.block.Block|getDefaultState|()Lnet/minecraft/block/state/IBlockState;
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1106|1112|shrink|method|net.minecraft.item.ItemStack|shrink|(I)V
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1137|1153|EnumActionResult|class|net.minecraft.util.EnumActionResult|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1154|1161|SUCCESS|field|net.minecraft.util.EnumActionResult|SUCCESS
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1190|1206|EnumActionResult|class|net.minecraft.util.EnumActionResult|false
-      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1207|1211|PASS|field|net.minecraft.util.EnumActionResult|PASS
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|664|670|player|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|player|0
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|678|685|worldIn|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|worldIn|1
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|696|699|pos|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|pos|2
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|710|714|hand|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|hand|3
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|727|733|facing|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|facing|4
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|741|745|hitX|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|hitX|5
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|753|757|hitY|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|hitY|6
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|765|769|hitZ|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|hitZ|7
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|603|611|Override|class|java.lang.Override|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|624|640|EnumActionResult|class|net.minecraft.util.EnumActionResult|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|641|650|onItemUse|method|net.minecraft.item.Item|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|651|663|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|672|677|World|class|net.minecraft.world.World|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|687|695|BlockPos|class|net.minecraft.util.math.BlockPos|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|701|709|EnumHand|class|net.minecraft.util.EnumHand|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|716|726|EnumFacing|class|net.minecraft.util.EnumFacing|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|782|791|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|804|810|player|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|player|0
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|811|822|getHeldItem|method|net.minecraft.entity.EntityLivingBase|getHeldItem|(Lnet/minecraft/util/EnumHand;)Lnet/minecraft/item/ItemStack;
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|823|827|hand|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|hand|3
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|845|852|worldIn|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|worldIn|1
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|853|866|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|867|870|pos|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|pos|2
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|872|880|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|886|892|Blocks|class|net.minecraft.init.Blocks|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|893|904|COBBLESTONE|field|net.minecraft.init.Blocks|COBBLESTONE
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|908|915|worldIn|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|worldIn|1
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|916|929|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|930|933|pos|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|pos|2
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|935|943|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|949|955|Blocks|class|net.minecraft.init.Blocks|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|956|966|IRON_BLOCK|field|net.minecraft.init.Blocks|IRON_BLOCK
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|970|977|worldIn|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|worldIn|1
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|978|991|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|992|995|pos|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|pos|2
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|997|1005|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1011|1017|Blocks|class|net.minecraft.init.Blocks|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1018|1024|PLANKS|field|net.minecraft.init.Blocks|PLANKS
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1050|1057|worldIn|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|worldIn|1
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1058|1071|setBlockState|method|net.minecraft.world.World|setBlockState|(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)Z
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1072|1075|pos|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|pos|2
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1077|1086|BlockInit|class|com.ice2670.plasmacannon.init.BlockInit|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1087|1110|BLOCK_ADVCOMPOSITEARMOR|field|com.ice2670.plasmacannon.init.BlockInit|BLOCK_ADVCOMPOSITEARMOR
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1111|1126|getDefaultState|method|net.minecraft.block.Block|getDefaultState|()Lnet/minecraft/block/state/IBlockState;
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1154|1160|shrink|method|net.minecraft.item.ItemStack|shrink|(I)V
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1185|1201|EnumActionResult|class|net.minecraft.util.EnumActionResult|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1202|1209|SUCCESS|field|net.minecraft.util.EnumActionResult|SUCCESS
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1237|1244|worldIn|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|worldIn|1
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1245|1258|getBlockState|method|net.minecraft.world.IBlockAccess|getBlockState|(Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1259|1262|pos|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|pos|2
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1264|1272|getBlock|method|net.minecraft.block.state.IBlockState|getBlock|()Lnet/minecraft/block/Block;
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1278|1287|BlockInit|class|com.ice2670.plasmacannon.init.BlockInit|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1288|1303|BLOCK_SHIPARMOR|field|com.ice2670.plasmacannon.init.BlockInit|BLOCK_SHIPARMOR
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1329|1336|worldIn|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|worldIn|1
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1337|1350|setBlockState|method|net.minecraft.world.World|setBlockState|(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)Z
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1351|1354|pos|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|pos|2
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1356|1365|BlockInit|class|com.ice2670.plasmacannon.init.BlockInit|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1366|1389|BLOCK_ADVCOMPOSITEARMOR|field|com.ice2670.plasmacannon.init.BlockInit|BLOCK_ADVCOMPOSITEARMOR
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1390|1405|getDefaultState|method|net.minecraft.block.Block|getDefaultState|()Lnet/minecraft/block/state/IBlockState;
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1433|1439|shrink|method|net.minecraft.item.ItemStack|shrink|(I)V
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1457|1463|player|param|com.ice2670.plasmacannon.items.ItemAdvCompositeArmor|onItemUse|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;|player|0
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1464|1473|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1474|1497|addItemStackToInventory|method|net.minecraft.entity.player.InventoryPlayer|addItemStackToInventory|(Lnet/minecraft/item/ItemStack;)Z
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1502|1511|ItemStack|class|net.minecraft.item.ItemStack|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1512|1520|ItemInit|class|com.ice2670.plasmacannon.init.ItemInit|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1521|1532|ARMOR_STELL|field|com.ice2670.plasmacannon.init.ItemInit|ARMOR_STELL
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1558|1574|EnumActionResult|class|net.minecraft.util.EnumActionResult|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1575|1582|SUCCESS|field|net.minecraft.util.EnumActionResult|SUCCESS
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1611|1627|EnumActionResult|class|net.minecraft.util.EnumActionResult|false
+      @|com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java|1628|1632|PASS|field|net.minecraft.util.EnumActionResult|PASS
    Method End: onItemUse(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;
 Class End  : com.ice2670.plasmacannon.items.ItemAdvCompositeArmor
 endProcessing "com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java"
@@ -3065,7 +3086,7 @@ Class Start: com.ice2670.plasmacannon.items.ItemBase
 Class End  : com.ice2670.plasmacannon.items.ItemBase
 endProcessing "com/ice2670/plasmacannon/items/ItemBase.java"
 
-startProcessing "com/ice2670/plasmacannon/items/ItemCompositeArmor.java" md5: 0bc48d54a7d4ccdc60cb03f79d0dab94
+startProcessing "com/ice2670/plasmacannon/items/ItemCompositeArmor.java" md5: 1deee6ba05359aeb8120f1ae620f9669
 @|com/ice2670/plasmacannon/items/ItemCompositeArmor.java|8|38|com.ice2670.plasmacannon.items|package|com.ice2670.plasmacannon.items|(file)
 Class Start: com.ice2670.plasmacannon.items.ItemCompositeArmor
    @|com/ice2670/plasmacannon/items/ItemCompositeArmor.java|476|494|ItemCompositeArmor|class|com.ice2670.plasmacannon.items.ItemCompositeArmor|false
@@ -4318,7 +4339,7 @@ Class Start: com.ice2670.plasmacannon.util.IHasModel
 Class End  : com.ice2670.plasmacannon.util.IHasModel
 endProcessing "com/ice2670/plasmacannon/util/IHasModel.java"
 
-startProcessing "com/ice2670/plasmacannon/util/Reference.java" md5: 690d76add206fc113cef0f9b074b586c
+startProcessing "com/ice2670/plasmacannon/util/Reference.java" md5: 976cd184ff7606daedb3f7a8f301aa48
 @|com/ice2670/plasmacannon/util/Reference.java|8|37|com.ice2670.plasmacannon.util|package|com.ice2670.plasmacannon.util|(file)
 Class Start: com.ice2670.plasmacannon.util.Reference
    @|com/ice2670/plasmacannon/util/Reference.java|55|64|Reference|class|com.ice2670.plasmacannon.util.Reference|false
@@ -4331,19 +4352,19 @@ Class Start: com.ice2670.plasmacannon.util.Reference
    @|com/ice2670/plasmacannon/util/Reference.java|205|211|String|class|java.lang.String|false
    @|com/ice2670/plasmacannon/util/Reference.java|205|211|String|class|java.lang.String|false
    @|com/ice2670/plasmacannon/util/Reference.java|212|219|VERSION|field|com.ice2670.plasmacannon.util.Reference|VERSION|
-   @|com/ice2670/plasmacannon/util/Reference.java|254|260|String|class|java.lang.String|false
-   @|com/ice2670/plasmacannon/util/Reference.java|254|260|String|class|java.lang.String|false
-   @|com/ice2670/plasmacannon/util/Reference.java|261|267|CLIENT|field|com.ice2670.plasmacannon.util.Reference|CLIENT|
-   @|com/ice2670/plasmacannon/util/Reference.java|341|347|String|class|java.lang.String|false
-   @|com/ice2670/plasmacannon/util/Reference.java|341|347|String|class|java.lang.String|false
-   @|com/ice2670/plasmacannon/util/Reference.java|348|354|COMMON|field|com.ice2670.plasmacannon.util.Reference|COMMON|
-   @|com/ice2670/plasmacannon/util/Reference.java|434|451|ENTITY_PLASMABALL|field|com.ice2670.plasmacannon.util.Reference|ENTITY_PLASMABALL|
-   @|com/ice2670/plasmacannon/util/Reference.java|488|510|ENTITY_lARGEPLASMABALL|field|com.ice2670.plasmacannon.util.Reference|ENTITY_lARGEPLASMABALL|
-   @|com/ice2670/plasmacannon/util/Reference.java|547|574|FAKE_ENTITY_lARGEPLASMABALL|field|com.ice2670.plasmacannon.util.Reference|FAKE_ENTITY_lARGEPLASMABALL|
-   @|com/ice2670/plasmacannon/util/Reference.java|611|623|FAST_TORPEDO|field|com.ice2670.plasmacannon.util.Reference|FAST_TORPEDO|
-   @|com/ice2670/plasmacannon/util/Reference.java|660|672|FAKE_TORPEDO|field|com.ice2670.plasmacannon.util.Reference|FAKE_TORPEDO|
-   @|com/ice2670/plasmacannon/util/Reference.java|709|721|AUTO_TORPEDO|field|com.ice2670.plasmacannon.util.Reference|AUTO_TORPEDO|
-   @|com/ice2670/plasmacannon/util/Reference.java|758|774|FAKE_AUTOTORPEDO|field|com.ice2670.plasmacannon.util.Reference|FAKE_AUTOTORPEDO|
+   @|com/ice2670/plasmacannon/util/Reference.java|256|262|String|class|java.lang.String|false
+   @|com/ice2670/plasmacannon/util/Reference.java|256|262|String|class|java.lang.String|false
+   @|com/ice2670/plasmacannon/util/Reference.java|263|269|CLIENT|field|com.ice2670.plasmacannon.util.Reference|CLIENT|
+   @|com/ice2670/plasmacannon/util/Reference.java|343|349|String|class|java.lang.String|false
+   @|com/ice2670/plasmacannon/util/Reference.java|343|349|String|class|java.lang.String|false
+   @|com/ice2670/plasmacannon/util/Reference.java|350|356|COMMON|field|com.ice2670.plasmacannon.util.Reference|COMMON|
+   @|com/ice2670/plasmacannon/util/Reference.java|436|453|ENTITY_PLASMABALL|field|com.ice2670.plasmacannon.util.Reference|ENTITY_PLASMABALL|
+   @|com/ice2670/plasmacannon/util/Reference.java|490|512|ENTITY_lARGEPLASMABALL|field|com.ice2670.plasmacannon.util.Reference|ENTITY_lARGEPLASMABALL|
+   @|com/ice2670/plasmacannon/util/Reference.java|549|576|FAKE_ENTITY_lARGEPLASMABALL|field|com.ice2670.plasmacannon.util.Reference|FAKE_ENTITY_lARGEPLASMABALL|
+   @|com/ice2670/plasmacannon/util/Reference.java|613|625|FAST_TORPEDO|field|com.ice2670.plasmacannon.util.Reference|FAST_TORPEDO|
+   @|com/ice2670/plasmacannon/util/Reference.java|662|674|FAKE_TORPEDO|field|com.ice2670.plasmacannon.util.Reference|FAKE_TORPEDO|
+   @|com/ice2670/plasmacannon/util/Reference.java|711|723|AUTO_TORPEDO|field|com.ice2670.plasmacannon.util.Reference|AUTO_TORPEDO|
+   @|com/ice2670/plasmacannon/util/Reference.java|760|776|FAKE_AUTOTORPEDO|field|com.ice2670.plasmacannon.util.Reference|FAKE_AUTOTORPEDO|
 Class End  : com.ice2670.plasmacannon.util.Reference
 endProcessing "com/ice2670/plasmacannon/util/Reference.java"
 

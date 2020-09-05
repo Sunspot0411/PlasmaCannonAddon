@@ -1125,21 +1125,29 @@ End  Processing: com/ice2670/plasmacannon/items/IridiumPlate.java
 
 Start Processing: com/ice2670/plasmacannon/items/ItemAdvCompositeArmor.java
 FOUND CONSTR method com/ice2670/plasmacannon/items/ItemAdvCompositeArmor/ItemAdvCompositeArmor (Ljava/lang/String;)V com/ice2670/plasmacannon/items/ItemAdvCompositeArmor
-Rename method net/minecraft/item/Item/onItemUse (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;[593,602]::onItemUse->func_180614_a
-Rename method net/minecraft/entity/EntityLivingBase/getHeldItem (Lnet/minecraft/util/EnumHand;)Lnet/minecraft/item/ItemStack;[767,778]::getHeldItem->func_184586_b
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[811,824]::getBlockState->func_180495_p
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[830,838]::getBlock->func_177230_c
-Rename field net/minecraft/init/Blocks/COBBLESTONE[856,867]::COBBLESTONE->field_150347_e
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[882,895]::getBlockState->func_180495_p
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[901,909]::getBlock->func_177230_c
-Rename field net/minecraft/init/Blocks/IRON_BLOCK[927,937]::IRON_BLOCK->field_150339_S
-Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[953,966]::getBlockState->func_180495_p
-Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[972,980]::getBlock->func_177230_c
-Rename field net/minecraft/init/Blocks/PLANKS[998,1004]::PLANKS->field_150344_f
-Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)Z[1046,1059]::setBlockState->func_175656_a
-Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[1099,1114]::getDefaultState->func_176223_P
-Rename method net/minecraft/item/ItemStack/shrink (I)V[1140,1146]::shrink->func_190918_g
+Rename method net/minecraft/item/Item/onItemUse (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumHand;Lnet/minecraft/util/EnumFacing;FFF)Lnet/minecraft/util/EnumActionResult;[641,650]::onItemUse->func_180614_a
+Rename method net/minecraft/entity/EntityLivingBase/getHeldItem (Lnet/minecraft/util/EnumHand;)Lnet/minecraft/item/ItemStack;[815,826]::getHeldItem->func_184586_b
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[859,872]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[878,886]::getBlock->func_177230_c
+Rename field net/minecraft/init/Blocks/COBBLESTONE[904,915]::COBBLESTONE->field_150347_e
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[930,943]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[949,957]::getBlock->func_177230_c
+Rename field net/minecraft/init/Blocks/IRON_BLOCK[975,985]::IRON_BLOCK->field_150339_S
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[1001,1014]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[1020,1028]::getBlock->func_177230_c
+Rename field net/minecraft/init/Blocks/PLANKS[1046,1052]::PLANKS->field_150344_f
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)Z[1094,1107]::setBlockState->func_175656_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[1147,1162]::getDefaultState->func_176223_P
+Rename method net/minecraft/item/ItemStack/shrink (I)V[1188,1194]::shrink->func_190918_g
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/block/state/IBlockState;[1286,1299]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[1305,1313]::getBlock->func_177230_c
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)Z[1383,1396]::setBlockState->func_175656_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[1436,1451]::getDefaultState->func_176223_P
+Rename method net/minecraft/item/ItemStack/shrink (I)V[1477,1483]::shrink->func_190918_g
+Rename field net/minecraft/entity/player/EntityPlayer/inventory[1515,1524]::inventory->field_71071_by
+Rename method net/minecraft/entity/player/InventoryPlayer/addItemStackToInventory (Lnet/minecraft/item/ItemStack;)Z[1530,1553]::addItemStackToInventory->func_70441_a
 Import: com.ice2670.plasmacannon.init.BlockInit
+Import: com.ice2670.plasmacannon.init.ItemInit
 Import: net.minecraft.entity.player.EntityPlayer
 Import: net.minecraft.init.Blocks
 Import: net.minecraft.item.ItemStack

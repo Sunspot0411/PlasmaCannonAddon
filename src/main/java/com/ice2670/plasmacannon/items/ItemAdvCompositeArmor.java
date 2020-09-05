@@ -1,6 +1,7 @@
 package com.ice2670.plasmacannon.items;
 
 import com.ice2670.plasmacannon.init.BlockInit;
+import com.ice2670.plasmacannon.init.ItemInit;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
@@ -23,6 +24,14 @@ public class ItemAdvCompositeArmor extends ItemBase {
         {
             worldIn.setBlockState(pos, BlockInit.BLOCK_ADVCOMPOSITEARMOR.getDefaultState());
             itemstack.shrink(1);
+            return EnumActionResult.SUCCESS;
+        }
+
+        if (worldIn.getBlockState(pos).getBlock() == BlockInit.BLOCK_SHIPARMOR)
+        {
+            worldIn.setBlockState(pos, BlockInit.BLOCK_ADVCOMPOSITEARMOR.getDefaultState());
+            itemstack.shrink(1);
+            player.inventory.addItemStackToInventory(new ItemStack(ItemInit.ARMOR_STELL,2));
             return EnumActionResult.SUCCESS;
         }
         return EnumActionResult.PASS;
