@@ -41,7 +41,7 @@ endProcessing "com/ice2670/plasmacannon/blocks/BlockShipArmor.java"
 startProcessing "com/ice2670/plasmacannon/blocks/BlockTorpedoLauncher.java" md5: e912b40ebfb61eecc428e1b41de0db6b
 endProcessing "com/ice2670/plasmacannon/blocks/BlockTorpedoLauncher.java"
 
-startProcessing "com/ice2670/plasmacannon/entity/EntityAutoTorpedo.java" md5: a23388bc5d1bfd3c41dd49d4fd3a9647
+startProcessing "com/ice2670/plasmacannon/entity/EntityAutoTorpedo.java" md5: 68c10fc3350c6067b9afaada75bb4025
 endProcessing "com/ice2670/plasmacannon/entity/EntityAutoTorpedo.java"
 
 startProcessing "com/ice2670/plasmacannon/entity/EntityFastTorpedo.java" md5: a068edf6c5a609d1ae9166ad2c0c1099
@@ -95,7 +95,7 @@ endProcessing "com/ice2670/plasmacannon/proxy/CommonProxy.java"
 startProcessing "com/ice2670/plasmacannon/tileentities/TileEntityPlasmaCannon.java" md5: 806f795d9c2e446da8fc4359c19c7889
 endProcessing "com/ice2670/plasmacannon/tileentities/TileEntityPlasmaCannon.java"
 
-startProcessing "com/ice2670/plasmacannon/tileentities/TileEntityTorpedoLauncher.java" md5: 2cb2a097b7228e722bb1b100bbd09887
+startProcessing "com/ice2670/plasmacannon/tileentities/TileEntityTorpedoLauncher.java" md5: e0b76f49cbdc65b8df7997f847a67520
 endProcessing "com/ice2670/plasmacannon/tileentities/TileEntityTorpedoLauncher.java"
 
 startProcessing "com/ice2670/plasmacannon/util/IHasModel.java" md5: 87d1b88d60cb5227bfd3e0b897ffee72

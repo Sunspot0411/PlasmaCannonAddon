@@ -116,7 +116,7 @@ public class EntityAutoTorpedo extends EntityPlasmaBall
                             result.entityHit.posX + 2, result.entityHit.posY + 2, result.entityHit.posZ + 2);
                     List<EntityLivingBase> targets = getEntityWorld().getEntitiesWithinAABB(EntityLivingBase.class, axis);
                     for (EntityLivingBase mob : targets) {
-                        (mob).setHealth((mob).getHealth() - 1);
+                        (mob).setHealth((mob).getHealth() - 5);
                         mob.hurtResistantTime = -1;
                     }
 
@@ -129,7 +129,7 @@ public class EntityAutoTorpedo extends EntityPlasmaBall
                             result.entityHit.posX + 2, result.entityHit.posY + 2, result.entityHit.posZ + 2);
                     List<EntityLivingBase> targets = getEntityWorld().getEntitiesWithinAABB(EntityLivingBase.class, axis);
                     for (EntityLivingBase mob : targets) {
-                        (mob).setHealth((mob).getHealth() - 1);
+                        (mob).setHealth((mob).getHealth() - 5);
                         mob.hurtResistantTime = -1;
                     }
 

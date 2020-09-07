@@ -18,9 +18,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
-import valkyrienwarfare.api.IPhysicsEntity;
-import valkyrienwarfare.api.IPhysicsEntityManager;
-import valkyrienwarfare.api.TransformType;
 
 //import valkyrienwarfare.api.IPhysicsEntity;
 //import valkyrienwarfare.api.IPhysicsEntityManager;

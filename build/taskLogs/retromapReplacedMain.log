@@ -1419,144 +1419,144 @@ Adding 1 imports
 End  Processing: com/ice2670/plasmacannon/tileentities/TileEntityPlasmaCannon.java
 
 Start Processing: com/ice2670/plasmacannon/tileentities/TileEntityTorpedoLauncher.java
-Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[1203,1214]::readFromNBT->func_145839_a
-Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[1253,1264]::readFromNBT->func_145839_a
-Rename method net/minecraft/nbt/NBTTagCompound/hasKey (Ljava/lang/String;)Z[1292,1298]::hasKey->func_74764_b
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[1368,1378]::getInteger->func_74762_e
-Rename method net/minecraft/nbt/NBTTagCompound/hasKey (Ljava/lang/String;)Z[1427,1433]::hasKey->func_74764_b
-Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[1505,1515]::getInteger->func_74762_e
-Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[1599,1609]::writeToNBT->func_189515_b
-Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[1650,1660]::writeToNBT->func_189515_b
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1683,1693]::setInteger->func_74768_a
-Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1743,1753]::setInteger->func_74768_a
-Rename method net/minecraft/block/state/IBlockState/getValue (Lnet/minecraft/block/properties/IProperty;)Ljava/lang/Comparable;[1987,1995]::getValue->func_177229_b
-Rename method net/minecraft/util/math/Vec3i/getX ()I[2056,2060]::getX->func_177958_n
-Rename method net/minecraft/util/EnumFacing/getFrontOffsetX ()I[2100,2115]::getFrontOffsetX->func_82601_c
-Rename method net/minecraft/util/math/Vec3i/getY ()I[2141,2145]::getY->func_177956_o
-Rename method net/minecraft/util/EnumFacing/getFrontOffsetY ()I[2185,2200]::getFrontOffsetY->func_96559_d
-Rename method net/minecraft/util/math/Vec3i/getZ ()I[2226,2230]::getZ->func_177952_p
-Rename method net/minecraft/util/EnumFacing/getFrontOffsetZ ()I[2270,2285]::getFrontOffsetZ->func_82599_e
-Rename field net/minecraft/tileentity/TileEntity/world[2375,2380]::world->field_145850_b
-Rename field net/minecraft/world/World/isRemote[2390,2398]::isRemote->field_72995_K
-Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[2433,2444]::sendMessage->func_145747_a
-Rename field net/minecraft/world/World/isRemote[2589,2597]::isRemote->field_72995_K
-Rename method net/minecraft/entity/Entity/getLookVec ()Lnet/minecraft/util/math/Vec3d;[2649,2659]::getLookVec->func_70040_Z
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[2852,2857]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[2875,2876]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[2900,2901]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[2925,2926]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[2980,2991]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[3212,3217]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[3235,3236]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[3260,3261]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[3285,3286]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[3340,3351]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[3571,3576]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[3594,3595]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[3619,3620]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[3644,3645]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[3699,3710]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[3930,3935]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[3953,3954]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[3978,3979]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[4003,4004]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[4058,4069]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[4287,4292]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[4310,4311]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[4335,4336]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[4360,4361]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[4415,4426]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[4646,4651]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[4669,4670]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[4694,4695]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[4719,4720]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[4774,4785]::spawnEntity->func_72838_d
-Rename method net/minecraft/world/World/playSound (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V[4855,4864]::playSound->func_184133_a
-Rename field net/minecraft/world/World/isRemote[5129,5137]::isRemote->field_72995_K
-Rename method net/minecraft/entity/Entity/getLookVec ()Lnet/minecraft/util/math/Vec3d;[5189,5199]::getLookVec->func_70040_Z
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[5397,5402]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[5420,5421]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[5445,5446]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[5470,5471]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[5526,5537]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[5766,5771]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[5789,5790]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[5814,5815]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[5839,5840]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[5895,5906]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[6134,6139]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[6157,6158]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[6182,6183]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[6207,6208]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[6263,6274]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[6502,6507]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[6525,6526]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[6550,6551]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[6575,6576]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[6631,6642]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[6868,6873]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[6891,6892]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[6916,6917]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[6941,6942]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[6997,7008]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[7236,7241]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[7259,7260]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[7284,7285]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[7309,7310]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[7365,7376]::spawnEntity->func_72838_d
-Rename method net/minecraft/world/World/playSound (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V[7447,7456]::playSound->func_184133_a
-Rename method net/minecraft/block/state/IBlockState/getValue (Lnet/minecraft/block/properties/IProperty;)Ljava/lang/Comparable;[7840,7848]::getValue->func_177229_b
-Rename method net/minecraft/util/math/Vec3i/getX ()I[7909,7913]::getX->func_177958_n
-Rename method net/minecraft/util/EnumFacing/getFrontOffsetX ()I[7953,7968]::getFrontOffsetX->func_82601_c
-Rename method net/minecraft/util/math/Vec3i/getY ()I[7994,7998]::getY->func_177956_o
-Rename method net/minecraft/util/EnumFacing/getFrontOffsetY ()I[8038,8053]::getFrontOffsetY->func_96559_d
-Rename method net/minecraft/util/math/Vec3i/getZ ()I[8079,8083]::getZ->func_177952_p
-Rename method net/minecraft/util/EnumFacing/getFrontOffsetZ ()I[8123,8138]::getFrontOffsetZ->func_82599_e
-Rename field net/minecraft/tileentity/TileEntity/world[8220,8225]::world->field_145850_b
-Rename field net/minecraft/world/World/isRemote[8235,8243]::isRemote->field_72995_K
-Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[8278,8289]::sendMessage->func_145747_a
-Rename method net/minecraft/entity/EntityLivingBase/getHeldItem (Lnet/minecraft/util/EnumHand;)Lnet/minecraft/item/ItemStack;[8424,8435]::getHeldItem->func_184586_b
-Rename method net/minecraft/item/ItemStack/shrink (I)V[8467,8473]::shrink->func_190918_g
-Rename field net/minecraft/world/World/isRemote[8602,8610]::isRemote->field_72995_K
-Rename method net/minecraft/entity/Entity/getLookVec ()Lnet/minecraft/util/math/Vec3d;[8667,8677]::getLookVec->func_70040_Z
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[8887,8892]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[8910,8911]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[8935,8936]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[8960,8961]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[9019,9030]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[9275,9280]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[9298,9299]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[9323,9324]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[9348,9349]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[9407,9418]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[9662,9667]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[9685,9686]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[9710,9711]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[9735,9736]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[9794,9805]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[10049,10054]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[10072,10073]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[10097,10098]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[10122,10123]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[10181,10192]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[10434,10439]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[10457,10458]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[10482,10483]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[10507,10508]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[10566,10577]::spawnEntity->func_72838_d
-Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[10821,10826]::shoot->func_70186_c
-Rename field net/minecraft/util/math/Vec3d/x[10844,10845]::x->field_72450_a
-Rename field net/minecraft/util/math/Vec3d/y[10869,10870]::y->field_72448_b
-Rename field net/minecraft/util/math/Vec3d/z[10894,10895]::z->field_72449_c
-Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[10953,10964]::spawnEntity->func_72838_d
-Rename method net/minecraft/world/World/playSound (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V[11049,11058]::playSound->func_184133_a
-Rename method net/minecraft/entity/EntityLivingBase/getHeldItem (Lnet/minecraft/util/EnumHand;)Lnet/minecraft/item/ItemStack;[11438,11449]::getHeldItem->func_184586_b
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[11485,11492]::getItem->func_77973_b
-Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[11595,11602]::getItem->func_77973_b
-Rename method net/minecraft/item/ItemStack/shrink (I)V[11713,11719]::shrink->func_190918_g
-Rename field net/minecraft/tileentity/TileEntity/world[11829,11834]::world->field_145850_b
-Rename field net/minecraft/world/World/isRemote[11844,11852]::isRemote->field_72995_K
-Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[11887,11898]::sendMessage->func_145747_a
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[1062,1073]::readFromNBT->func_145839_a
+Rename method net/minecraft/tileentity/TileEntity/readFromNBT (Lnet/minecraft/nbt/NBTTagCompound;)V[1112,1123]::readFromNBT->func_145839_a
+Rename method net/minecraft/nbt/NBTTagCompound/hasKey (Ljava/lang/String;)Z[1151,1157]::hasKey->func_74764_b
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[1227,1237]::getInteger->func_74762_e
+Rename method net/minecraft/nbt/NBTTagCompound/hasKey (Ljava/lang/String;)Z[1286,1292]::hasKey->func_74764_b
+Rename method net/minecraft/nbt/NBTTagCompound/getInteger (Ljava/lang/String;)I[1364,1374]::getInteger->func_74762_e
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[1458,1468]::writeToNBT->func_189515_b
+Rename method net/minecraft/tileentity/TileEntity/writeToNBT (Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;[1509,1519]::writeToNBT->func_189515_b
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1542,1552]::setInteger->func_74768_a
+Rename method net/minecraft/nbt/NBTTagCompound/setInteger (Ljava/lang/String;I)V[1602,1612]::setInteger->func_74768_a
+Rename method net/minecraft/block/state/IBlockState/getValue (Lnet/minecraft/block/properties/IProperty;)Ljava/lang/Comparable;[1846,1854]::getValue->func_177229_b
+Rename method net/minecraft/util/math/Vec3i/getX ()I[1915,1919]::getX->func_177958_n
+Rename method net/minecraft/util/EnumFacing/getFrontOffsetX ()I[1959,1974]::getFrontOffsetX->func_82601_c
+Rename method net/minecraft/util/math/Vec3i/getY ()I[2000,2004]::getY->func_177956_o
+Rename method net/minecraft/util/EnumFacing/getFrontOffsetY ()I[2044,2059]::getFrontOffsetY->func_96559_d
+Rename method net/minecraft/util/math/Vec3i/getZ ()I[2085,2089]::getZ->func_177952_p
+Rename method net/minecraft/util/EnumFacing/getFrontOffsetZ ()I[2129,2144]::getFrontOffsetZ->func_82599_e
+Rename field net/minecraft/tileentity/TileEntity/world[2234,2239]::world->field_145850_b
+Rename field net/minecraft/world/World/isRemote[2249,2257]::isRemote->field_72995_K
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[2292,2303]::sendMessage->func_145747_a
+Rename field net/minecraft/world/World/isRemote[2448,2456]::isRemote->field_72995_K
+Rename method net/minecraft/entity/Entity/getLookVec ()Lnet/minecraft/util/math/Vec3d;[2508,2518]::getLookVec->func_70040_Z
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[2711,2716]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[2734,2735]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[2759,2760]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[2784,2785]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[2839,2850]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[3071,3076]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[3094,3095]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[3119,3120]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[3144,3145]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[3199,3210]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[3430,3435]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[3453,3454]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[3478,3479]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[3503,3504]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[3558,3569]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[3789,3794]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[3812,3813]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[3837,3838]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[3862,3863]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[3917,3928]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[4146,4151]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[4169,4170]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[4194,4195]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[4219,4220]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[4274,4285]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[4505,4510]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[4528,4529]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[4553,4554]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[4578,4579]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[4633,4644]::spawnEntity->func_72838_d
+Rename method net/minecraft/world/World/playSound (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V[4714,4723]::playSound->func_184133_a
+Rename field net/minecraft/world/World/isRemote[4988,4996]::isRemote->field_72995_K
+Rename method net/minecraft/entity/Entity/getLookVec ()Lnet/minecraft/util/math/Vec3d;[5048,5058]::getLookVec->func_70040_Z
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[5256,5261]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[5279,5280]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[5304,5305]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[5329,5330]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[5385,5396]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[5625,5630]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[5648,5649]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[5673,5674]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[5698,5699]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[5754,5765]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[5993,5998]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[6016,6017]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[6041,6042]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[6066,6067]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[6122,6133]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[6361,6366]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[6384,6385]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[6409,6410]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[6434,6435]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[6490,6501]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[6727,6732]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[6750,6751]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[6775,6776]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[6800,6801]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[6856,6867]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[7095,7100]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[7118,7119]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[7143,7144]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[7168,7169]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[7224,7235]::spawnEntity->func_72838_d
+Rename method net/minecraft/world/World/playSound (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V[7306,7315]::playSound->func_184133_a
+Rename method net/minecraft/block/state/IBlockState/getValue (Lnet/minecraft/block/properties/IProperty;)Ljava/lang/Comparable;[7699,7707]::getValue->func_177229_b
+Rename method net/minecraft/util/math/Vec3i/getX ()I[7768,7772]::getX->func_177958_n
+Rename method net/minecraft/util/EnumFacing/getFrontOffsetX ()I[7812,7827]::getFrontOffsetX->func_82601_c
+Rename method net/minecraft/util/math/Vec3i/getY ()I[7853,7857]::getY->func_177956_o
+Rename method net/minecraft/util/EnumFacing/getFrontOffsetY ()I[7897,7912]::getFrontOffsetY->func_96559_d
+Rename method net/minecraft/util/math/Vec3i/getZ ()I[7938,7942]::getZ->func_177952_p
+Rename method net/minecraft/util/EnumFacing/getFrontOffsetZ ()I[7982,7997]::getFrontOffsetZ->func_82599_e
+Rename field net/minecraft/tileentity/TileEntity/world[8079,8084]::world->field_145850_b
+Rename field net/minecraft/world/World/isRemote[8094,8102]::isRemote->field_72995_K
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[8137,8148]::sendMessage->func_145747_a
+Rename method net/minecraft/entity/EntityLivingBase/getHeldItem (Lnet/minecraft/util/EnumHand;)Lnet/minecraft/item/ItemStack;[8283,8294]::getHeldItem->func_184586_b
+Rename method net/minecraft/item/ItemStack/shrink (I)V[8326,8332]::shrink->func_190918_g
+Rename field net/minecraft/world/World/isRemote[8461,8469]::isRemote->field_72995_K
+Rename method net/minecraft/entity/Entity/getLookVec ()Lnet/minecraft/util/math/Vec3d;[8526,8536]::getLookVec->func_70040_Z
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[8746,8751]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[8769,8770]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[8794,8795]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[8819,8820]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[8878,8889]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[9134,9139]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[9157,9158]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[9182,9183]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[9207,9208]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[9266,9277]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[9521,9526]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[9544,9545]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[9569,9570]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[9594,9595]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[9653,9664]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[9908,9913]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[9931,9932]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[9956,9957]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[9981,9982]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[10040,10051]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[10293,10298]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[10316,10317]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[10341,10342]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[10366,10367]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[10425,10436]::spawnEntity->func_72838_d
+Rename method net/minecraft/entity/IProjectile/shoot (DDDFF)V[10680,10685]::shoot->func_70186_c
+Rename field net/minecraft/util/math/Vec3d/x[10703,10704]::x->field_72450_a
+Rename field net/minecraft/util/math/Vec3d/y[10728,10729]::y->field_72448_b
+Rename field net/minecraft/util/math/Vec3d/z[10753,10754]::z->field_72449_c
+Rename method net/minecraft/world/World/spawnEntity (Lnet/minecraft/entity/Entity;)Z[10812,10823]::spawnEntity->func_72838_d
+Rename method net/minecraft/world/World/playSound (Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/SoundEvent;Lnet/minecraft/util/SoundCategory;FF)V[10908,10917]::playSound->func_184133_a
+Rename method net/minecraft/entity/EntityLivingBase/getHeldItem (Lnet/minecraft/util/EnumHand;)Lnet/minecraft/item/ItemStack;[11297,11308]::getHeldItem->func_184586_b
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[11344,11351]::getItem->func_77973_b
+Rename method net/minecraft/item/ItemStack/getItem ()Lnet/minecraft/item/Item;[11454,11461]::getItem->func_77973_b
+Rename method net/minecraft/item/ItemStack/shrink (I)V[11572,11578]::shrink->func_190918_g
+Rename field net/minecraft/tileentity/TileEntity/world[11688,11693]::world->field_145850_b
+Rename field net/minecraft/world/World/isRemote[11703,11711]::isRemote->field_72995_K
+Rename method net/minecraft/command/ICommandSender/sendMessage (Lnet/minecraft/util/text/ITextComponent;)V[11746,11757]::sendMessage->func_145747_a
 Import: com.ice2670.plasmacannon.blocks.BlockTorpedoLauncher
 Import: com.ice2670.plasmacannon.entity.*
 Import: com.ice2670.plasmacannon.init.ItemInit
