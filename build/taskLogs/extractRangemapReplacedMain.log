@@ -5,49 +5,49 @@ Processing 37 files
 startProcessing "com/ice2670/plasmacannon/Main.java" md5: 41d2ae9d172afe1d4f1258ee9df7137c
 endProcessing "com/ice2670/plasmacannon/Main.java"
 
-startProcessing "com/ice2670/plasmacannon/blocks/BlockAdvCompositeArmor.java" md5: 5eddd0d15c230228b26dd32d6b695875
+startProcessing "com/ice2670/plasmacannon/blocks/BlockAdvCompositeArmor.java" md5: 25b9db32aae28463e6298e3c2a5083c9
 endProcessing "com/ice2670/plasmacannon/blocks/BlockAdvCompositeArmor.java"
 
 startProcessing "com/ice2670/plasmacannon/blocks/BlockBase.java" md5: 5a11423cba1774c7889054ebdaecb76f
 endProcessing "com/ice2670/plasmacannon/blocks/BlockBase.java"
 
-startProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenACA1.java" md5: 70a0bd8952c1340d6454c955422a7af4
+startProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenACA1.java" md5: 93e785d3e515f4572b5b20cbcd3b698f
 endProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenACA1.java"
 
-startProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenACA2.java" md5: 1f45927f9d9840aef8c6421c34450fcc
+startProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenACA2.java" md5: 983a29dbb9b45ce21bfe81079f461d0d
 endProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenACA2.java"
 
-startProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenACA3.java" md5: 93cd49a32787ad79669e6779ad42405b
+startProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenACA3.java" md5: f93692218d628092e7cb390cca4590b4
 endProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenACA3.java"
 
-startProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenCA.java" md5: 1977395f1c422762194c0dce5d753b48
+startProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenCA.java" md5: 639748ec5626c70be2be063f10430787
 endProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenCA.java"
 
-startProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenTG.java" md5: 8bfdaf8d9df69adfc0ec89caa6cc0f06
+startProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenTG.java" md5: 52c199b6fdc2f4082f4d131d5c8297df
 endProcessing "com/ice2670/plasmacannon/blocks/BlockBrokenTG.java"
 
-startProcessing "com/ice2670/plasmacannon/blocks/BlockCompositeArmor.java" md5: b461a22c2f79e209e2e974896f482d48
+startProcessing "com/ice2670/plasmacannon/blocks/BlockCompositeArmor.java" md5: 48fe42e65eaa1433c55e1093859bb189
 endProcessing "com/ice2670/plasmacannon/blocks/BlockCompositeArmor.java"
 
 startProcessing "com/ice2670/plasmacannon/blocks/BlockPC.java" md5: 3cd396a0df6a00c7d2c90571cc09dcaf
 endProcessing "com/ice2670/plasmacannon/blocks/BlockPC.java"
 
-startProcessing "com/ice2670/plasmacannon/blocks/BlockPlasmaCannon.java" md5: 5236cb5269e51d3c8c2cf0aab2dab317
+startProcessing "com/ice2670/plasmacannon/blocks/BlockPlasmaCannon.java" md5: 9717cf7091540c56e3814d90381c253d
 endProcessing "com/ice2670/plasmacannon/blocks/BlockPlasmaCannon.java"
 
-startProcessing "com/ice2670/plasmacannon/blocks/BlockShipArmor.java" md5: 36a6411222305d0901bf5a0a997a736f
+startProcessing "com/ice2670/plasmacannon/blocks/BlockShipArmor.java" md5: 3000e3a91424f0592cc6b1cc7b847bf2
 endProcessing "com/ice2670/plasmacannon/blocks/BlockShipArmor.java"
 
-startProcessing "com/ice2670/plasmacannon/blocks/BlockTorpedoLauncher.java" md5: e912b40ebfb61eecc428e1b41de0db6b
+startProcessing "com/ice2670/plasmacannon/blocks/BlockTorpedoLauncher.java" md5: e5b344331c9a4aef43dd87b8c087b862
 endProcessing "com/ice2670/plasmacannon/blocks/BlockTorpedoLauncher.java"
 
-startProcessing "com/ice2670/plasmacannon/entity/EntityAutoTorpedo.java" md5: 68c10fc3350c6067b9afaada75bb4025
+startProcessing "com/ice2670/plasmacannon/entity/EntityAutoTorpedo.java" md5: b92ae08cc453648607fc664b08fad000
 endProcessing "com/ice2670/plasmacannon/entity/EntityAutoTorpedo.java"
 
-startProcessing "com/ice2670/plasmacannon/entity/EntityFastTorpedo.java" md5: a068edf6c5a609d1ae9166ad2c0c1099
+startProcessing "com/ice2670/plasmacannon/entity/EntityFastTorpedo.java" md5: ad35d14cf22f04ae50e7b0fcec5628e3
 endProcessing "com/ice2670/plasmacannon/entity/EntityFastTorpedo.java"
 
-startProcessing "com/ice2670/plasmacannon/entity/EntityLargePlasmaBall.java" md5: 8ed3ba8c307e706c8fc7f07d7f21534b
+startProcessing "com/ice2670/plasmacannon/entity/EntityLargePlasmaBall.java" md5: 58789cf56e37cc2af7f1da3cbdf80cdf
 endProcessing "com/ice2670/plasmacannon/entity/EntityLargePlasmaBall.java"
 
 startProcessing "com/ice2670/plasmacannon/entity/EntityPlasmaBall.java" md5: 3997f6d16224da019a0d7c35b41e85c8
@@ -101,7 +101,7 @@ endProcessing "com/ice2670/plasmacannon/tileentities/TileEntityTorpedoLauncher.j
 startProcessing "com/ice2670/plasmacannon/util/IHasModel.java" md5: 87d1b88d60cb5227bfd3e0b897ffee72
 endProcessing "com/ice2670/plasmacannon/util/IHasModel.java"
 
-startProcessing "com/ice2670/plasmacannon/util/Reference.java" md5: 976cd184ff7606daedb3f7a8f301aa48
+startProcessing "com/ice2670/plasmacannon/util/Reference.java" md5: d766dca242709c9cdc47a454f5028745
 endProcessing "com/ice2670/plasmacannon/util/Reference.java"
 
 startProcessing "com/ice2670/plasmacannon/util/handlers/RegistryHandler.java" md5: 19d1ff3ebe0da3f6e3813d63f5570b85

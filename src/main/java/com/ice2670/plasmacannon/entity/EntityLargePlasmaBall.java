@@ -26,7 +26,7 @@ import java.util.List;
 
 public class EntityLargePlasmaBall extends EntityPlasmaBall
 {
-    public double explosionPower = 0.89*powerFactorf;
+    public double explosionPower = 0.1*powerFactorf;
     public int damagefactor =10* powerFactorf;
 
     private static final DataParameter<Boolean> INVULNERABLE = EntityDataManager.<Boolean>createKey(net.minecraft.entity.projectile.EntityWitherSkull.class, DataSerializers.BOOLEAN);
@@ -99,17 +99,31 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
         double d=(double)f;
         float f1;
 
-        if (powerFactorf > 20) {
+        if (powerFactorf > 68){
 
-            f1 = (float) (1 * d);
+            f1 = (float) (0.005 * d);
 
-        } else
+        } else if (powerFactorf > 65) {
+
+            f1 = (float) (0.04 * d);
+
+        } else if (powerFactorf > 60) {
+
+            f1 = (float) (0.06 * d);
+
+        } else if (powerFactorf > 20) {
+
+            f1 = (float) (0.15 * d);
+
+        }
+        else
+
             {
-                f1 =(float) (1 * d);
+                f1 =(float) (0.11 * d);
             }
 
 
-        return f;
+        return f1;
     }
 
     /**
@@ -124,11 +138,9 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
             {
                 if (powerFactorf >= 20)
                 {
-                        result.entityHit.attackEntityFrom(DamageSource.DRAGON_BREATH, 50*damagefactor);
-                        result.entityHit.attackEntityFrom(DamageSource.MAGIC, 50*damagefactor);
-                        result.entityHit.attackEntityFrom(DamageSource.LAVA, 50*damagefactor);
+                        result.entityHit.attackEntityFrom(DamageSource.DRAGON_BREATH, damagefactor);
+                        result.entityHit.attackEntityFrom(DamageSource.LAVA, damagefactor);
                 } else {
-                        result.entityHit.attackEntityFrom(DamageSource.MAGIC, damagefactor);
                         result.entityHit.attackEntityFrom(DamageSource.LAVA, damagefactor);
                 }
 
@@ -167,7 +179,7 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
                     ((EntityLivingBase)result.entityHit).setFire(30);
 
                 }
-                this.world.createExplosion(this, this.posX + 0.7*this.motionX, this.posY + 0.7*this.motionY, this.posZ + 0.7*this.motionZ, (float)this.explosionPower, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
+                this.world.createExplosion(this, result.entityHit.posX - 0.3*this.motionX, result.entityHit.posY - 0.3*this.motionY, result.entityHit.posZ - 0.3*this.motionZ, (float)this.explosionPower, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
                 this.setDead();
             }
 
@@ -238,7 +250,7 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
                 }
             }
         }
-        this.world.createExplosion(this, this.posX + 0.7*this.motionX, this.posY + 0.7*this.motionY, this.posZ + 0.7*this.motionZ, (float)this.explosionPower, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
+        this.world.createExplosion(this, pos.getX() - 0.32*this.motionX, pos.getY() - 0.32*this.motionY, pos.getZ() - 0.32*this.motionZ, (float)this.explosionPower, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
         this.setDead();
 
 

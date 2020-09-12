@@ -23,7 +23,7 @@ public class BlockBrokenTG extends BlockBase
         setCreativeTab(ValkyrienSkiesMod.VS_CREATIVE_TAB);
         setSoundType(SoundType.GLASS);
         setHardness(100.0F);
-        setResistance(60.0F);
+        setResistance(130.0F);
         setHarvestLevel("pickaxe", 3);
     }
 

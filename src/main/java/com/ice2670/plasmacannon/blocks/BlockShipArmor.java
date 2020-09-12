@@ -12,8 +12,8 @@ public class BlockShipArmor extends BlockBase
     {
         super(name, Material.IRON);
         setSoundType(SoundType.METAL);
-        setHardness(40.0F);
-        setResistance(40.0F);
+        setHardness(60.0F);
+        setResistance(60.0F);
         setHarvestLevel("pickaxe", 3);
 
     }

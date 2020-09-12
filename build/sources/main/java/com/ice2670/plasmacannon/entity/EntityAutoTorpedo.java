@@ -26,7 +26,6 @@ import java.util.List;
  */
 public class EntityAutoTorpedo extends EntityPlasmaBall
 {
-    public int damagefactor =2* powerFactorf;
 
     private static final DataParameter<Boolean> INVULNERABLE = EntityDataManager.<Boolean>createKey(net.minecraft.entity.projectile.EntityWitherSkull.class, DataSerializers.BOOLEAN);
 
@@ -80,20 +79,12 @@ public class EntityAutoTorpedo extends EntityPlasmaBall
             f = Math.min(0.8F, f);
         }
 
-        /*double d=(double)f;
+        double d=(double)f;
         float f1;
 
-        if (powerFactorf > 20) {
+        f1 = (float) (0.3 * d);
 
-            f1 = (float) (1 * d);
-
-        } else
-            {
-                f1 =(float) (1 * d);
-            }
-            */
-
-        return f;
+        return f1;
     }
 
     /**
@@ -105,9 +96,7 @@ public class EntityAutoTorpedo extends EntityPlasmaBall
         {
             if (result.entityHit != null)
             {
-                result.entityHit.attackEntityFrom(DamageSource.DRAGON_BREATH, damagefactor);
-                result.entityHit.attackEntityFrom(DamageSource.MAGIC, damagefactor);
-                result.entityHit.attackEntityFrom(DamageSource.LAVA, damagefactor);
+                result.entityHit.attackEntityFrom(DamageSource.DRAGON_BREATH, 2);
 
 
                 if (result.entityHit instanceof EntityLivingBase)
@@ -116,7 +105,7 @@ public class EntityAutoTorpedo extends EntityPlasmaBall
                             result.entityHit.posX + 2, result.entityHit.posY + 2, result.entityHit.posZ + 2);
                     List<EntityLivingBase> targets = getEntityWorld().getEntitiesWithinAABB(EntityLivingBase.class, axis);
                     for (EntityLivingBase mob : targets) {
-                        (mob).setHealth((mob).getHealth() - 5);
+                        (mob).setHealth((mob).getHealth() - 3);
                         mob.hurtResistantTime = -1;
                     }
 
@@ -129,12 +118,12 @@ public class EntityAutoTorpedo extends EntityPlasmaBall
                             result.entityHit.posX + 2, result.entityHit.posY + 2, result.entityHit.posZ + 2);
                     List<EntityLivingBase> targets = getEntityWorld().getEntitiesWithinAABB(EntityLivingBase.class, axis);
                     for (EntityLivingBase mob : targets) {
-                        (mob).setHealth((mob).getHealth() - 5);
+                        (mob).setHealth((mob).getHealth() - 3);
                         mob.hurtResistantTime = -1;
                     }
 
                 }
-                this.world.newExplosion(this, this.posX + 0.7*this.motionX, this.posY + 0.7*this.motionY, this.posZ + 0.7*this.motionZ, (float)1, false, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
+                this.world.newExplosion(this, result.entityHit.posX - 0.1*this.motionX, result.entityHit.posY - 0.1*this.motionY, result.entityHit.posZ - 0.1*this.motionZ, (float)1, false, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
                 this.setDead();
             }
 
@@ -165,7 +154,7 @@ public class EntityAutoTorpedo extends EntityPlasmaBall
             getEntityWorld().destroyBlock(pos, false);
             }
         }
-        this.world.newExplosion(this, this.posX + 0.7*this.motionX, this.posY + 0.7*this.motionY, this.posZ + 0.7*this.motionZ, (float)1, false, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
+        this.world.newExplosion(this, pos.getX() - 0.3*this.motionX, pos.getY() - 0.3*this.motionY, pos.getZ() - 0.3*this.motionZ, (float)1, false, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
         this.setDead();
 
 

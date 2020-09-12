@@ -34,7 +34,7 @@ public class BlockPlasmaCannon extends BlockBase
         super(name, Material.IRON);
         setSoundType(SoundType.METAL);
         setHardness(500.0F);
-        setResistance(170.0F);
+        setResistance(380.0F);
         setHarvestLevel("pickaxe", 3);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
     }
