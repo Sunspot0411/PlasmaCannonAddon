@@ -101,7 +101,7 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
 
         if (powerFactorf > 68){
 
-            f1 = (float) (0.007 * d);
+            f1 = (float) (0.01 * d);
 
         } else if (powerFactorf > 65) {
 
