@@ -103,7 +103,7 @@ public class EntityFastTorpedo extends EntityPlasmaBall
         double d=(double)f;
         float f1;
 
-        f1 =(float) (0.2 * d);
+        f1 =(float) (0.1 * d);
 
 
         return f1;
@@ -173,27 +173,27 @@ public class EntityFastTorpedo extends EntityPlasmaBall
             // Go through non solid block
             return;
         } else {
-            if (hitBlock.getBlockHardness(world,pos)==951)
+            if (hitBlock.getBlockHardness(world,pos)==1902)
             {
                 world.setBlockState(pos, BlockInit.BLOCK_BROKENACA1.getDefaultState(), 11);
             }
-            if (hitBlock.getBlockHardness(world,pos)==651)
+            if (hitBlock.getBlockHardness(world,pos)==1302)
             {
                 world.setBlockState(pos, BlockInit.BLOCK_BROKENACA2.getDefaultState(), 11);
             }
-            if (hitBlock.getBlockHardness(world,pos)==501)
+            if (hitBlock.getBlockHardness(world,pos)==1002)
             {
                 world.setBlockState(pos, BlockInit.BLOCK_BROKENCA.getDefaultState(), 11);
             }
-            if (hitBlock.getBlockHardness(world,pos)==451)
+            if (hitBlock.getBlockHardness(world,pos)==902)
             {
                 world.setBlockState(pos, BlockInit.BLOCK_BROKENACA3.getDefaultState(), 11);
             }
-            if (hitBlock.getBlockHardness(world,pos)==201)
+            if (hitBlock.getBlockHardness(world,pos)==402)
             {
                 world.setBlockState(pos, BlockInit.BLOCK_BROKENTG.getDefaultState(), 11);
             }
-            if (hitBlock.getBlockHardness(world,pos)<=200)
+            if (hitBlock.getBlockHardness(world,pos)<=400)
             {
             getEntityWorld().destroyBlock(pos, false);
             }

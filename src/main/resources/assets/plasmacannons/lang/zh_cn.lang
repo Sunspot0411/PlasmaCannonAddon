@@ -26,5 +26,5 @@ tile.block_brokenaca1.name=损坏的高级复合装甲
 tile.block_brokenaca2.name=被破坏的高级复合装甲
 tile.block_brokenaca3.name=被摧毁的高级复合装甲
 tile.block_brokenca.name=损坏的复合装甲
-tile.block_brokentg.name=损坏的强化玻璃
+tile.block_brokentg.name=损坏的钢化玻璃
 tile.block_torpedo_launcher.name=鱼雷发射器

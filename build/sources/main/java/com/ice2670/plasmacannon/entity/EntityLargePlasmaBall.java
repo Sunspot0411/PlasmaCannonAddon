@@ -101,25 +101,18 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
 
         if (powerFactorf > 68){
 
-            f1 = (float) (0.005 * d);
+            f1 = (float) (0.007 * d);
 
         } else if (powerFactorf > 65) {
 
-            f1 = (float) (0.04 * d);
+            f1 = (float) (0.02 * d);
 
         } else if (powerFactorf > 60) {
 
-            f1 = (float) (0.06 * d);
+            f1 = (float) (0.03 * d);
 
-        } else if (powerFactorf > 20) {
-
-            f1 = (float) (0.15 * d);
-
-        }
-        else
-
-            {
-                f1 =(float) (0.11 * d);
+        } else {
+                f1 =(float) (0.056 * d);
             }
 
 
@@ -210,41 +203,41 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
             getEntityWorld().destroyBlock(pos, false);
             }else if(powerFactorf >= 40 && powerFactorf <= 54)
             {
-                if (hitBlock.getBlockHardness(world,pos)==951)
+                if (hitBlock.getBlockHardness(world,pos)==1902)
                 {
                     world.setBlockState(pos, BlockInit.BLOCK_BROKENACA2.getDefaultState(), 11);
                 }
-                if (hitBlock.getBlockHardness(world,pos)==651)
+                if (hitBlock.getBlockHardness(world,pos)==1302)
                 {
                     world.setBlockState(pos, BlockInit.BLOCK_BROKENACA3.getDefaultState(), 11);
                 }
-                if (hitBlock.getBlockHardness(world,pos)<=502)
+                if (hitBlock.getBlockHardness(world,pos)<=1003)
                 {
                     getEntityWorld().destroyBlock(pos, false);
                 }
             }else if(powerFactorf >= 10 && powerFactorf <= 39)
             {
-                if (hitBlock.getBlockHardness(world,pos)==951)
+                if (hitBlock.getBlockHardness(world,pos)==1902)
                 {
                     world.setBlockState(pos, BlockInit.BLOCK_BROKENACA1.getDefaultState(), 11);
                 }
-                if (hitBlock.getBlockHardness(world,pos)==651)
+                if (hitBlock.getBlockHardness(world,pos)==1302)
                 {
                     world.setBlockState(pos, BlockInit.BLOCK_BROKENACA2.getDefaultState(), 11);
                 }
-                if (hitBlock.getBlockHardness(world,pos)==501)
+                if (hitBlock.getBlockHardness(world,pos)==1002)
                 {
                     world.setBlockState(pos, BlockInit.BLOCK_BROKENCA.getDefaultState(), 11);
                 }
-                if (hitBlock.getBlockHardness(world,pos)==451)
+                if (hitBlock.getBlockHardness(world,pos)==902)
                 {
                     world.setBlockState(pos, BlockInit.BLOCK_BROKENACA3.getDefaultState(), 11);
                 }
-                if (hitBlock.getBlockHardness(world,pos)==201)
+                if (hitBlock.getBlockHardness(world,pos)==402)
                 {
                     world.setBlockState(pos, BlockInit.BLOCK_BROKENTG.getDefaultState(), 11);
                 }
-                if (hitBlock.getBlockHardness(world,pos)<=200)
+                if (hitBlock.getBlockHardness(world,pos)<=400)
                 {
                     getEntityWorld().destroyBlock(pos, false);
                 }

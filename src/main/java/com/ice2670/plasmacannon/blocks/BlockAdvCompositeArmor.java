@@ -9,8 +9,8 @@ public class BlockAdvCompositeArmor extends BlockBase {
     public BlockAdvCompositeArmor(String name) {
         super(name, Material.IRON);
         setSoundType(SoundType.METAL);
-        setHardness(951.0F);
-        setResistance(620.0F);
-        setHarvestLevel("pickaxe", 3);
+        setHardness(1902.0F);
+        setResistance(1240.0F);
+        setHarvestLevel("pickaxe", 4);
     }
 }

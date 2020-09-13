@@ -22,9 +22,9 @@ public class BlockBrokenTG extends BlockBase
         super(name, Material.GLASS);
         setCreativeTab(ValkyrienSkiesMod.VS_CREATIVE_TAB);
         setSoundType(SoundType.GLASS);
-        setHardness(100.0F);
-        setResistance(130.0F);
-        setHarvestLevel("pickaxe", 3);
+        setHardness(200.0F);
+        setResistance(260.0F);
+        setHarvestLevel("pickaxe", 2);
     }
 
     public int quantityDropped(Random random)

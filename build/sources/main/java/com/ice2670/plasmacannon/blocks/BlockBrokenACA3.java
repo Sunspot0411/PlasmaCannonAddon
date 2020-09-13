@@ -12,8 +12,8 @@ public class BlockBrokenACA3 extends BlockBase
     {
         super(name, Material.IRON);
         setSoundType(SoundType.METAL);
-        setHardness(150.0F);
-        setResistance(140.0F);
+        setHardness(399.0F);
+        setResistance(280.0F);
         setHarvestLevel("pickaxe", 3);
     }
 }
