@@ -1,4 +1,4 @@
-Processing 37 files
+Processing 42 files
 Start Processing: com/ice2670/plasmacannon/Main.java
 Rename field net/minecraft/init/Blocks/OBSIDIAN[2103,2111]::OBSIDIAN->field_150343_Z
 Import: com.ice2670.plasmacannon.init.ItemInit
@@ -1194,6 +1194,62 @@ Import: net.minecraft.util.EnumHand
 Import: net.minecraft.util.math.BlockPos
 Import: net.minecraft.world.World
 End  Processing: com/ice2670/plasmacannon/items/ItemCompositeArmor.java
+
+Start Processing: com/ice2670/plasmacannon/mixin/IMixinEntityMiningLaser.java
+Import: net.minecraft.world.World
+End  Processing: com/ice2670/plasmacannon/mixin/IMixinEntityMiningLaser.java
+
+Start Processing: com/ice2670/plasmacannon/mixin/MixinEntity.java
+Import: net.minecraft.entity.Entity
+Import: net.minecraft.world.World
+Import: org.spongepowered.asm.mixin.Mixin
+Import: org.spongepowered.asm.mixin.Shadow
+End  Processing: com/ice2670/plasmacannon/mixin/MixinEntity.java
+
+Start Processing: com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java
+Rename method net/minecraft/world/Explosion/doExplosionA ()V[1830,1842]::doExplosionA->func_77278_a
+Rename method net/minecraft/world/Explosion/doExplosionB (Z)V[1865,1877]::doExplosionB->func_77279_a
+Import: ic2.api.event.LaserEvent
+Import: ic2.api.event.LaserEvent.LaserExplodesEvent
+Import: ic2.core.ExplosionIC2
+Import: ic2.core.item.tool.EntityMiningLaser
+Import: net.minecraft.entity.Entity
+Import: net.minecraft.entity.EntityLivingBase
+Import: net.minecraft.world.Explosion
+Import: net.minecraft.world.World
+Import: net.minecraftforge.common.MinecraftForge
+Import: org.spongepowered.asm.mixin.Mixin
+Import: org.spongepowered.asm.mixin.Overwrite
+Import: org.spongepowered.asm.mixin.Shadow
+Import: org.spongepowered.asm.mixin.injection.At
+Import: org.spongepowered.asm.mixin.injection.Redirect
+End  Processing: com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java
+
+Start Processing: com/ice2670/plasmacannon/mixin/MixinExplosion.java
+Import: net.minecraft.entity.Entity
+Import: net.minecraft.entity.player.EntityPlayer
+Import: net.minecraft.util.math.BlockPos
+Import: net.minecraft.util.math.Vec3d
+Import: net.minecraft.world.Explosion
+Import: net.minecraft.world.World
+Import: org.spongepowered.asm.mixin.Final
+Import: org.spongepowered.asm.mixin.Mixin
+Import: org.spongepowered.asm.mixin.Shadow
+Adding 3 imports
+        java.util.List
+        java.util.Map
+        java.util.Random
+End  Processing: com/ice2670/plasmacannon/mixin/MixinExplosion.java
+
+Start Processing: com/ice2670/plasmacannon/mixin/MixinLoaderForge.java
+FOUND CONSTR method com/ice2670/plasmacannon/mixin/MixinLoaderForge/MixinLoaderForge ()V com/ice2670/plasmacannon/mixin/MixinLoaderForge
+Import: java.util.Map
+Import: net.minecraftforge.fml.relauncher.IFMLLoadingPlugin
+Import: net.minecraftforge.fml.relauncher.IFMLLoadingPlugin.MCVersion
+Import: org.spongepowered.asm.launch.MixinBootstrap
+Import: org.spongepowered.asm.mixin.MixinEnvironment
+Import: org.spongepowered.asm.mixin.Mixins
+End  Processing: com/ice2670/plasmacannon/mixin/MixinLoaderForge.java
 
 Start Processing: com/ice2670/plasmacannon/proxy/ClientProxy.java
 Import: com.ice2670.plasmacannon.entity.*

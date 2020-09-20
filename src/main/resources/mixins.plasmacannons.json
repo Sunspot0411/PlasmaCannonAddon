@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "com.ice2670.plasmacannon.mixin",
+  "mixins": [
+    "MixinEntity",
+    "MixinEntityMiningLaser",
+    "MixinExplosion"
+  ],
+  "client": [
+
+  ]
+}

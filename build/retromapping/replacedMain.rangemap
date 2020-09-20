@@ -1,7 +1,6 @@
-Unsupposrted library path: D:\Minecraft Modding\PlasmaCannonAddon\build\classes\api
 Unsupposrted library path: D:\Minecraft Modding\PlasmaCannonAddon\build\resources\api
 Symbol range map extraction starting
-Processing 37 files
+Processing 42 files
 startProcessing "com/ice2670/plasmacannon/Main.java" md5: 41d2ae9d172afe1d4f1258ee9df7137c
 @|com/ice2670/plasmacannon/Main.java|8|32|com.ice2670.plasmacannon|package|com.ice2670.plasmacannon|(file)
 Class Start: com.ice2670.plasmacannon.Main
@@ -3162,6 +3161,300 @@ Class Start: com.ice2670.plasmacannon.items.ItemCompositeArmor
 Class End  : com.ice2670.plasmacannon.items.ItemCompositeArmor
 endProcessing "com/ice2670/plasmacannon/items/ItemCompositeArmor.java"
 
+startProcessing "com/ice2670/plasmacannon/mixin/IMixinEntityMiningLaser.java" md5: eb346f2dbcabad277c3110cb0bd480ac
+@|com/ice2670/plasmacannon/mixin/IMixinEntityMiningLaser.java|8|38|com.ice2670.plasmacannon.mixin|package|com.ice2670.plasmacannon.mixin|(file)
+Class Start: com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser
+   @|com/ice2670/plasmacannon/mixin/IMixinEntityMiningLaser.java|97|120|IMixinEntityMiningLaser|class|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|false
+   Method Start: getX()D
+      @|com/ice2670/plasmacannon/mixin/IMixinEntityMiningLaser.java|143|147|getX|method|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|getX|()D
+   Method End: getX()D
+   Method Start: getY()D
+      @|com/ice2670/plasmacannon/mixin/IMixinEntityMiningLaser.java|172|176|getY|method|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|getY|()D
+   Method End: getY()D
+   Method Start: getZ()D
+      @|com/ice2670/plasmacannon/mixin/IMixinEntityMiningLaser.java|201|205|getZ|method|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|getZ|()D
+   Method End: getZ()D
+   Method Start: getWorld()Lnet/minecraft/world/World;
+      @|com/ice2670/plasmacannon/mixin/IMixinEntityMiningLaser.java|223|228|World|class|net.minecraft.world.World|false
+      @|com/ice2670/plasmacannon/mixin/IMixinEntityMiningLaser.java|229|237|getWorld|method|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|getWorld|()Lnet/minecraft/world/World;
+   Method End: getWorld()Lnet/minecraft/world/World;
+Class End  : com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser
+endProcessing "com/ice2670/plasmacannon/mixin/IMixinEntityMiningLaser.java"
+
+startProcessing "com/ice2670/plasmacannon/mixin/MixinEntity.java" md5: 1b597b34ca8d38d7ad4ffb4ac66f8893
+@|com/ice2670/plasmacannon/mixin/MixinEntity.java|8|38|com.ice2670.plasmacannon.mixin|package|com.ice2670.plasmacannon.mixin|(file)
+Class Start: com.ice2670.plasmacannon.mixin.MixinEntity
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|205|210|Mixin|class|org.spongepowered.asm.mixin.Mixin|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|211|216|value|method|org.spongepowered.asm.mixin.Mixin|value|()[Ljava/lang/Class;
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|219|225|Entity|class|net.minecraft.entity.Entity|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|233|241|priority|method|org.spongepowered.asm.mixin.Mixin|priority|()I
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|264|275|MixinEntity|class|com.ice2670.plasmacannon.mixin.MixinEntity|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|287|310|IMixinEntityMiningLaser|class|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|332|338|Entity|class|net.minecraft.entity.Entity|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|332|338|Entity|class|net.minecraft.entity.Entity|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|339|351|thisAsEntity|field|com.ice2670.plasmacannon.mixin.MixinEntity|thisAsEntity|
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|354|360|Entity|class|net.minecraft.entity.Entity|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|367|371|cast|method|java.lang.Class|cast|(Ljava/lang/Object;)Ljava/lang/Object;
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|385|391|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|411|415|posX|field|com.ice2670.plasmacannon.mixin.MixinEntity|posX|
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|515|521|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|541|545|posY|field|com.ice2670.plasmacannon.mixin.MixinEntity|posY|
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|635|641|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|661|665|posZ|field|com.ice2670.plasmacannon.mixin.MixinEntity|posZ|
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|692|697|World|class|net.minecraft.world.World|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|673|679|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|692|697|World|class|net.minecraft.world.World|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntity.java|698|703|world|field|com.ice2670.plasmacannon.mixin.MixinEntity|world|
+   Method Start: getX()D
+      @|com/ice2670/plasmacannon/mixin/MixinEntity.java|713|721|Override|class|java.lang.Override|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntity.java|741|745|getX|method|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|getX|()D
+      @|com/ice2670/plasmacannon/mixin/MixinEntity.java|766|770|posX|field|com.ice2670.plasmacannon.mixin.MixinEntity|posX
+   Method End: getX()D
+   Method Start: getY()D
+      @|com/ice2670/plasmacannon/mixin/MixinEntity.java|787|795|Override|class|java.lang.Override|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntity.java|815|819|getY|method|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|getY|()D
+      @|com/ice2670/plasmacannon/mixin/MixinEntity.java|840|844|posY|field|com.ice2670.plasmacannon.mixin.MixinEntity|posY
+   Method End: getY()D
+   Method Start: getZ()D
+      @|com/ice2670/plasmacannon/mixin/MixinEntity.java|861|869|Override|class|java.lang.Override|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntity.java|889|893|getZ|method|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|getZ|()D
+      @|com/ice2670/plasmacannon/mixin/MixinEntity.java|914|918|posZ|field|com.ice2670.plasmacannon.mixin.MixinEntity|posZ
+   Method End: getZ()D
+   Method Start: getWorld()Lnet/minecraft/world/World;
+      @|com/ice2670/plasmacannon/mixin/MixinEntity.java|935|943|Override|class|java.lang.Override|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntity.java|956|961|World|class|net.minecraft.world.World|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntity.java|962|970|getWorld|method|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|getWorld|()Lnet/minecraft/world/World;
+      @|com/ice2670/plasmacannon/mixin/MixinEntity.java|991|996|world|field|com.ice2670.plasmacannon.mixin.MixinEntity|world
+   Method End: getWorld()Lnet/minecraft/world/World;
+Class End  : com.ice2670.plasmacannon.mixin.MixinEntity
+endProcessing "com/ice2670/plasmacannon/mixin/MixinEntity.java"
+
+startProcessing "com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java" md5: 3bac427f218703335d593e732e42f662
+@|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|8|38|com.ice2670.plasmacannon.mixin|package|com.ice2670.plasmacannon.mixin|(file)
+Class Start: com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|662|667|Mixin|class|org.spongepowered.asm.mixin.Mixin|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|668|673|value|method|org.spongepowered.asm.mixin.Mixin|value|()[Ljava/lang/Class;
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|676|693|EntityMiningLaser|class|ic2.core.item.tool.EntityMiningLaser|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|701|709|priority|method|org.spongepowered.asm.mixin.Mixin|priority|()I
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|732|754|MixinEntityMiningLaser|class|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|766|772|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|773|778|remap|method|org.spongepowered.asm.mixin.Shadow|remap|()Z
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|806|811|range|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|range|
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|826|832|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|833|838|remap|method|org.spongepowered.asm.mixin.Shadow|remap|()Z
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|866|871|power|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|power|
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|886|892|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|893|898|remap|method|org.spongepowered.asm.mixin.Shadow|remap|()Z
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|924|935|blockBreaks|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|blockBreaks|
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|947|953|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|954|959|remap|method|org.spongepowered.asm.mixin.Shadow|remap|()Z
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|989|998|explosive|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|explosive|
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1014|1020|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1021|1026|remap|method|org.spongepowered.asm.mixin.Shadow|remap|()Z
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1068|1078|laserSpeed|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|laserSpeed|
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1127|1143|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1093|1099|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1100|1105|remap|method|org.spongepowered.asm.mixin.Shadow|remap|()Z
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1127|1143|EntityLivingBase|class|net.minecraft.entity.EntityLivingBase|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1144|1149|owner|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|owner|
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1157|1163|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1164|1169|remap|method|org.spongepowered.asm.mixin.Shadow|remap|()Z
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1199|1209|headingSet|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|headingSet|
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1225|1231|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1232|1237|remap|method|org.spongepowered.asm.mixin.Shadow|remap|()Z
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1267|1272|smelt|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|smelt|
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1288|1294|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1295|1300|remap|method|org.spongepowered.asm.mixin.Shadow|remap|()Z
+   @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1327|1337|ticksInAir|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|ticksInAir|
+   Method Start: doExplosionRedirect(Lic2/core/ExplosionIC2;)V
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1522|1534|explosionIC2|param|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|doExplosionRedirect|(Lic2/core/ExplosionIC2;)V|explosionIC2|0
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1353|1361|Redirect|class|org.spongepowered.asm.mixin.injection.Redirect|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1362|1368|method|method|org.spongepowered.asm.mixin.injection.Redirect|method|()[Ljava/lang/String;
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1382|1384|at|method|org.spongepowered.asm.mixin.injection.Redirect|at|()Lorg/spongepowered/asm/mixin/injection/At;
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1388|1390|At|class|org.spongepowered.asm.mixin.injection.At|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1391|1396|value|method|org.spongepowered.asm.mixin.injection.At|value|()Ljava/lang/String;
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1409|1415|target|method|org.spongepowered.asm.mixin.injection.At|target|()Ljava/lang/String;
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1457|1462|remap|method|org.spongepowered.asm.mixin.injection.Redirect|remap|()Z
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1489|1508|doExplosionRedirect|method|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|doExplosionRedirect|(Lic2/core/ExplosionIC2;)V
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1509|1521|ExplosionIC2|class|ic2.core.ExplosionIC2|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1552|1561|Explosion|class|net.minecraft.world.Explosion|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1578|1587|Explosion|class|net.minecraft.world.Explosion|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1588|1611|IMixinEntityMiningLaser|class|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1618|1622|cast|method|java.lang.Class|cast|(Ljava/lang/Object;)Ljava/lang/Object;
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1629|1637|getWorld|method|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|getWorld|()Lnet/minecraft/world/World;
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1647|1670|IMixinEntityMiningLaser|class|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1677|1681|cast|method|java.lang.Class|cast|(Ljava/lang/Object;)Ljava/lang/Object;
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1688|1692|getX|method|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|getX|()D
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1696|1719|IMixinEntityMiningLaser|class|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1726|1730|cast|method|java.lang.Class|cast|(Ljava/lang/Object;)Ljava/lang/Object;
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1737|1741|getY|method|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|getY|()D
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1745|1768|IMixinEntityMiningLaser|class|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1775|1779|cast|method|java.lang.Class|cast|(Ljava/lang/Object;)Ljava/lang/Object;
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1786|1790|getZ|method|com.ice2670.plasmacannon.mixin.IMixinEntityMiningLaser|getZ|()D
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1830|1842|doExplosionA|method|net.minecraft.world.Explosion|doExplosionA|()V
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1865|1877|doExplosionB|method|net.minecraft.world.Explosion|doExplosionB|(Z)V
+   Method End: doExplosionRedirect(Lic2/core/ExplosionIC2;)V
+   Method Start: copyDataFromEvent(Lic2/api/event/LaserEvent;)V
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1963|1968|event|param|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|copyDataFromEvent|(Lic2/api/event/LaserEvent;)V|event|0
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1902|1908|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1909|1914|remap|method|org.spongepowered.asm.mixin.Shadow|remap|()Z
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1934|1951|copyDataFromEvent|method|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|copyDataFromEvent|(Lic2/api/event/LaserEvent;)V
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1952|1962|LaserEvent|class|ic2.api.event.LaserEvent|false
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1986|1991|owner|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|owner
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|1994|1999|event|param|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|copyDataFromEvent|(Lic2/api/event/LaserEvent;)V|event|0
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2000|2005|owner|field|ic2.api.event.LaserEvent|owner
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2021|2026|range|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|range
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2029|2034|event|param|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|copyDataFromEvent|(Lic2/api/event/LaserEvent;)V|event|0
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2035|2040|range|field|ic2.api.event.LaserEvent|range
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2056|2061|power|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|power
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2064|2069|event|param|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|copyDataFromEvent|(Lic2/api/event/LaserEvent;)V|event|0
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2070|2075|power|field|ic2.api.event.LaserEvent|power
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2091|2102|blockBreaks|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|blockBreaks
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2105|2110|event|param|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|copyDataFromEvent|(Lic2/api/event/LaserEvent;)V|event|0
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2111|2122|blockBreaks|field|ic2.api.event.LaserEvent|blockBreaks
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2138|2147|explosive|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|explosive
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2150|2155|event|param|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|copyDataFromEvent|(Lic2/api/event/LaserEvent;)V|event|0
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2156|2165|explosive|field|ic2.api.event.LaserEvent|explosive
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2181|2186|smelt|field|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|smelt
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2189|2194|event|param|com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser|copyDataFromEvent|(Lic2/api/event/LaserEvent;)V|event|0
+      @|com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java|2195|2200|smelt|field|ic2.api.event.LaserEvent|smelt
+   Method End: copyDataFromEvent(Lic2/api/event/LaserEvent;)V
+Class End  : com.ice2670.plasmacannon.mixin.MixinEntityMiningLaser
+endProcessing "com/ice2670/plasmacannon/mixin/MixinEntityMiningLaser.java"
+
+startProcessing "com/ice2670/plasmacannon/mixin/MixinExplosion.java" md5: 6ab8b564c3d7c7b973930cba9cc79f83
+@|com/ice2670/plasmacannon/mixin/MixinExplosion.java|8|38|com.ice2670.plasmacannon.mixin|package|com.ice2670.plasmacannon.mixin|(file)
+Class Start: com.ice2670.plasmacannon.mixin.MixinExplosion
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|493|498|Mixin|class|org.spongepowered.asm.mixin.Mixin|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|499|504|value|method|org.spongepowered.asm.mixin.Mixin|value|()[Ljava/lang/Class;
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|507|516|Explosion|class|net.minecraft.world.Explosion|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|524|532|priority|method|org.spongepowered.asm.mixin.Mixin|priority|()I
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|566|580|MixinExplosion|class|com.ice2670.plasmacannon.mixin.MixinExplosion|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|622|627|Vec3d|class|net.minecraft.util.math.Vec3d|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|590|596|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|603|608|Final|class|org.spongepowered.asm.mixin.Final|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|622|627|Vec3d|class|net.minecraft.util.math.Vec3d|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|628|636|position|field|com.ice2670.plasmacannon.mixin.MixinExplosion|position|
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|644|650|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|657|662|Final|class|org.spongepowered.asm.mixin.Final|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|684|694|causesFire|field|com.ice2670.plasmacannon.mixin.MixinExplosion|causesFire|
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|767|773|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|780|785|Final|class|org.spongepowered.asm.mixin.Final|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|807|821|damagesTerrain|field|com.ice2670.plasmacannon.mixin.MixinExplosion|damagesTerrain|
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|861|867|Random|class|java.util.Random|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|829|835|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|842|847|Final|class|org.spongepowered.asm.mixin.Final|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|861|867|Random|class|java.util.Random|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|868|874|random|field|com.ice2670.plasmacannon.mixin.MixinExplosion|random|
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|914|919|World|class|net.minecraft.world.World|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|882|888|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|895|900|Final|class|org.spongepowered.asm.mixin.Final|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|914|919|World|class|net.minecraft.world.World|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|920|925|world|field|com.ice2670.plasmacannon.mixin.MixinExplosion|world|
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|933|939|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|946|951|Final|class|org.spongepowered.asm.mixin.Final|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|972|973|x|field|com.ice2670.plasmacannon.mixin.MixinExplosion|x|
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|981|987|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|994|999|Final|class|org.spongepowered.asm.mixin.Final|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1020|1021|y|field|com.ice2670.plasmacannon.mixin.MixinExplosion|y|
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1029|1035|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1042|1047|Final|class|org.spongepowered.asm.mixin.Final|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1068|1069|z|field|com.ice2670.plasmacannon.mixin.MixinExplosion|z|
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1109|1115|Entity|class|net.minecraft.entity.Entity|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1077|1083|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1090|1095|Final|class|org.spongepowered.asm.mixin.Final|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1109|1115|Entity|class|net.minecraft.entity.Entity|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1116|1124|exploder|field|com.ice2670.plasmacannon.mixin.MixinExplosion|exploder|
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1132|1138|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1145|1150|Final|class|org.spongepowered.asm.mixin.Final|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1170|1174|size|field|com.ice2670.plasmacannon.mixin.MixinExplosion|size|
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1293|1301|BlockPos|class|net.minecraft.util.math.BlockPos|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1288|1292|List|class|java.util.List|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1256|1262|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1269|1274|Final|class|org.spongepowered.asm.mixin.Final|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1288|1292|List|class|java.util.List|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1293|1301|BlockPos|class|net.minecraft.util.math.BlockPos|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1303|1325|affectedBlockPositions|field|com.ice2670.plasmacannon.mixin.MixinExplosion|affectedBlockPositions|
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1468|1480|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1482|1487|Vec3d|class|net.minecraft.util.math.Vec3d|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1464|1467|Map|class|java.util.Map|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1432|1438|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1445|1450|Final|class|org.spongepowered.asm.mixin.Final|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1464|1467|Map|class|java.util.Map|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1468|1480|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1482|1487|Vec3d|class|net.minecraft.util.math.Vec3d|false
+   @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1489|1507|playerKnockbackMap|field|com.ice2670.plasmacannon.mixin.MixinExplosion|playerKnockbackMap|
+   Method Start: getPosition()Lnet/minecraft/util/math/Vec3d;
+      @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1517|1523|Shadow|class|org.spongepowered.asm.mixin.Shadow|false
+      @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1536|1541|Vec3d|class|net.minecraft.util.math.Vec3d|false
+      @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1542|1553|getPosition|method|com.ice2670.plasmacannon.mixin.MixinExplosion|getPosition|()Lnet/minecraft/util/math/Vec3d;
+      @|com/ice2670/plasmacannon/mixin/MixinExplosion.java|1578|1586|position|field|com.ice2670.plasmacannon.mixin.MixinExplosion|position
+   Method End: getPosition()Lnet/minecraft/util/math/Vec3d;
+Class End  : com.ice2670.plasmacannon.mixin.MixinExplosion
+endProcessing "com/ice2670/plasmacannon/mixin/MixinExplosion.java"
+
+startProcessing "com/ice2670/plasmacannon/mixin/MixinLoaderForge.java" md5: 3b80945c6d8ae0f082cf4f4124c929fc
+@|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|8|38|com.ice2670.plasmacannon.mixin|package|com.ice2670.plasmacannon.mixin|(file)
+Class Start: com.ice2670.plasmacannon.mixin.MixinLoaderForge
+   @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|352|361|MCVersion|class|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin.MCVersion|false
+   @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|386|402|MixinLoaderForge|class|com.ice2670.plasmacannon.mixin.MixinLoaderForge|false
+   @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|414|431|IFMLLoadingPlugin|class|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|false
+   @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|463|486|isObfuscatedEnvironment|field|com.ice2670.plasmacannon.mixin.MixinLoaderForge|isObfuscatedEnvironment|
+   Method Start: MixinLoaderForge()V
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|510|526|MixinLoaderForge|method|com.ice2670.plasmacannon.mixin.MixinLoaderForge|MixinLoaderForge|()V
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|540|546|System|class|java.lang.System|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|547|550|out|field|java.lang.System|out
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|551|558|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|606|620|MixinBootstrap|class|org.spongepowered.asm.launch.MixinBootstrap|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|621|625|init|method|org.spongepowered.asm.launch.MixinBootstrap|init|()V
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|638|644|Mixins|class|org.spongepowered.asm.mixin.Mixins|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|645|661|addConfiguration|method|org.spongepowered.asm.mixin.Mixins|addConfiguration|(Ljava/lang/String;)V
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|701|717|MixinEnvironment|class|org.spongepowered.asm.mixin.MixinEnvironment|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|718|739|getDefaultEnvironment|method|org.spongepowered.asm.mixin.MixinEnvironment|getDefaultEnvironment|()Lorg/spongepowered/asm/mixin/MixinEnvironment;
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|742|763|setObfuscationContext|method|org.spongepowered.asm.mixin.MixinEnvironment|setObfuscationContext|(Ljava/lang/String;)V
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|784|790|System|class|java.lang.System|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|791|794|out|field|java.lang.System|out
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|795|802|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|803|819|MixinEnvironment|class|org.spongepowered.asm.mixin.MixinEnvironment|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|820|841|getDefaultEnvironment|method|org.spongepowered.asm.mixin.MixinEnvironment|getDefaultEnvironment|()Lorg/spongepowered/asm/mixin/MixinEnvironment;
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|844|865|getObfuscationContext|method|org.spongepowered.asm.mixin.MixinEnvironment|getObfuscationContext|()Ljava/lang/String;
+   Method End: MixinLoaderForge()V
+   Method Start: getASMTransformerClass()[Ljava/lang/String;
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|885|893|Override|class|java.lang.Override|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|906|912|String|class|java.lang.String|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|915|937|getASMTransformerClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getASMTransformerClass|()[Ljava/lang/String;
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|962|968|String|class|java.lang.String|false
+   Method End: getASMTransformerClass()[Ljava/lang/String;
+   Method Start: getModContainerClass()Ljava/lang/String;
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|988|996|Override|class|java.lang.Override|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1009|1015|String|class|java.lang.String|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1016|1036|getModContainerClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getModContainerClass|()Ljava/lang/String;
+   Method End: getModContainerClass()Ljava/lang/String;
+   Method Start: getSetupClass()Ljava/lang/String;
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1078|1086|Override|class|java.lang.Override|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1099|1105|String|class|java.lang.String|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1106|1119|getSetupClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getSetupClass|()Ljava/lang/String;
+   Method End: getSetupClass()Ljava/lang/String;
+   Method Start: injectData(Ljava/util/Map;)V
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1218|1222|data|param|com.ice2670.plasmacannon.mixin.MixinLoaderForge|injectData|(Ljava/util/Map;)V|data|0
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1161|1169|Override|class|java.lang.Override|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1187|1197|injectData|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|injectData|(Ljava/util/Map;)V
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1198|1201|Map|class|java.util.Map|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1202|1208|String|class|java.lang.String|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1210|1216|Object|class|java.lang.Object|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1235|1258|isObfuscatedEnvironment|field|com.ice2670.plasmacannon.mixin.MixinLoaderForge|isObfuscatedEnvironment
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1272|1279|Boolean|class|java.lang.Boolean|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1281|1285|data|param|com.ice2670.plasmacannon.mixin.MixinLoaderForge|injectData|(Ljava/util/Map;)V|data|0
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1286|1289|get|method|java.util.Map|get|(Ljava/lang/Object;)Ljava/lang/Object;
+   Method End: injectData(Ljava/util/Map;)V
+   Method Start: getAccessTransformerClass()Ljava/lang/String;
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1337|1345|Override|class|java.lang.Override|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1358|1364|String|class|java.lang.String|false
+      @|com/ice2670/plasmacannon/mixin/MixinLoaderForge.java|1365|1390|getAccessTransformerClass|method|net.minecraftforge.fml.relauncher.IFMLLoadingPlugin|getAccessTransformerClass|()Ljava/lang/String;
+   Method End: getAccessTransformerClass()Ljava/lang/String;
+Class End  : com.ice2670.plasmacannon.mixin.MixinLoaderForge
+endProcessing "com/ice2670/plasmacannon/mixin/MixinLoaderForge.java"
+
 startProcessing "com/ice2670/plasmacannon/proxy/ClientProxy.java" md5: 905f996d9678f474e6b5a4e1d51888e9
 @|com/ice2670/plasmacannon/proxy/ClientProxy.java|8|38|com.ice2670.plasmacannon.proxy|package|com.ice2670.plasmacannon.proxy|(file)
 Class Start: com.ice2670.plasmacannon.proxy.ClientProxy
@@ -4329,7 +4622,7 @@ Class Start: com.ice2670.plasmacannon.util.IHasModel
 Class End  : com.ice2670.plasmacannon.util.IHasModel
 endProcessing "com/ice2670/plasmacannon/util/IHasModel.java"
 
-startProcessing "com/ice2670/plasmacannon/util/Reference.java" md5: d766dca242709c9cdc47a454f5028745
+startProcessing "com/ice2670/plasmacannon/util/Reference.java" md5: 4c60405829e22f03a4388487e4d261f7
 @|com/ice2670/plasmacannon/util/Reference.java|8|37|com.ice2670.plasmacannon.util|package|com.ice2670.plasmacannon.util|(file)
 Class Start: com.ice2670.plasmacannon.util.Reference
    @|com/ice2670/plasmacannon/util/Reference.java|55|64|Reference|class|com.ice2670.plasmacannon.util.Reference|false
@@ -4350,11 +4643,8 @@ Class Start: com.ice2670.plasmacannon.util.Reference
    @|com/ice2670/plasmacannon/util/Reference.java|350|356|COMMON|field|com.ice2670.plasmacannon.util.Reference|COMMON|
    @|com/ice2670/plasmacannon/util/Reference.java|436|453|ENTITY_PLASMABALL|field|com.ice2670.plasmacannon.util.Reference|ENTITY_PLASMABALL|
    @|com/ice2670/plasmacannon/util/Reference.java|490|512|ENTITY_lARGEPLASMABALL|field|com.ice2670.plasmacannon.util.Reference|ENTITY_lARGEPLASMABALL|
-   @|com/ice2670/plasmacannon/util/Reference.java|549|576|FAKE_ENTITY_lARGEPLASMABALL|field|com.ice2670.plasmacannon.util.Reference|FAKE_ENTITY_lARGEPLASMABALL|
-   @|com/ice2670/plasmacannon/util/Reference.java|613|625|FAST_TORPEDO|field|com.ice2670.plasmacannon.util.Reference|FAST_TORPEDO|
-   @|com/ice2670/plasmacannon/util/Reference.java|662|674|FAKE_TORPEDO|field|com.ice2670.plasmacannon.util.Reference|FAKE_TORPEDO|
-   @|com/ice2670/plasmacannon/util/Reference.java|711|723|AUTO_TORPEDO|field|com.ice2670.plasmacannon.util.Reference|AUTO_TORPEDO|
-   @|com/ice2670/plasmacannon/util/Reference.java|760|776|FAKE_AUTOTORPEDO|field|com.ice2670.plasmacannon.util.Reference|FAKE_AUTOTORPEDO|
+   @|com/ice2670/plasmacannon/util/Reference.java|549|561|FAST_TORPEDO|field|com.ice2670.plasmacannon.util.Reference|FAST_TORPEDO|
+   @|com/ice2670/plasmacannon/util/Reference.java|598|610|AUTO_TORPEDO|field|com.ice2670.plasmacannon.util.Reference|AUTO_TORPEDO|
 Class End  : com.ice2670.plasmacannon.util.Reference
 endProcessing "com/ice2670/plasmacannon/util/Reference.java"
 
