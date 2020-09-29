@@ -442,116 +442,116 @@ Rename method net/minecraft/nbt/NBTTagCompound/getByte (Ljava/lang/String;)B[284
 Rename method net/minecraft/entity/Entity/getExplosionResistance (Lnet/minecraft/world/Explosion;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)F[3001,3023]::getExplosionResistance->func_180428_a
 Rename method net/minecraft/entity/Entity/getExplosionResistance (Lnet/minecraft/world/Explosion;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;)F[3125,3147]::getExplosionResistance->func_180428_a
 Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[3217,3225]::getBlock->func_177230_c
-Rename method net/minecraft/entity/projectile/EntityThrowable/onImpact (Lnet/minecraft/util/math/RayTraceResult;)V[3709,3717]::onImpact->func_70184_a
-Rename field net/minecraft/entity/Entity/world[3771,3776]::world->field_70170_p
-Rename field net/minecraft/world/World/isRemote[3785,3793]::isRemote->field_72995_K
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[3835,3844]::entityHit->field_72308_g
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[3897,3906]::entityHit->field_72308_g
-Rename method net/minecraft/entity/Entity/attackEntityFrom (Lnet/minecraft/util/DamageSource;F)Z[3911,3927]::attackEntityFrom->func_70097_a
-Rename field net/minecraft/util/DamageSource/DRAGON_BREATH[3937,3950]::DRAGON_BREATH->field_188407_q
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[3998,4007]::entityHit->field_72308_g
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[4127,4136]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posX[4141,4145]::posX->field_70165_t
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[4167,4176]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posY[4181,4185]::posY->field_70163_u
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[4207,4216]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posZ[4221,4225]::posZ->field_70161_v
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[4276,4285]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posX[4290,4294]::posX->field_70165_t
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[4316,4325]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posY[4330,4334]::posY->field_70163_u
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[4356,4365]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posZ[4370,4374]::posZ->field_70161_v
-Rename method net/minecraft/command/ICommandSender/getEntityWorld ()Lnet/minecraft/world/World;[4444,4458]::getEntityWorld->func_130014_f_
-Rename method net/minecraft/world/World/getEntitiesWithinAABB (Ljava/lang/Class;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;[4461,4482]::getEntitiesWithinAABB->func_72872_a
-Rename method net/minecraft/entity/EntityLivingBase/setHealth (F)V[4596,4605]::setHealth->func_70606_j
-Rename method net/minecraft/entity/EntityLivingBase/getHealth ()F[4615,4624]::getHealth->func_110143_aJ
-Rename field net/minecraft/entity/Entity/hurtResistantTime[4678,4695]::hurtResistantTime->field_70172_ad
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[4771,4780]::entityHit->field_72308_g
-Rename method net/minecraft/entity/Entity/setFire (I)V[4786,4793]::setFire->func_70015_d
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[4853,4862]::entityHit->field_72308_g
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[4980,4989]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posX[4994,4998]::posX->field_70165_t
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[5020,5029]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posY[5034,5038]::posY->field_70163_u
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[5060,5069]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posZ[5074,5078]::posZ->field_70161_v
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[5129,5138]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posX[5143,5147]::posX->field_70165_t
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[5169,5178]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posY[5183,5187]::posY->field_70163_u
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[5209,5218]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posZ[5223,5227]::posZ->field_70161_v
-Rename method net/minecraft/command/ICommandSender/getEntityWorld ()Lnet/minecraft/world/World;[5297,5311]::getEntityWorld->func_130014_f_
-Rename method net/minecraft/world/World/getEntitiesWithinAABB (Ljava/lang/Class;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;[5314,5335]::getEntitiesWithinAABB->func_72872_a
-Rename method net/minecraft/entity/EntityLivingBase/setHealth (F)V[5449,5458]::setHealth->func_70606_j
-Rename method net/minecraft/entity/EntityLivingBase/getHealth ()F[5468,5477]::getHealth->func_110143_aJ
-Rename field net/minecraft/entity/Entity/hurtResistantTime[5521,5538]::hurtResistantTime->field_70172_ad
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[5614,5623]::entityHit->field_72308_g
-Rename method net/minecraft/entity/Entity/setFire (I)V[5629,5636]::setFire->func_70015_d
-Rename field net/minecraft/entity/Entity/world[5690,5695]::world->field_70170_p
-Rename method net/minecraft/world/World/createExplosion (Lnet/minecraft/entity/Entity;DDDFZ)Lnet/minecraft/world/Explosion;[5704,5719]::createExplosion->func_72876_a
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[5730,5739]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posX[5744,5748]::posX->field_70165_t
-Rename field net/minecraft/entity/Entity/motionX[5769,5776]::motionX->field_70159_w
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[5791,5800]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posY[5805,5809]::posY->field_70163_u
-Rename field net/minecraft/entity/Entity/motionY[5830,5837]::motionY->field_70181_x
-Rename field net/minecraft/util/math/RayTraceResult/entityHit[5852,5861]::entityHit->field_72308_g
-Rename field net/minecraft/entity/Entity/posZ[5866,5870]::posZ->field_70161_v
-Rename field net/minecraft/entity/Entity/motionZ[5891,5898]::motionZ->field_70179_y
-Rename field net/minecraft/entity/Entity/world[6002,6007]::world->field_70170_p
-Rename method net/minecraft/entity/Entity/setDead ()V[6055,6062]::setDead->func_70106_y
-Rename method net/minecraft/entity/Entity/canBeCollidedWith ()Z[6244,6261]::canBeCollidedWith->func_70067_L
-Rename method net/minecraft/block/state/IBlockProperties/getMaterial ()Lnet/minecraft/block/material/Material;[6443,6454]::getMaterial->func_185904_a
-Rename method net/minecraft/block/material/Material/isSolid ()Z[6459,6466]::isSolid->func_76220_a
-Rename method net/minecraft/block/state/IBlockProperties/getBlockHardness (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)F[6585,6601]::getBlockHardness->func_185887_b
-Rename field net/minecraft/entity/Entity/world[6599,6604]::world->field_70170_p
-Rename field net/minecraft/entity/Entity/world[6657,6662]::world->field_70170_p
-Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[6671,6684]::setBlockState->func_180501_a
-Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[6717,6732]::getDefaultState->func_176223_P
-Rename method net/minecraft/block/state/IBlockProperties/getBlockHardness (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)F[6780,6796]::getBlockHardness->func_185887_b
-Rename field net/minecraft/entity/Entity/world[6794,6799]::world->field_70170_p
-Rename field net/minecraft/entity/Entity/world[6852,6857]::world->field_70170_p
-Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[6866,6879]::setBlockState->func_180501_a
-Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[6912,6927]::getDefaultState->func_176223_P
-Rename method net/minecraft/block/state/IBlockProperties/getBlockHardness (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)F[6975,6991]::getBlockHardness->func_185887_b
-Rename field net/minecraft/entity/Entity/world[6989,6994]::world->field_70170_p
-Rename field net/minecraft/entity/Entity/world[7047,7052]::world->field_70170_p
-Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[7061,7074]::setBlockState->func_180501_a
-Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[7105,7120]::getDefaultState->func_176223_P
-Rename method net/minecraft/block/state/IBlockProperties/getBlockHardness (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)F[7168,7184]::getBlockHardness->func_185887_b
-Rename field net/minecraft/entity/Entity/world[7182,7187]::world->field_70170_p
-Rename field net/minecraft/entity/Entity/world[7239,7244]::world->field_70170_p
-Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[7253,7266]::setBlockState->func_180501_a
-Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[7299,7314]::getDefaultState->func_176223_P
-Rename method net/minecraft/block/state/IBlockProperties/getBlockHardness (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)F[7362,7378]::getBlockHardness->func_185887_b
-Rename field net/minecraft/entity/Entity/world[7376,7381]::world->field_70170_p
-Rename field net/minecraft/entity/Entity/world[7433,7438]::world->field_70170_p
-Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[7447,7460]::setBlockState->func_180501_a
-Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[7491,7506]::getDefaultState->func_176223_P
-Rename method net/minecraft/block/state/IBlockProperties/getBlockHardness (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)F[7554,7570]::getBlockHardness->func_185887_b
-Rename field net/minecraft/entity/Entity/world[7568,7573]::world->field_70170_p
-Rename method net/minecraft/command/ICommandSender/getEntityWorld ()Lnet/minecraft/world/World;[7621,7635]::getEntityWorld->func_130014_f_
-Rename method net/minecraft/world/World/destroyBlock (Lnet/minecraft/util/math/BlockPos;Z)Z[7638,7650]::destroyBlock->func_175655_b
-Rename field net/minecraft/entity/Entity/world[7707,7712]::world->field_70170_p
-Rename method net/minecraft/world/World/createExplosion (Lnet/minecraft/entity/Entity;DDDFZ)Lnet/minecraft/world/Explosion;[7721,7736]::createExplosion->func_72876_a
-Rename method net/minecraft/util/math/Vec3i/getX ()I[7744,7748]::getX->func_177958_n
-Rename field net/minecraft/entity/Entity/motionX[7771,7778]::motionX->field_70159_w
-Rename method net/minecraft/util/math/Vec3i/getY ()I[7790,7794]::getY->func_177956_o
-Rename field net/minecraft/entity/Entity/motionY[7817,7824]::motionY->field_70181_x
-Rename method net/minecraft/util/math/Vec3i/getZ ()I[7836,7840]::getZ->func_177952_p
-Rename field net/minecraft/entity/Entity/motionZ[7863,7870]::motionZ->field_70179_y
-Rename field net/minecraft/entity/Entity/world[7974,7979]::world->field_70170_p
-Rename method net/minecraft/entity/Entity/setDead ()V[8019,8026]::setDead->func_70106_y
-Rename method net/minecraft/entity/Entity/attackEntityFrom (Lnet/minecraft/util/DamageSource;F)Z[8130,8146]::attackEntityFrom->func_70097_a
-Rename method net/minecraft/entity/Entity/entityInit ()V[8237,8247]::entityInit->func_70088_a
-Rename field net/minecraft/entity/Entity/dataManager[8273,8284]::dataManager->field_70180_af
-Rename method net/minecraft/network/datasync/EntityDataManager/register (Lnet/minecraft/network/datasync/DataParameter;Ljava/lang/Object;)V[8288,8296]::register->func_187214_a
-Rename field net/minecraft/entity/Entity/dataManager[8524,8535]::dataManager->field_70180_af
-Rename method net/minecraft/network/datasync/EntityDataManager/get (Lnet/minecraft/network/datasync/DataParameter;)Ljava/lang/Object;[8539,8542]::get->func_187225_a
-Rename field net/minecraft/entity/Entity/dataManager[8765,8776]::dataManager->field_70180_af
-Rename method net/minecraft/network/datasync/EntityDataManager/set (Lnet/minecraft/network/datasync/DataParameter;Ljava/lang/Object;)V[8780,8783]::set->func_187227_b
+Rename method net/minecraft/entity/projectile/EntityThrowable/onImpact (Lnet/minecraft/util/math/RayTraceResult;)V[3710,3718]::onImpact->func_70184_a
+Rename field net/minecraft/entity/Entity/world[3772,3777]::world->field_70170_p
+Rename field net/minecraft/world/World/isRemote[3786,3794]::isRemote->field_72995_K
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[3836,3845]::entityHit->field_72308_g
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[3898,3907]::entityHit->field_72308_g
+Rename method net/minecraft/entity/Entity/attackEntityFrom (Lnet/minecraft/util/DamageSource;F)Z[3912,3928]::attackEntityFrom->func_70097_a
+Rename field net/minecraft/util/DamageSource/DRAGON_BREATH[3938,3951]::DRAGON_BREATH->field_188407_q
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[3999,4008]::entityHit->field_72308_g
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[4128,4137]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posX[4142,4146]::posX->field_70165_t
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[4168,4177]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posY[4182,4186]::posY->field_70163_u
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[4208,4217]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posZ[4222,4226]::posZ->field_70161_v
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[4277,4286]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posX[4291,4295]::posX->field_70165_t
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[4317,4326]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posY[4331,4335]::posY->field_70163_u
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[4357,4366]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posZ[4371,4375]::posZ->field_70161_v
+Rename method net/minecraft/command/ICommandSender/getEntityWorld ()Lnet/minecraft/world/World;[4445,4459]::getEntityWorld->func_130014_f_
+Rename method net/minecraft/world/World/getEntitiesWithinAABB (Ljava/lang/Class;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;[4462,4483]::getEntitiesWithinAABB->func_72872_a
+Rename method net/minecraft/entity/EntityLivingBase/setHealth (F)V[4597,4606]::setHealth->func_70606_j
+Rename method net/minecraft/entity/EntityLivingBase/getHealth ()F[4616,4625]::getHealth->func_110143_aJ
+Rename field net/minecraft/entity/Entity/hurtResistantTime[4669,4686]::hurtResistantTime->field_70172_ad
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[4762,4771]::entityHit->field_72308_g
+Rename method net/minecraft/entity/Entity/setFire (I)V[4777,4784]::setFire->func_70015_d
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[4844,4853]::entityHit->field_72308_g
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[4971,4980]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posX[4985,4989]::posX->field_70165_t
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[5011,5020]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posY[5025,5029]::posY->field_70163_u
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[5051,5060]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posZ[5065,5069]::posZ->field_70161_v
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[5120,5129]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posX[5134,5138]::posX->field_70165_t
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[5160,5169]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posY[5174,5178]::posY->field_70163_u
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[5200,5209]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posZ[5214,5218]::posZ->field_70161_v
+Rename method net/minecraft/command/ICommandSender/getEntityWorld ()Lnet/minecraft/world/World;[5288,5302]::getEntityWorld->func_130014_f_
+Rename method net/minecraft/world/World/getEntitiesWithinAABB (Ljava/lang/Class;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;[5305,5326]::getEntitiesWithinAABB->func_72872_a
+Rename method net/minecraft/entity/EntityLivingBase/setHealth (F)V[5440,5449]::setHealth->func_70606_j
+Rename method net/minecraft/entity/EntityLivingBase/getHealth ()F[5459,5468]::getHealth->func_110143_aJ
+Rename field net/minecraft/entity/Entity/hurtResistantTime[5512,5529]::hurtResistantTime->field_70172_ad
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[5605,5614]::entityHit->field_72308_g
+Rename method net/minecraft/entity/Entity/setFire (I)V[5620,5627]::setFire->func_70015_d
+Rename field net/minecraft/entity/Entity/world[5681,5686]::world->field_70170_p
+Rename method net/minecraft/world/World/createExplosion (Lnet/minecraft/entity/Entity;DDDFZ)Lnet/minecraft/world/Explosion;[5695,5710]::createExplosion->func_72876_a
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[5721,5730]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posX[5735,5739]::posX->field_70165_t
+Rename field net/minecraft/entity/Entity/motionX[5760,5767]::motionX->field_70159_w
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[5782,5791]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posY[5796,5800]::posY->field_70163_u
+Rename field net/minecraft/entity/Entity/motionY[5821,5828]::motionY->field_70181_x
+Rename field net/minecraft/util/math/RayTraceResult/entityHit[5843,5852]::entityHit->field_72308_g
+Rename field net/minecraft/entity/Entity/posZ[5857,5861]::posZ->field_70161_v
+Rename field net/minecraft/entity/Entity/motionZ[5882,5889]::motionZ->field_70179_y
+Rename field net/minecraft/entity/Entity/world[5993,5998]::world->field_70170_p
+Rename method net/minecraft/entity/Entity/setDead ()V[6046,6053]::setDead->func_70106_y
+Rename method net/minecraft/entity/Entity/canBeCollidedWith ()Z[6235,6252]::canBeCollidedWith->func_70067_L
+Rename method net/minecraft/block/state/IBlockProperties/getMaterial ()Lnet/minecraft/block/material/Material;[6434,6445]::getMaterial->func_185904_a
+Rename method net/minecraft/block/material/Material/isSolid ()Z[6450,6457]::isSolid->func_76220_a
+Rename method net/minecraft/block/state/IBlockProperties/getBlockHardness (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)F[6576,6592]::getBlockHardness->func_185887_b
+Rename field net/minecraft/entity/Entity/world[6590,6595]::world->field_70170_p
+Rename field net/minecraft/entity/Entity/world[6648,6653]::world->field_70170_p
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[6662,6675]::setBlockState->func_180501_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[6708,6723]::getDefaultState->func_176223_P
+Rename method net/minecraft/block/state/IBlockProperties/getBlockHardness (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)F[6771,6787]::getBlockHardness->func_185887_b
+Rename field net/minecraft/entity/Entity/world[6785,6790]::world->field_70170_p
+Rename field net/minecraft/entity/Entity/world[6843,6848]::world->field_70170_p
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[6857,6870]::setBlockState->func_180501_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[6903,6918]::getDefaultState->func_176223_P
+Rename method net/minecraft/block/state/IBlockProperties/getBlockHardness (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)F[6966,6982]::getBlockHardness->func_185887_b
+Rename field net/minecraft/entity/Entity/world[6980,6985]::world->field_70170_p
+Rename field net/minecraft/entity/Entity/world[7038,7043]::world->field_70170_p
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[7052,7065]::setBlockState->func_180501_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[7096,7111]::getDefaultState->func_176223_P
+Rename method net/minecraft/block/state/IBlockProperties/getBlockHardness (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)F[7159,7175]::getBlockHardness->func_185887_b
+Rename field net/minecraft/entity/Entity/world[7173,7178]::world->field_70170_p
+Rename field net/minecraft/entity/Entity/world[7230,7235]::world->field_70170_p
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[7244,7257]::setBlockState->func_180501_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[7290,7305]::getDefaultState->func_176223_P
+Rename method net/minecraft/block/state/IBlockProperties/getBlockHardness (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)F[7353,7369]::getBlockHardness->func_185887_b
+Rename field net/minecraft/entity/Entity/world[7367,7372]::world->field_70170_p
+Rename field net/minecraft/entity/Entity/world[7424,7429]::world->field_70170_p
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[7438,7451]::setBlockState->func_180501_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[7482,7497]::getDefaultState->func_176223_P
+Rename method net/minecraft/block/state/IBlockProperties/getBlockHardness (Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)F[7545,7561]::getBlockHardness->func_185887_b
+Rename field net/minecraft/entity/Entity/world[7559,7564]::world->field_70170_p
+Rename method net/minecraft/command/ICommandSender/getEntityWorld ()Lnet/minecraft/world/World;[7612,7626]::getEntityWorld->func_130014_f_
+Rename method net/minecraft/world/World/destroyBlock (Lnet/minecraft/util/math/BlockPos;Z)Z[7629,7641]::destroyBlock->func_175655_b
+Rename field net/minecraft/entity/Entity/world[7698,7703]::world->field_70170_p
+Rename method net/minecraft/world/World/createExplosion (Lnet/minecraft/entity/Entity;DDDFZ)Lnet/minecraft/world/Explosion;[7712,7727]::createExplosion->func_72876_a
+Rename method net/minecraft/util/math/Vec3i/getX ()I[7735,7739]::getX->func_177958_n
+Rename field net/minecraft/entity/Entity/motionX[7762,7769]::motionX->field_70159_w
+Rename method net/minecraft/util/math/Vec3i/getY ()I[7781,7785]::getY->func_177956_o
+Rename field net/minecraft/entity/Entity/motionY[7808,7815]::motionY->field_70181_x
+Rename method net/minecraft/util/math/Vec3i/getZ ()I[7827,7831]::getZ->func_177952_p
+Rename field net/minecraft/entity/Entity/motionZ[7854,7861]::motionZ->field_70179_y
+Rename field net/minecraft/entity/Entity/world[7965,7970]::world->field_70170_p
+Rename method net/minecraft/entity/Entity/setDead ()V[8010,8017]::setDead->func_70106_y
+Rename method net/minecraft/entity/Entity/attackEntityFrom (Lnet/minecraft/util/DamageSource;F)Z[8121,8137]::attackEntityFrom->func_70097_a
+Rename method net/minecraft/entity/Entity/entityInit ()V[8228,8238]::entityInit->func_70088_a
+Rename field net/minecraft/entity/Entity/dataManager[8264,8275]::dataManager->field_70180_af
+Rename method net/minecraft/network/datasync/EntityDataManager/register (Lnet/minecraft/network/datasync/DataParameter;Ljava/lang/Object;)V[8279,8287]::register->func_187214_a
+Rename field net/minecraft/entity/Entity/dataManager[8515,8526]::dataManager->field_70180_af
+Rename method net/minecraft/network/datasync/EntityDataManager/get (Lnet/minecraft/network/datasync/DataParameter;)Ljava/lang/Object;[8530,8533]::get->func_187225_a
+Rename field net/minecraft/entity/Entity/dataManager[8756,8767]::dataManager->field_70180_af
+Rename method net/minecraft/network/datasync/EntityDataManager/set (Lnet/minecraft/network/datasync/DataParameter;Ljava/lang/Object;)V[8771,8774]::set->func_187227_b
 Import: com.ice2670.plasmacannon.init.BlockInit
 Import: net.minecraft.block.Block
 Import: net.minecraft.block.state.IBlockState

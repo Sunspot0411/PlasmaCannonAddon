@@ -43,7 +43,7 @@ endProcessing "com/ice2670/plasmacannon/blocks/BlockTorpedoLauncher.java"
 startProcessing "com/ice2670/plasmacannon/entity/EntityAutoTorpedo.java" md5: b92ae08cc453648607fc664b08fad000
 endProcessing "com/ice2670/plasmacannon/entity/EntityAutoTorpedo.java"
 
-startProcessing "com/ice2670/plasmacannon/entity/EntityFastTorpedo.java" md5: 5b11a5466e763c771047b86784d9fd4f
+startProcessing "com/ice2670/plasmacannon/entity/EntityFastTorpedo.java" md5: ca4f98826c23c79de321bbbe1fdf4ee7
 endProcessing "com/ice2670/plasmacannon/entity/EntityFastTorpedo.java"
 
 startProcessing "com/ice2670/plasmacannon/entity/EntityLargePlasmaBall.java" md5: 5216581a350ca319bb8e0905639b8b27

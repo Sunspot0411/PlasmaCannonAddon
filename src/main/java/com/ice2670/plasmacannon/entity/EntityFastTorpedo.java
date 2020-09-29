@@ -103,7 +103,7 @@ public class EntityFastTorpedo extends EntityPlasmaBall
         double d=(double)f;
         float f1;
 
-        f1 =(float) (0.1 * d);
+        f1 =(float) (0.07 * d);
 
 
         return f1;
@@ -126,7 +126,7 @@ public class EntityFastTorpedo extends EntityPlasmaBall
                             result.entityHit.posX + 2, result.entityHit.posY + 2, result.entityHit.posZ + 2);
                     List<EntityLivingBase> targets = getEntityWorld().getEntitiesWithinAABB(EntityLivingBase.class, axis);
                     for (EntityLivingBase mob : targets) {
-                        (mob).setHealth((mob).getHealth() - damagefactor);
+                        (mob).setHealth((mob).getHealth() - 20);
                         mob.hurtResistantTime = -1;
                     }
 
