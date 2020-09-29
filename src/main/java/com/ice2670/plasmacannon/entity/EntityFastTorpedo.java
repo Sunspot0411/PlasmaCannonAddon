@@ -29,7 +29,7 @@ import java.util.List;
  */
 public class EntityFastTorpedo extends EntityPlasmaBall
 {
-    public double explosionPower = 0.3*powerFactorf;
+    public double explosionPower = 0.4*powerFactorf;
     public int damagefactor = 2* powerFactorf;
 
     private static final DataParameter<Boolean> INVULNERABLE = EntityDataManager.<Boolean>createKey(net.minecraft.entity.projectile.EntityWitherSkull.class, DataSerializers.BOOLEAN);
@@ -140,7 +140,7 @@ public class EntityFastTorpedo extends EntityPlasmaBall
                             result.entityHit.posX + 2, result.entityHit.posY + 2, result.entityHit.posZ + 2);
                     List<EntityLivingBase> targets = getEntityWorld().getEntitiesWithinAABB(EntityLivingBase.class, axis);
                     for (EntityLivingBase mob : targets) {
-                        (mob).setHealth((mob).getHealth() - damagefactor);
+                        (mob).setHealth((mob).getHealth() - 20);
                         mob.hurtResistantTime = -1;
                     }
 

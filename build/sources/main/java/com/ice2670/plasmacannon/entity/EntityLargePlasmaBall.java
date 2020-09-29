@@ -26,7 +26,7 @@ import java.util.List;
 
 public class EntityLargePlasmaBall extends EntityPlasmaBall
 {
-    public double explosionPower = 0.1*powerFactorf;
+    public double explosionPower = 0.14*powerFactorf;
     public int damagefactor =10* powerFactorf;
 
     private static final DataParameter<Boolean> INVULNERABLE = EntityDataManager.<Boolean>createKey(net.minecraft.entity.projectile.EntityWitherSkull.class, DataSerializers.BOOLEAN);
@@ -101,18 +101,18 @@ public class EntityLargePlasmaBall extends EntityPlasmaBall
 
         if (powerFactorf > 68){
 
-            f1 = (float) (0.01 * d);
+            f1 = (float) (0.014 * d);
 
         } else if (powerFactorf > 65) {
 
-            f1 = (float) (0.02 * d);
+            f1 = (float) (0.028 * d);
 
         } else if (powerFactorf > 60) {
 
-            f1 = (float) (0.03 * d);
+            f1 = (float) (0.042 * d);
 
         } else {
-                f1 =(float) (0.056 * d);
+                f1 =(float) (0.0784 * d);
             }
 
 

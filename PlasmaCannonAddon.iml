@@ -11,20 +11,6 @@
       </configuration>
     </facet>
   </component>
-  <component name="McpModuleSettings">
-    <option name="mappingFiles">
-      <set>
-        <option value="C:\Users\77586\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\mcp-notch.srg" />
-        <option value="C:\Users\77586\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\mcp-srg.srg" />
-        <option value="C:\Users\77586\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\mcp.exc" />
-        <option value="C:\Users\77586\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\notch-mcp.srg" />
-        <option value="C:\Users\77586\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\notch-srg.srg" />
-        <option value="C:\Users\77586\.gradle\caches\minecraft\de\oceanlabs\mcp\mcp_snapshot\20171003\1.12.2\srgs\srg.exc" />
-      </set>
-    </option>
-    <option name="mcpVersion" value="snapshot_20171003" />
-    <option name="minecraftVersion" value="1.12.2" />
-  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
