@@ -1,9 +1,6 @@
 package com.ice2670.plasmacannon.init;
 
-import com.ice2670.plasmacannon.items.IridiumPlate;
-import com.ice2670.plasmacannon.items.ItemBase;
-import com.ice2670.plasmacannon.items.ItemAdvCompositeArmor;
-import com.ice2670.plasmacannon.items.ItemCompositeArmor;
+import com.ice2670.plasmacannon.items.*;
 import net.minecraft.item.Item;
 
 import java.util.ArrayList;
@@ -49,6 +46,9 @@ public class ItemInit
 
     public static final Item AUTO_TORPEDO = new ItemBase("autotorpedo");
 
+    public static final Item ITEM_TORPEDOLAUNCHER = new ItemTorpedoLauncher("item_torpedolauncher");
+
+    public static final Item ITEM_PLASMACANNON = new ItemPlasmaCannon("item_plasmacannon");
 
 
 }

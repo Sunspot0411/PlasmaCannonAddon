@@ -74,37 +74,37 @@ public class TileEntityTorpedoLauncher extends TileEntity
                 Vec3d playview2 = playerIn.getLookVec();
                 if (enumfacing == EnumFacing.NORTH) {
                     EntityFastTorpedo torpedo1 = new EntityFastTorpedo(worldIn, d0, d1, d2-0.5, 10);
-                    torpedo1.shoot(playview2.x, playview2.y, playview2.z, 4, 0.00F);
+                    torpedo1.shoot(playview2.x, playview2.y, playview2.z, 3, 0.00F);
                     worldIn.spawnEntity(torpedo1);
                 }
 
                 if (enumfacing == EnumFacing.SOUTH) {
                     EntityFastTorpedo torpedo1 = new EntityFastTorpedo(worldIn, d0, d1, d2+0.5, 10);
-                    torpedo1.shoot(playview2.x, playview2.y, playview2.z, 4, 0.00F);
+                    torpedo1.shoot(playview2.x, playview2.y, playview2.z, 3, 0.00F);
                     worldIn.spawnEntity(torpedo1);
                 }
 
                 if (enumfacing == EnumFacing.EAST) {
                     EntityFastTorpedo torpedo1 = new EntityFastTorpedo(worldIn, d0+0.5, d1, d2, 10);
-                    torpedo1.shoot(playview2.x, playview2.y, playview2.z, 4, 0.00F);
+                    torpedo1.shoot(playview2.x, playview2.y, playview2.z, 3, 0.00F);
                     worldIn.spawnEntity(torpedo1);
                 }
 
                 if (enumfacing == EnumFacing.WEST) {
                     EntityFastTorpedo torpedo1 = new EntityFastTorpedo(worldIn, d0-0.5, d1, d2, 10);
-                    torpedo1.shoot(playview2.x, playview2.y, playview2.z, 4, 0.00F);
+                    torpedo1.shoot(playview2.x, playview2.y, playview2.z, 3, 0.00F);
                     worldIn.spawnEntity(torpedo1);
                 }
 
                 if (enumfacing == EnumFacing.UP) {
                     EntityFastTorpedo torpedo1 = new EntityFastTorpedo(worldIn, d0, d1+0.5, d2, 10);
-                    torpedo1.shoot(playview2.x, playview2.y, playview2.z, 4, 0.00F);
+                    torpedo1.shoot(playview2.x, playview2.y, playview2.z, 3, 0.00F);
                     worldIn.spawnEntity(torpedo1);
                 }
 
                 if (enumfacing == EnumFacing.DOWN) {
                     EntityFastTorpedo torpedo1 = new EntityFastTorpedo(worldIn, d0, d1-0.5, d2, 10);
-                    torpedo1.shoot(playview2.x, playview2.y, playview2.z, 4, 0.00F);
+                    torpedo1.shoot(playview2.x, playview2.y, playview2.z, 3, 0.00F);
                     worldIn.spawnEntity(torpedo1);
                 }
 
@@ -118,37 +118,37 @@ public class TileEntityTorpedoLauncher extends TileEntity
                 Vec3d playview2 = playerIn.getLookVec();
                 if (enumfacing == EnumFacing.NORTH) {
                     EntityFastTorpedo fastTorpedo = new EntityFastTorpedo(worldIn, d0, d1, d2-0.5, 5);
-                    fastTorpedo.shoot(playview2.x, playview2.y, playview2.z, 6F, 0.00F);
+                    fastTorpedo.shoot(playview2.x, playview2.y, playview2.z, 5F, 0.00F);
                     worldIn.spawnEntity(fastTorpedo);
                 }
 
                 if (enumfacing == EnumFacing.SOUTH) {
                     EntityFastTorpedo fastTorpedo = new EntityFastTorpedo(worldIn, d0, d1, d2+0.5, 5);
-                    fastTorpedo.shoot(playview2.x, playview2.y, playview2.z, 6F, 0.00F);
+                    fastTorpedo.shoot(playview2.x, playview2.y, playview2.z, 5F, 0.00F);
                     worldIn.spawnEntity(fastTorpedo);
                 }
 
                 if (enumfacing == EnumFacing.EAST) {
                     EntityFastTorpedo fastTorpedo = new EntityFastTorpedo(worldIn, d0+0.5, d1, d2, 5);
-                    fastTorpedo.shoot(playview2.x, playview2.y, playview2.z, 6F, 0.00F);
+                    fastTorpedo.shoot(playview2.x, playview2.y, playview2.z, 5F, 0.00F);
                     worldIn.spawnEntity(fastTorpedo);
                 }
 
                 if (enumfacing == EnumFacing.WEST) {
                     EntityFastTorpedo fastTorpedo = new EntityFastTorpedo(worldIn, d0-0.5, d1, d2, 5);
-                    fastTorpedo.shoot(playview2.x, playview2.y, playview2.z, 6F, 0.00F);
+                    fastTorpedo.shoot(playview2.x, playview2.y, playview2.z, 5F, 0.00F);
                     worldIn.spawnEntity(fastTorpedo);
                 }
 
                 if (enumfacing == EnumFacing.UP) {
                     EntityFastTorpedo fastTorpedo = new EntityFastTorpedo(worldIn, d0, d1+0.5, d2, 5);
-                    fastTorpedo.shoot(playview2.x, playview2.y, playview2.z, 6F, 0.00F);
+                    fastTorpedo.shoot(playview2.x, playview2.y, playview2.z, 5F, 0.00F);
                     worldIn.spawnEntity(fastTorpedo);
                 }
 
                 if (enumfacing == EnumFacing.DOWN) {
                     EntityFastTorpedo fastTorpedo = new EntityFastTorpedo(worldIn, d0, d1-0.5, d2, 5);
-                    fastTorpedo.shoot(playview2.x, playview2.y, playview2.z, 6F, 0.00F);
+                    fastTorpedo.shoot(playview2.x, playview2.y, playview2.z, 5F, 0.00F);
                     worldIn.spawnEntity(fastTorpedo);
                 }
             }
@@ -185,37 +185,37 @@ public class TileEntityTorpedoLauncher extends TileEntity
                     Vec3d playview2 = playerIn.getLookVec();
                     if (enumfacing == EnumFacing.NORTH) {
                         EntityAutoTorpedo autoTorpedo = new EntityAutoTorpedo(worldIn, d0, d1, d2-0.4, 3);
-                        autoTorpedo.shoot(playview2.x, playview2.y, playview2.z, 6, 0.00F);
+                        autoTorpedo.shoot(playview2.x, playview2.y, playview2.z, 5, 0.00F);
                         worldIn.spawnEntity(autoTorpedo);
                     }
 
                     if (enumfacing == EnumFacing.SOUTH) {
                         EntityAutoTorpedo autoTorpedo = new EntityAutoTorpedo(worldIn, d0, d1, d2+0.4, 3);
-                        autoTorpedo.shoot(playview2.x, playview2.y, playview2.z, 6, 0.00F);
+                        autoTorpedo.shoot(playview2.x, playview2.y, playview2.z, 5, 0.00F);
                         worldIn.spawnEntity(autoTorpedo);
                     }
 
                     if (enumfacing == EnumFacing.EAST) {
                         EntityAutoTorpedo autoTorpedo = new EntityAutoTorpedo(worldIn, d0+0.4, d1, d2, 3);
-                        autoTorpedo.shoot(playview2.x, playview2.y, playview2.z, 6, 0.00F);
+                        autoTorpedo.shoot(playview2.x, playview2.y, playview2.z, 5, 0.00F);
                         worldIn.spawnEntity(autoTorpedo);
                     }
 
                     if (enumfacing == EnumFacing.WEST) {
                         EntityAutoTorpedo autoTorpedo = new EntityAutoTorpedo(worldIn, d0-0.4, d1, d2, 3);
-                        autoTorpedo.shoot(playview2.x, playview2.y, playview2.z, 6, 0.00F);
+                        autoTorpedo.shoot(playview2.x, playview2.y, playview2.z, 5, 0.00F);
                         worldIn.spawnEntity(autoTorpedo);
                     }
 
                     if (enumfacing == EnumFacing.UP) {
                         EntityAutoTorpedo autoTorpedo = new EntityAutoTorpedo(worldIn, d0, d1+0.4, d2, 3);
-                        autoTorpedo.shoot(playview2.x, playview2.y, playview2.z, 6, 0.00F);
+                        autoTorpedo.shoot(playview2.x, playview2.y, playview2.z, 5, 0.00F);
                         worldIn.spawnEntity(autoTorpedo);
                     }
 
                     if (enumfacing == EnumFacing.DOWN) {
                         EntityAutoTorpedo autoTorpedo = new EntityAutoTorpedo(worldIn, d0, d1-0.4, d2, 3);
-                        autoTorpedo.shoot(playview2.x, playview2.y, playview2.z, 6, 0.00F);
+                        autoTorpedo.shoot(playview2.x, playview2.y, playview2.z, 5, 0.00F);
                         worldIn.spawnEntity(autoTorpedo);
                     }
 

@@ -26,7 +26,7 @@
     
     "result":
     {
-        "item": "plasmacannons:plasma_cannon",
+        "item": "plasmacannons:item_plasmacannon",
         "count": 1
     }
 }

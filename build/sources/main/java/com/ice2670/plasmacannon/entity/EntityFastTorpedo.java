@@ -15,6 +15,7 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
@@ -29,7 +30,7 @@ import java.util.List;
  */
 public class EntityFastTorpedo extends EntityPlasmaBall
 {
-    public double explosionPower = 0.4*powerFactorf;
+    public double explosionPower = 0.6*powerFactorf;
     public int damagefactor = 2* powerFactorf;
 
     private static final DataParameter<Boolean> INVULNERABLE = EntityDataManager.<Boolean>createKey(net.minecraft.entity.projectile.EntityWitherSkull.class, DataSerializers.BOOLEAN);
@@ -103,7 +104,7 @@ public class EntityFastTorpedo extends EntityPlasmaBall
         double d=(double)f;
         float f1;
 
-        f1 =(float) (0.07 * d);
+        f1 =(float) (0.14 * d);
 
 
         return f1;
@@ -147,7 +148,7 @@ public class EntityFastTorpedo extends EntityPlasmaBall
                     ((EntityLivingBase)result.entityHit).setFire(30);
 
                 }
-                this.world.createExplosion(this, result.entityHit.posX - 0.1*this.motionX, result.entityHit.posY - 0.1*this.motionY, result.entityHit.posZ - 0.1*this.motionZ, (float)this.explosionPower, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
+                this.world.createExplosion(this, result.entityHit.posX - 0.4*(this.motionX/ MathHelper.sqrt((this.motionX)*(this.motionX)+(this.motionY)*(this.motionY)+(this.motionZ)*(this.motionZ))), result.entityHit.posY - 0.4*(this.motionY/MathHelper.sqrt((this.motionX)*(this.motionX)+(this.motionY)*(this.motionY)+(this.motionZ)*(this.motionZ))), result.entityHit.posZ - 0.4*(this.motionZ/MathHelper.sqrt((this.motionX)*(this.motionX)+(this.motionY)*(this.motionY)+(this.motionZ)*(this.motionZ))), (float)this.explosionPower, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
                 this.setDead();
             }
 
@@ -199,7 +200,7 @@ public class EntityFastTorpedo extends EntityPlasmaBall
             }
         }
 
-        this.world.createExplosion(this, pos.getX() - 0.4*this.motionX, pos.getY() - 0.4*this.motionY, pos.getZ() - 0.4*this.motionZ, (float)this.explosionPower, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
+        this.world.createExplosion(this, pos.getX() - 1.5*(this.motionX/MathHelper.sqrt((this.motionX)*(this.motionX)+(this.motionY)*(this.motionY)+(this.motionZ)*(this.motionZ))), pos.getY() - 1.5*(this.motionY/MathHelper.sqrt((this.motionX)*(this.motionX)+(this.motionY)*(this.motionY)+(this.motionZ)*(this.motionZ))), pos.getZ() - 1.5*(this.motionZ/MathHelper.sqrt((this.motionX)*(this.motionX)+(this.motionY)*(this.motionY)+(this.motionZ)*(this.motionZ))), (float)this.explosionPower, net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.thrower));
         this.setDead();
 
 
