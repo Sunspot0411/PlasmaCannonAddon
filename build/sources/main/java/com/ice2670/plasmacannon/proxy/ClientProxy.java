@@ -2,6 +2,7 @@ package com.ice2670.plasmacannon.proxy;
 
 
 import com.ice2670.plasmacannon.entity.*;
+import com.ice2670.plasmacannon.entity.render.RenderEntityTorpedoPrimed;
 import com.ice2670.plasmacannon.entity.render.RenderFastTorpedo;
 import com.ice2670.plasmacannon.entity.render.RenderLargePlasmaBall;
 import com.ice2670.plasmacannon.entity.render.RenderPlasmaBall;
@@ -56,6 +57,15 @@ public class ClientProxy extends CommonProxy
             public Render<? super EntityFastTorpedo> createRenderFor(RenderManager manager)
             {
                 return new RenderFastTorpedo(manager);
+            }
+        });
+
+        RenderingRegistry.registerEntityRenderingHandler(EntityTorpedoPrimed.class, new IRenderFactory<EntityTorpedoPrimed>()
+        {
+
+            public Render<? super EntityTorpedoPrimed> createRenderFor(RenderManager manager)
+            {
+                return new RenderEntityTorpedoPrimed(manager);
             }
         });
     }

@@ -19,7 +19,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'org.spongepowered.mixin'
 
-version = "1.3.10"
+version = "1.4.1"
 group = "com.ice2670.plasmacannon" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "PlasmaCannon"
 
@@ -78,7 +78,10 @@ dependencies {
         exclude module: 'guava'
     }
     compile 'net.industrial-craft:industrialcraft-2:2.8.75-ex112:dev'
-    deobfCompile('com.github.ValkyrienSkies:Valkyrien-Skies:master-SNAPSHOT') {
+    deobfCompile("org.valkyrienskies:Valkyrien-Skies:058e49549a8ac59cd198cf6e12b77d74643ef0a0:all") {
+        transitive = false
+    }
+    deobfCompile("org.valkyrienskies:Valkyrien-Skies-Control:bc55aa179d643fd30d4c49a48a2491633033c5f3:all") {
         transitive = false
     }
     // for more info...

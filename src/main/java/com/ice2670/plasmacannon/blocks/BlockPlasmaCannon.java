@@ -22,6 +22,7 @@ import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import org.valkyrienskies.addon.control.ValkyrienSkiesControl;
 
 import java.util.Random;
 
@@ -111,6 +112,9 @@ public class BlockPlasmaCannon extends BlockBase
                 plasmacannon.displayfirepower(worldIn,pos,state,playerIn);
 
             }
+            if (item == ValkyrienSkiesControl.INSTANCE.vsWrench){
+                worldIn.setBlockState(pos, BlockInit.BLOCK_PLASMA_CANNON.getDefaultState().withProperty(FACING, EnumFacing.getDirectionFromEntityLiving(pos, playerIn)));
+            }
         }
 
         return true;
@@ -129,7 +133,7 @@ public class BlockPlasmaCannon extends BlockBase
     @Override
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
     {
-        worldIn.setBlockState(pos, this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
+        worldIn.setBlockState(pos, this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing()), 2);
     }
 
     @Override

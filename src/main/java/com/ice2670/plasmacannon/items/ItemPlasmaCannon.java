@@ -34,7 +34,7 @@ public class ItemPlasmaCannon extends ItemBase
 
         if (worldIn.getBlockState(pos).getBlock() == Blocks.REDSTONE_BLOCK)
         {
-            worldIn.setBlockState(pos, BlockInit.BLOCK_PLASMA_CANNON.getDefaultState().withProperty(FACING, facing));
+            worldIn.setBlockState(pos, BlockInit.BLOCK_PLASMA_CANNON.getDefaultState().withProperty(FACING, facing.getOpposite()));
             itemstack.shrink(1);
             player.inventory.addItemStackToInventory(new ItemStack(Items.REDSTONE,9));
             return EnumActionResult.SUCCESS;

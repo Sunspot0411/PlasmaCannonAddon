@@ -23,11 +23,11 @@ item.plasma_container.name=Plasma Container
 item.advcomposite_armor_material.name=Advanced Armor Material
 item.item_plasmacannon.name=Plasma Cannon(Placer)
 tooltip.plasmacannons.item_plasmacannon_1=Right click on a Redstone Block to place. Place Plasma Generators behind to increase fire power, can place 69 at most
-tooltip.plasmacannons.item_plasmacannon_2=Active with redstone or Electronic Trigger. Requires EU energy to charge. Use Energy Reader to read energy
+tooltip.plasmacannons.item_plasmacannon_2=Active with redstone or Electronic Trigger. Requires EU energy to charge. Use Energy Reader to read energy. Can be rotated by VS Wrench
 tooltip.plasmacannons.item_plasmacannon_3=Very hard to remove once placed! Design your cannon arrangement with Redstone Blocks before transforming them to Plasma Cannon
 item.item_torpedolauncher.name=Torpedo Launcher(Placer)
-tooltip.plasmacannons.item_torpedolauncher_1=Right click on an Observer to place. Launches torpedo along player's view, one side is transparent for players to see through
-tooltip.plasmacannons.item_torpedolauncher_2=Can launch 3 kinds of torpedo. For high speed and high explosive torpedo, load first and active with electronic trigger. For fast shoot torpedo, right click on the launcher directly to fire.
+tooltip.plasmacannons.item_torpedolauncher_1=Right click on an Observer to place. Launches torpedo along player's view, one side is transparent for players to see through. Can be rotated by VS Wrench
+tooltip.plasmacannons.item_torpedolauncher_2=Can launch 3 kinds of torpedo. For high speed and high explosive torpedo, place adjacent(none diagonal)to a launcher and right click the launcher to load. Use Electronic Trigger to aim and fire. For fast shoot torpedo, right click on the launcher directly to fire.
 tooltip.plasmacannons.item_torpedolauncher_3=Very hard to remove once placed! Design your launcher arrangement with Observers before transforming them to Torpedo Launcher
 
 tile.block_plasmagenerator.name=Plasma Generator
@@ -41,4 +41,8 @@ tile.block_brokenaca3.name=Destroyed Advanced Composite Armor Plate
 tile.block_brokenca.name=Broken Composite Armor Plate
 tile.block_brokentg.name=Broken Tempered Glass
 tile.block_torpedo_launcher.name=Torpedo Launcher
+tile.block_fasttorpedo.name=Torpedo - High Speed
+tile.block_highexplosivetorpedo.name=Torpedo - High Explosive
+tooltip.plasmacannons.item_torpedo_1=Place next to a torpedo launcher, right click on the launcher to load
+tooltip.plasmacannons.item_torpedo_2=Caution: Can be ignited by redstone signal or VS Wrench!
 

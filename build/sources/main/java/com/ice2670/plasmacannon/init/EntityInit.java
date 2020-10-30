@@ -15,6 +15,7 @@ public class EntityInit
         registerEntity("largeplasmaball", EntityLargePlasmaBall.class, Reference.ENTITY_lARGEPLASMABALL, 800);
         registerEntity("fasttorpedo", EntityFastTorpedo.class, Reference.FAST_TORPEDO, 800);
         registerEntity("autotorpedo", EntityAutoTorpedo.class, Reference.AUTO_TORPEDO, 800);
+        registerEntity("torpedoprimed", EntityTorpedoPrimed.class, Reference.TORPEDO_PRIMED, 800);
     }
 
     private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range)

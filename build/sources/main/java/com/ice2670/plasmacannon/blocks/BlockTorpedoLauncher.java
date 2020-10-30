@@ -20,6 +20,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import org.valkyrienskies.addon.control.ValkyrienSkiesControl;
 import org.valkyrienskies.mod.common.ValkyrienSkiesMod;
 
 import java.util.Random;
@@ -41,7 +42,7 @@ public class BlockTorpedoLauncher extends BlockBase
 
     @Override
     public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
-        return this.getDefaultState().withProperty(FACING, EnumFacing.getDirectionFromEntityLiving(pos, placer));
+        return this.getDefaultState().withProperty(FACING, EnumFacing.getDirectionFromEntityLiving(pos, placer).getOpposite());
     }
 
     @Override
@@ -93,22 +94,22 @@ public class BlockTorpedoLauncher extends BlockBase
         ItemStack heldItem = playerIn.getHeldItem(hand);
         TileEntityTorpedoLauncher torpedolauncher = (TileEntityTorpedoLauncher) worldIn.getTileEntity(pos);
 
-        if (heldItem == null){
-            return false;}
 
-        else {
-            Item item = heldItem.getItem();
-            if(item == ItemInit.TORPEDO ||item == ItemInit.FASTTORPEDO ){
-                torpedolauncher.torpedoLoad(worldIn,pos,state,playerIn,hand);
-            }
-            else if (item == ItemInit.INGOT_KEY){
-                torpedolauncher.launchtorpedo(worldIn,pos,state,playerIn);
-            }
-            else if (item == ItemInit.AUTO_TORPEDO){
-                torpedolauncher.shoottorpedo(worldIn,pos,state,playerIn,hand);
-            }
 
+        Item item = heldItem.getItem();
+        if(item != ItemInit.INGOT_KEY && item != ItemInit.AUTO_TORPEDO && item != ValkyrienSkiesControl.INSTANCE.vsWrench){
+            torpedolauncher.torpedoLoad(worldIn,pos,state,playerIn,hand);
         }
+        else if (item == ItemInit.INGOT_KEY){
+            torpedolauncher.launchtorpedo(worldIn,pos,state,playerIn);
+        }
+        else if (item == ItemInit.AUTO_TORPEDO){
+            torpedolauncher.shoottorpedo(worldIn,pos,state,playerIn,hand);
+        } else {
+            worldIn.setBlockState(pos, BlockInit.BLOCK_TORPEDOLAUNCHER.getDefaultState().withProperty(FACING, EnumFacing.getDirectionFromEntityLiving(pos, playerIn)));
+        }
+
+
 
         return true;
     }

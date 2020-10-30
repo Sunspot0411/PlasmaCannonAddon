@@ -34,7 +34,7 @@ public class ItemTorpedoLauncher extends ItemBase
 
         if (worldIn.getBlockState(pos).getBlock() == Blocks.OBSERVER)
         {
-            worldIn.setBlockState(pos, BlockInit.BLOCK_TORPEDOLAUNCHER.getDefaultState().withProperty(FACING, facing));
+            worldIn.setBlockState(pos, BlockInit.BLOCK_TORPEDOLAUNCHER.getDefaultState().withProperty(FACING, facing.getOpposite()));
             itemstack.shrink(1);
             return EnumActionResult.SUCCESS;
         }

@@ -18,7 +18,7 @@ public class BlockBase extends Block implements IHasModel
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(ValkyrienSkiesMod.VS_CREATIVE_TAB);
-        setHardness(15.0F);
+        setHardness(10.0F);
         setResistance(20.0F);
         setHarvestLevel("pickaxe", 2);
 

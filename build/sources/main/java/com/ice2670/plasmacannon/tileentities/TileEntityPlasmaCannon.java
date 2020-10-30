@@ -102,7 +102,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                         i++;
                     } else {
                         this.powerfactor = i;
-                        this.maxenergy = 10000 * i;
+                        this.maxenergy = 30000 * i;
                         if (this.energy > (this.maxenergy - 100)) {
 
                             if (!worldIn.isRemote) {
@@ -136,7 +136,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                         i++;
                     } else {
                         this.powerfactor = i;
-                        this.maxenergy = 10000 * i;
+                        this.maxenergy = 30000 * i;
                         if (this.energy > (this.maxenergy - 100)) {
 
                             if (!worldIn.isRemote) {
@@ -170,7 +170,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                         i++;
                     } else {
                         this.powerfactor = i;
-                        this.maxenergy = 10000 * i;
+                        this.maxenergy = 30000 * i;
                         if (this.energy > (this.maxenergy - 100)) {
 
                             if (!worldIn.isRemote) {
@@ -204,7 +204,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                         i++;
                     } else {
                         this.powerfactor = i;
-                        this.maxenergy = 10000 * i;
+                        this.maxenergy = 30000 * i;
                         if (this.energy > (this.maxenergy - 100)) {
 
                             if (!worldIn.isRemote) {
@@ -260,7 +260,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                     i++;
                 } else {
                     this.powerfactor = i;
-                    this.maxenergy = 10000 * i;
+                    this.maxenergy = 30000 * i;
                     if (this.energy > (this.maxenergy - 100)) {
 
                         if (!worldIn.isRemote) {
@@ -293,7 +293,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                     i++;
                 } else {
                     this.powerfactor = i;
-                    this.maxenergy = 10000 * i;
+                    this.maxenergy = 30000 * i;
                     if (this.energy > (this.maxenergy - 100)) {
 
                         if (!worldIn.isRemote) {
@@ -326,7 +326,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                     i++;
                 } else {
                     this.powerfactor = i;
-                    this.maxenergy = 10000 * i;
+                    this.maxenergy = 30000 * i;
                     if (this.energy > (this.maxenergy - 100)) {
 
                         if (!worldIn.isRemote) {
@@ -359,7 +359,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                     i++;
                 } else {
                     this.powerfactor = i;
-                    this.maxenergy = 10000 * i;
+                    this.maxenergy = 30000 * i;
                     if (this.energy > (this.maxenergy - 100)) {
 
                         if (!worldIn.isRemote) {
@@ -442,7 +442,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                 else
                 {
                     this.powerfactor = i;
-                    this.maxenergy = 10000*i;
+                    this.maxenergy = 30000*i;
                     break;
                 }
             }
@@ -464,7 +464,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                 else
                 {
                     this.powerfactor = i;
-                    this.maxenergy = 10000*i;
+                    this.maxenergy = 30000*i;
                     break;
                 }
             }
@@ -485,7 +485,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                 else
                 {
                     this.powerfactor = i;
-                    this.maxenergy = 10000*i;
+                    this.maxenergy = 30000*i;
                     break;
                 }
             }
@@ -506,7 +506,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                 else
                 {
                     this.powerfactor = i;
-                    this.maxenergy = 10000*i;
+                    this.maxenergy = 30000*i;
                     break;
                 }
             }

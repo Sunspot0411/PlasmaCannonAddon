@@ -3,11 +3,13 @@ package com.ice2670.plasmacannon.tileentities;
 
 import com.ice2670.plasmacannon.blocks.BlockTorpedoLauncher;
 import com.ice2670.plasmacannon.entity.*;
+import com.ice2670.plasmacannon.init.BlockInit;
 import com.ice2670.plasmacannon.init.ItemInit;
 import com.ice2670.plasmacannon.util.handlers.SoundsHandler;
 import net.minecraft.block.state.IBlockState;
 
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -230,14 +232,253 @@ public class TileEntityTorpedoLauncher extends TileEntity
 
 
     public void torpedoLoad(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand){
+        EnumFacing enumfacing = (EnumFacing) state.getValue(BlockTorpedoLauncher.FACING);
+        int x = this.pos.getX();
+        int y = this.pos.getY();
+        int z = this.pos.getZ();
+        BlockPos pos0 = new BlockPos(x, y, z + 1);
+        BlockPos pos1 = new BlockPos(x, y, z - 1);
+        BlockPos pos2 = new BlockPos(x - 1, y, z);
+        BlockPos pos3 = new BlockPos(x + 1, y, z);
+        BlockPos pos4 = new BlockPos(x, y - 1, z);
+        BlockPos pos5 = new BlockPos(x, y + 1, z);
+
         if (this.torpedoload == 0 && this.ftorpedoload == 0){
-            ItemStack heldItem = playerIn.getHeldItem(hand);
-            if (heldItem.getItem() == ItemInit.TORPEDO) {
-                this.torpedoload = 1;
-            } else if (heldItem.getItem() == ItemInit.FASTTORPEDO){
-                this.ftorpedoload = 1;
+            if (enumfacing == EnumFacing.NORTH){
+                if(world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos2, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos4).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos4, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos3).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos3, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos5).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos5, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if(world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos2, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos4).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos4, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos3).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos3, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos5).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos5, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                } else {
+                    if (world.isRemote) {
+                        playerIn.sendMessage(new TextComponentString("no torpedo load"));
+                    }
+                }
+
             }
-            heldItem.shrink(1);
+            if (enumfacing == EnumFacing.SOUTH){
+                if(world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos2, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos4).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos4, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos3).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos3, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos5).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos5, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                } else if(world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos2, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos4).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos4, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos3).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos3, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos5).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos5, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else {
+                    if (world.isRemote) {
+                        playerIn.sendMessage(new TextComponentString("no torpedo load"));
+                    }
+                }
+
+            }
+            if (enumfacing == EnumFacing.EAST){
+                if(world.getBlockState(pos0).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos0, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos4).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos4, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos1).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos1, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos5).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos5, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                } else if(world.getBlockState(pos0).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos0, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos4).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos4, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos1).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos1, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos5).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos5, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else {
+                    if (world.isRemote) {
+                        playerIn.sendMessage(new TextComponentString("no torpedo load"));
+                    }
+                }
+
+            }
+            if (enumfacing == EnumFacing.WEST){
+                if(world.getBlockState(pos0).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos0, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos4).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos4, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos1).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos1, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos5).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos5, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                } else if(world.getBlockState(pos0).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos0, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos4).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos4, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos1).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos1, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos5).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos5, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else {
+                    if (world.isRemote) {
+                        playerIn.sendMessage(new TextComponentString("no torpedo load"));
+                    }
+                }
+
+            }
+            if (enumfacing == EnumFacing.UP){
+                if(world.getBlockState(pos0).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos0, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos2, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos1).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos1, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos3).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos3, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                } else if(world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos2, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos0).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos0, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos3).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos3, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos1).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos1, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else {
+                    if (world.isRemote) {
+                        playerIn.sendMessage(new TextComponentString("no torpedo load"));
+                    }
+                }
+
+            }
+            if (enumfacing == EnumFacing.DOWN){
+                if(world.getBlockState(pos0).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos0, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos2, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos1).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos1, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                }
+                else if (world.getBlockState(pos3).getBlock() == BlockInit.BLOCK_HIGHEXPLOSIVETORPEDO){
+                    worldIn.setBlockState(pos3, Blocks.AIR.getDefaultState());
+                    this.torpedoload = 1;
+                } else if(world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos2, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos0).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos0, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos3).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos3, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else if (world.getBlockState(pos1).getBlock() == BlockInit.BLOCK_FASTTORPEDO){
+                    worldIn.setBlockState(pos1, Blocks.AIR.getDefaultState());
+                    this.ftorpedoload = 1;
+                }
+                else {
+                    if (world.isRemote) {
+                        playerIn.sendMessage(new TextComponentString("no torpedo load"));
+                    }
+                }
+
+            }
+
         }
 
         else if(this.torpedoload >= 1 || this.ftorpedoload >= 1) {

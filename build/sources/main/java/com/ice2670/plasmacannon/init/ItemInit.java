@@ -34,10 +34,6 @@ public class ItemInit
 
     public static final Item SMALL_OBSIDIAN = new ItemBase("small_obsidian");
 
-    public static final Item TORPEDO = new ItemBase("torpedo");
-
-    public static final Item FASTTORPEDO = new ItemBase("ftorpedo");
-
     public static final Item PLASMACONTAINER = new ItemBase("plasma_container");
 
     public static final Item INTEGRATED_CIRCUIT = new ItemBase("integrated_circuit");

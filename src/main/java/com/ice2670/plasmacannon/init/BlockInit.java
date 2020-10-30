@@ -35,4 +35,7 @@ public class BlockInit
 
     public static final Block BLOCK_BROKENTG = new BlockBrokenTG("block_brokentg");
 
+    public static final Block BLOCK_FASTTORPEDO = new BlockTorpedo("block_fasttorpedo", 3);
+
+    public static final Block BLOCK_HIGHEXPLOSIVETORPEDO = new BlockTorpedo("block_highexplosivetorpedo", 6);
 }
