@@ -97,15 +97,13 @@ public class BlockTorpedoLauncher extends BlockBase
 
 
         Item item = heldItem.getItem();
-        if(item != ItemInit.INGOT_KEY && item != ItemInit.AUTO_TORPEDO && item != ValkyrienSkiesControl.INSTANCE.vsWrench){
-            torpedolauncher.torpedoLoad(worldIn,pos,state,playerIn,hand);
-        }
-        else if (item == ItemInit.INGOT_KEY){
+        if(item == ItemInit.INGOT_KEY){
             torpedolauncher.launchtorpedo(worldIn,pos,state,playerIn);
         }
         else if (item == ItemInit.AUTO_TORPEDO){
             torpedolauncher.shoottorpedo(worldIn,pos,state,playerIn,hand);
-        } else {
+        }
+        else if (item == ValkyrienSkiesControl.INSTANCE.vsWrench){
             worldIn.setBlockState(pos, BlockInit.BLOCK_TORPEDOLAUNCHER.getDefaultState().withProperty(FACING, EnumFacing.getDirectionFromEntityLiving(pos, playerIn)));
         }
 

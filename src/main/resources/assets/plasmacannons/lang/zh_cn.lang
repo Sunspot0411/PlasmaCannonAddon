@@ -27,7 +27,7 @@ tooltip.plasmacannons.item_plasmacannon_2=用红石信号或者电子击发器�
 tooltip.plasmacannons.item_plasmacannon_3=一旦放置难以移除！ 用红石方块设计好等离子炮布置以后再放置
 item.item_torpedolauncher.name=鱼雷发射器(放置)
 tooltip.plasmacannons.item_torpedolauncher_1=右键侦测器以放置。可以向玩家视线方向发射鱼雷， 透明的一面可以供玩家观察目标。可以用VS扳手旋转
-tooltip.plasmacannons.item_torpedolauncher_2=可以发射3种鱼雷。高速和高爆鱼雷需要先放置在鱼雷发射器旁边（不包含前，后及斜对角）， 右键鱼雷发射器装填， 再用电子击发器瞄准击发。高射速鱼雷只需要直接对发射器右键来瞄准并开火
+tooltip.plasmacannons.item_torpedolauncher_2=可以发射3种鱼雷。高速和高爆鱼雷需要先放置在鱼雷发射器旁边（不包含前，后及斜对角）， 用电子击发器右键鱼雷发射器装填或击发（如果鱼雷已经装填）。高射速鱼雷只需要直接对发射器右键来瞄准并开火
 tooltip.plasmacannons.item_torpedolauncher_3=一旦放置难以移除！ 用侦测器方块设计好鱼雷发射器布置以后再放置
 
 tile.block_plasmagenerator.name=等离子生成器
@@ -43,5 +43,5 @@ tile.block_brokentg.name=损坏的钢化玻璃
 tile.block_torpedo_launcher.name=鱼雷发射器
 tile.block_fasttorpedo.name=鱼雷-高速
 tile.block_highexplosivetorpedo.name=鱼雷-高爆
-tooltip.plasmacannons.torpedo_1=相邻鱼雷发射器放置， 右键鱼雷发射器装填。直接命中复合或高级复合装甲2次或4次可将其摧毁
+tooltip.plasmacannons.torpedo_1=相邻鱼雷发射器放置， 用电子击发器右键鱼雷发射器装填。直接命中复合或高级复合装甲2次或4次可将其摧毁
 tooltip.plasmacannons.torpedo_2=警告： 可以被红石信号或VS扳手引爆!

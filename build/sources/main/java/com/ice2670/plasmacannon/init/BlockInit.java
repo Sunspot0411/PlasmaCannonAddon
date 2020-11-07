@@ -39,5 +39,5 @@ public class BlockInit
 
     public static final Block BLOCK_HIGHEXPLOSIVETORPEDO = new BlockTorpedo("block_highexplosivetorpedo", 6);
 
-    public static final Block FAKETORPEDO = new BlockBase("faketorpedo",Material.AIR);
+    public static final Block FAKETORPEDO = new BlockPC("faketorpedo");
 }

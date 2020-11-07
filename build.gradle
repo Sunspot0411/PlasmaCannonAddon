@@ -19,7 +19,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'org.spongepowered.mixin'
 
-version = "1.4.1"
+version = "1.4.0"
 group = "com.ice2670.plasmacannon" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "PlasmaCannon"
 
