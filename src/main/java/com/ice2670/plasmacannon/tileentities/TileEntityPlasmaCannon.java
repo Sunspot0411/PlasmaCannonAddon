@@ -77,8 +77,6 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
 
 
     public void fireplasma(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn) {
-
-
         //direction
         EnumFacing enumfacing = (EnumFacing) state.getValue(FACING);
         double d0 = pos.getX() + 0.5D + (float) enumfacing.getFrontOffsetX();
@@ -89,153 +87,86 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
         int y = this.pos.getY();
         int z = this.pos.getZ();
 
-
-
         BlockPos pos2;
+        int i = 1;
 
-
-            if (enumfacing == EnumFacing.NORTH) {
-                int i = 1;
-                while (i < 71) {
-                    pos2 = new BlockPos(x, y, z + i);
-                    if (world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_PLASMAGENERATOR) {
-                        i++;
-                    } else {
-                        this.powerfactor = i;
-                        this.maxenergy = 30000 * i;
-                        if (this.energy > (this.maxenergy - 100)) {
-
-                            if (!worldIn.isRemote) {
-                                EntityLargePlasmaBall entityplasmaball = new EntityLargePlasmaBall(worldIn, d0, d1, d2 - 1, powerfactor);
-
-                                entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 5, 0.001F);
-
-                                worldIn.spawnEntity(entityplasmaball);
-                            }
-
-                            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 9.9F, 1.0F);
-                            this.energy = 0;
-                        } else {
-                            if (world.isRemote) {
-                                String str2 = Double.toString(energy);
-                                String str3 = Double.toString(maxenergy);
-                                playerIn.sendMessage(new TextComponentString("not enough energy " + str2 + "," + " needs " + str3));
-                            }
-                        }
-                        break;
-                    }
+        // [ProgramCrafter/23-09-2021]
+        // possibly this code can break, if ship is built near world border
+        // but ValkyrienSkies thinks that ever 512K/1M blocks cannot be accessed
+        if (enumfacing == EnumFacing.NORTH) {
+            while (i < 71) {
+                pos2 = new BlockPos(x, y, z + i);
+                if (world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_PLASMAGENERATOR) {
+                    i++;
+                } else {
+                    break;
                 }
             }
-
-            if (enumfacing == EnumFacing.SOUTH) {
-
-                int i = 1;
-                while (i < 71) {
-                    pos2 = new BlockPos(x, y, z - i);
-                    if (world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_PLASMAGENERATOR) {
-                        i++;
-                    } else {
-                        this.powerfactor = i;
-                        this.maxenergy = 30000 * i;
-                        if (this.energy > (this.maxenergy - 100)) {
-
-                            if (!worldIn.isRemote) {
-                                EntityLargePlasmaBall entityplasmaball = new EntityLargePlasmaBall(worldIn, d0, d1, d2 + 1, powerfactor);
-
-                                entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 5, 0.001F);
-
-                                worldIn.spawnEntity(entityplasmaball);
-                            }
-
-                            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 9.9F, 1.0F);
-                            this.energy = 0;
-                        } else {
-                            if (world.isRemote) {
-                                String str2 = Double.toString(energy);
-                                String str3 = Double.toString(maxenergy);
-                                playerIn.sendMessage(new TextComponentString("not enough energy " + str2 + "," + " needs " + str3));
-                            }
-                        }
-                        break;
-                    }
+        } else if (enumfacing == EnumFacing.SOUTH) {
+            while (i < 71) {
+                pos2 = new BlockPos(x, y, z - i);
+                if (world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_PLASMAGENERATOR) {
+                    i++;
+                } else {
+                    break;
                 }
             }
-
-            if (enumfacing == EnumFacing.EAST) {
-
-                int i = 1;
-                while (i < 71) {
-                    pos2 = new BlockPos(x - i, y, z);
-                    if (world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_PLASMAGENERATOR) {
-                        i++;
-                    } else {
-                        this.powerfactor = i;
-                        this.maxenergy = 30000 * i;
-                        if (this.energy > (this.maxenergy - 100)) {
-
-                            if (!worldIn.isRemote) {
-                                EntityLargePlasmaBall entityplasmaball = new EntityLargePlasmaBall(worldIn, d0 + 1, d1, d2, powerfactor);
-
-                                entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 5, 0.001F);
-
-                                worldIn.spawnEntity(entityplasmaball);
-                            }
-
-                            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 9.9F, 1.0F);
-                            this.energy = 0;
-                        } else {
-                            if (world.isRemote) {
-                                String str2 = Double.toString(energy);
-                                String str3 = Double.toString(maxenergy);
-                                playerIn.sendMessage(new TextComponentString("not enough energy " + str2 + "," + " needs " + str3));
-                            }
-                        }
-                        break;
-                    }
+        } else if (enumfacing == EnumFacing.EAST) {
+            while (i < 71) {
+                pos2 = new BlockPos(x - i, y, z);
+                if (world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_PLASMAGENERATOR) {
+                    i++;
+                } else {
+                    break;
                 }
             }
-
-            if (enumfacing == EnumFacing.WEST) {
-
-                int i = 1;
-                while (i < 71) {
-                    pos2 = new BlockPos(x + i, y, z);
-                    if (world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_PLASMAGENERATOR) {
-                        i++;
-                    } else {
-                        this.powerfactor = i;
-                        this.maxenergy = 30000 * i;
-                        if (this.energy > (this.maxenergy - 100)) {
-
-                            if (!worldIn.isRemote) {
-                                EntityLargePlasmaBall entityplasmaball = new EntityLargePlasmaBall(worldIn, d0 - 1, d1, d2, powerfactor);
-
-                                entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 5, 0.001F);
-
-                                worldIn.spawnEntity(entityplasmaball);
-                            }
-
-                            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 9.9F, 1.0F);
-                            this.energy = 0;
-                        } else {
-                            if (world.isRemote) {
-                                String str2 = Double.toString(energy);
-                                String str3 = Double.toString(maxenergy);
-                                playerIn.sendMessage(new TextComponentString("not enough energy " + str2 + "," + " needs " + str3));
-                            }
-                        }
-                        break;
-                    }
+        } else if (enumfacing == EnumFacing.WEST) {
+            while (i < 71) {
+                pos2 = new BlockPos(x + i, y, z);
+                if (world.getBlockState(pos2).getBlock() == BlockInit.BLOCK_PLASMAGENERATOR) {
+                    i++;
+                } else {
+                    break;
                 }
             }
-
-
-
-
+        }
+        
+        this.powerfactor = i;
+        this.maxenergy = 30000 * i;
+        if (this.energy > (this.maxenergy - 100)) {
+            if (!worldIn.isRemote) {
+                EntityLargePlasmaBall entityplasmaball = null;
+                
+                if (enumfacing == EnumFacing.NORTH) {
+                    entityplasmaball = new EntityLargePlasmaBall(worldIn, d0, d1, d2 - 1, powerfactor);
+                } else if (enumfacing == EnumFacing.SOUTH) {
+                    entityplasmaball = new EntityLargePlasmaBall(worldIn, d0, d1, d2 + 1, powerfactor);
+                } else if (enumfacing == EnumFacing.EAST) {
+                    entityplasmaball = new EntityLargePlasmaBall(worldIn, d0 + 1, d1, d2, powerfactor);
+                } else if (enumfacing == EnumFacing.WEST) {
+                    entityplasmaball = new EntityLargePlasmaBall(worldIn, d0 - 1, d1, d2, powerfactor);
+                }
+        
+                entityplasmaball.shoot((double) enumfacing.getFrontOffsetX(), (double) enumfacing.getFrontOffsetY(), (double) enumfacing.getFrontOffsetZ(), 5, 0.001F);
+        
+                worldIn.spawnEntity(entityplasmaball);
+            }
+        
+            worldIn.playSound(playerIn, pos, SoundsHandler.TILEENTITY_TILEENTITYPLASMACANNON_FIRECANNON, SoundCategory.BLOCKS, 9.9F, 1.0F);
+            this.energy = this.energy - (this.maxenergy - 100);
+        } else {
+            if (world.isRemote) {
+                String str2 = Double.toString(energy);
+                String str3 = Double.toString(maxenergy);
+                playerIn.sendMessage(new TextComponentString("not enough energy " + str2 + ", needs " + str3));
+            }
+        }
     }
 
     public void fireredstone(World worldIn, BlockPos pos, IBlockState state) {
-
+        fireplasma(worldIn, pos, state);
+        
+        /* [ProgramCrafter/23-09-2021] this code looks like the duplicate of fireplasma
 
         //direction
         EnumFacing enumfacing = (EnumFacing) state.getValue(FACING);
@@ -382,10 +313,7 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
                 }
             }
         }
-
-
-
-
+        */
     }
 
 
@@ -398,8 +326,10 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
         }
 
         if (ticks == 0) {
-            EnergyTileLoadEvent loadEvent = new EnergyTileLoadEvent(this);
-            MinecraftForge.EVENT_BUS.post(loadEvent);
+            if (!world.isRemote) {
+                EnergyTileLoadEvent loadEvent = new EnergyTileLoadEvent(this);
+                MinecraftForge.EVENT_BUS.post(loadEvent);
+            }
             //world.markBlockRangeForRenderUpdate(pos, pos);
             world.notifyBlockUpdate(pos, getState(), getState(), 3);
             //world.scheduleBlockUpdate(pos,this.getBlockType(),0,0);
