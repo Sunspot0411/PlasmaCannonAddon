@@ -326,8 +326,10 @@ public class TileEntityPlasmaCannon extends TileEntity implements ITickable, IEn
         }
 
         if (ticks == 0) {
-            EnergyTileLoadEvent loadEvent = new EnergyTileLoadEvent(this);
-            MinecraftForge.EVENT_BUS.post(loadEvent);
+            if (!world.isRemote) {
+                EnergyTileLoadEvent loadEvent = new EnergyTileLoadEvent(this);
+                MinecraftForge.EVENT_BUS.post(loadEvent);
+            }
             //world.markBlockRangeForRenderUpdate(pos, pos);
             world.notifyBlockUpdate(pos, getState(), getState(), 3);
             //world.scheduleBlockUpdate(pos,this.getBlockType(),0,0);
